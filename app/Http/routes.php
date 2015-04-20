@@ -20,6 +20,7 @@ Route::get('/infos-pratiques', 'HomeController@infosPratiques');
 Route::get('/actu', 'HomeController@actu');
 Route::get('/forfaits', 'HomeController@forfaits');
 Route::get('/contact', 'HomeController@contact');
+Route::get('/admin', 'AdminController@login');
 
 
 Route::controllers([

@@ -33,4 +33,44 @@ class HomeController extends Controller {
 		return view('home');
 	}
 
+    public function gammeToyota()
+    {
+        return view('gammeToyota');
+    }
+
+    public function sansPermis()
+    {
+        return view('sansPermis');
+    }
+
+    public function occasion()
+    {
+        return view('occasion');
+    }
+
+    public function pieces()
+    {
+        return view('pieces');
+    }
+
+    public function infosPratiques()
+    {
+        return view('infosPratiques');
+    }
+
+    public function actu()
+    {
+        return view('actu');
+    }
+
+    public function forfaits()
+    {
+        return view('forfaits');
+    }
+
+    public function contact()
+    {
+        return view('contact');
+    }
+
 }

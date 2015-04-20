@@ -12,6 +12,14 @@
 */
 
 Route::get('/', 'HomeController@index');
+Route::get('/gamme-toyota', 'HomeController@gammeToyota');
+Route::get('/sans-permis', 'HomeController@sansPermis');
+Route::get('/vehicules-occasion', 'HomeController@occasion');
+Route::get('/toutes-les-pieces', 'HomeController@pieces');
+Route::get('/infos-pratiques', 'HomeController@infosPratiques');
+Route::get('/actu', 'HomeController@actu');
+Route::get('/forfaits', 'HomeController@forfaits');
+Route::get('/contact', 'HomeController@contact');
 
 
 Route::controllers([

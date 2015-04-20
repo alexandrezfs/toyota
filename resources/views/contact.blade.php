@@ -1,7 +1,7 @@
 @extends('app')
 
 @section('content')
-    
+
     <!--Header End-->
     <section id="secondary-banner" class="dynamic-image-5"><!--for other images just change the class name of this section block like, class="dynamic-image-2" and add css for the changed class-->
         <div class="container">

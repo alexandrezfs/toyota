@@ -282,7 +282,7 @@
         </div>
     </div>
 </section>
-<div class="back_to_top"><img src="https://demo.themesuite.com/automotive/images/arrow-up.png" alt="scroll up"/></div>
+<div class="back_to_top"><img src="{{asset('images/arrow-up.png')}}" alt="scroll up"/></div>
 <!-- Bootstrap core JavaScript -->
 <script src="{{asset('js/retina.js')}}"></script>
 <script type="text/javascript" src="{{asset('js/jquery.parallax.js')}}"></script>

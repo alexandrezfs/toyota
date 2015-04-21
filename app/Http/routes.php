@@ -21,9 +21,14 @@ Route::get('/actu', 'HomeController@actu');
 Route::get('/forfaits', 'HomeController@forfaits');
 Route::get('/contact', 'HomeController@contact');
 Route::get('/admin', 'AdminController@login');
+Route::get('/admin/home', 'AdminController@home');
+Route::post('/admin/action/login', 'AdminController@loginAction');
+Route::get('/admin/vehocc/list', 'AdminController@vehoccListAction');
+Route::get('/admin/vehocc/add', 'AdminController@vehoccAddAction');
+Route::post('/admin/vehocc/add', 'AdminController@vehoccAddPostAction');
 
 
 Route::controllers([
-	'auth' => 'Auth\AuthController',
-	'password' => 'Auth\PasswordController',
+    'auth' => 'Auth\AuthController',
+    'password' => 'Auth\PasswordController',
 ]);

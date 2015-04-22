@@ -8,7 +8,7 @@
 
             <h4>Editer un véhicule occasion</h4>
 
-            <form action="/admin/vehocc/edit" method="POST">
+            <form action="{{url('/admin/veh/edit')}}" method="POST">
                 <label for="titre">Titre</label>
                 <input type="text" id="titre" name="titre" class="form-control" placeholder="Titre" value="{{$car['titre']}}" required autofocus>
                 <label for="description">Description</label>
@@ -19,6 +19,13 @@
                 <input type="text" id="km" name="km" class="form-control" value="{{$car['km']}}" placeholder="KM" required>
                 <label for="annee">Année</label>
                 <input type="text" id="annee" name="annee" class="form-control" value="{{$car['annee']}}" placeholder="Année" required>
+                <label for="type">Type</label>
+                <select type="text" id="type" name="type" class="form-control" required>
+                    <option value="neuf">Véhicule Neuf</option>
+                    <option value="occasion">Véhicule Occasion</option>
+                    <option value="sans-permis">Sans permis</option>
+                </select>
+
                 <input type="hidden" name="_token" value="{{ csrf_token() }}">
                 <input type="hidden" name="id" value="{{ $car['id']  }}">
                 <button type="submit" class="btn btn-success">Valider</button>

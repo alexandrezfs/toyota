@@ -12,7 +12,7 @@ use Illuminate\Support\Facades\Session;
 use Input;
 use Request;
 use DB;
-use App\VehOccaz;
+use App\Car;
 use View;
 
 class AdminController extends Controller
@@ -48,58 +48,73 @@ class AdminController extends Controller
         }
     }
 
-    public function vehoccListAction()
+    public function vehListAction()
     {
-        $cars = VehOccaz::all();
+        $cars = Car::all();
         View::share('cars', $cars);
 
-        return view('admin/vehocc/list');
+        return view('admin/veh/list');
     }
 
-    public function vehoccAddAction()
+    public function vehAddAction()
     {
-        return view('admin/vehocc/add');
+        return view('admin/veh/add');
     }
 
-    public function vehoccAddPostAction()
+    public function vehAddPostAction()
     {
-        $car = new VehOccaz();
+        $car = new Car();
         $car->titre = Input::get('titre');
         $car->description = Input::get('description');
         $car->km = Input::get('km');
         $car->prix = Input::get('prix');
         $car->annee = Input::get('annee');
-        $car->time = date("H:i");
-        $car->date = date("Y-m-d");
+        $car->type = Input::get('type');
 
         $car->save();
 
-        return redirect('admin/vehocc/list');
+        return redirect('admin/veh/list');
     }
 
-    public function vehoccEditAction($id) {
+    public function vehEditAction($id) {
 
-        $car = VehOccaz::find($id);
+        $car = Car::find($id);
 
         View::share('car', $car);
 
-        return view('admin/vehocc/edit');
+        return view('admin/veh/edit');
     }
 
-    public function vehoccEditPostAction() {
+    public function vehEditPostAction() {
 
         $id = Input::get("id");
 
-        $car = VehOccaz::find($id);
+        $car = Car::find($id);
 
         $car->titre = Input::get("titre");
         $car->description = Input::get("description");
         $car->km = Input::get("km");
         $car->prix = Input::get("prix");
         $car->annee = Input::get("annee");
+        $car->type = Input::get('type');
 
         $car->save();
 
-        return redirect('admin/vehocc/list');
+        return redirect('admin/veh/list');
+    }
+
+    public function upload() {
+
+        $extension = Input::file('file')->getClientOriginalExtension();
+
+        $filename = uniqid() . '.' . $extension;
+        $uploadPath = public_path() . '/upload';
+        $filepath = $uploadPath . '/' . $filename;
+
+        Request::file('file')->move($uploadPath, $filename);
+
+        $response = array("filepath" => $filepath, "filename" => $filename, "uploadPath" => $uploadPath);
+
+        return json_encode($response);
     }
 }

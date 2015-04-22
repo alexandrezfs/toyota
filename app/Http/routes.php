@@ -22,12 +22,13 @@ Route::get('/forfaits', 'HomeController@forfaits');
 Route::get('/contact', 'HomeController@contact');
 Route::get('/admin', 'AdminController@login');
 Route::get('/admin/home', 'AdminController@home');
+Route::post('/admin/upload', 'AdminController@upload');
 Route::post('/admin/action/login', 'AdminController@loginAction');
-Route::get('/admin/vehocc/list', 'AdminController@vehoccListAction');
-Route::get('/admin/vehocc/add', 'AdminController@vehoccAddAction');
-Route::post('/admin/vehocc/add', 'AdminController@vehoccAddPostAction');
-Route::get('/admin/vehocc/edit/{id}', 'AdminController@vehoccEditAction');
-Route::post('/admin/vehocc/edit', 'AdminController@vehoccEditPostAction');
+Route::get('/admin/veh/list', 'AdminController@vehListAction');
+Route::get('/admin/veh/add', 'AdminController@vehAddAction');
+Route::post('/admin/veh/add', 'AdminController@vehAddPostAction');
+Route::get('/admin/veh/edit/{id}', 'AdminController@vehEditAction');
+Route::post('/admin/veh/edit', 'AdminController@vehEditPostAction');
 
 
 Route::controllers([

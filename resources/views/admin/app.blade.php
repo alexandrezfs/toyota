@@ -22,6 +22,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
           apply the skin class to the body tag so the changes take effect.
     -->
     <link href="{{asset('css/skins/skin-blue.min.css')}}" rel="stylesheet" type="text/css"/>
+    <link href="{{asset('css/Admin.css')}}" rel="stylesheet" type="text/css"/>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -198,10 +199,10 @@ desired effect
             <ul class="sidebar-menu">
                 <li class="header">Menu</li>
                 <li class="treeview">
-                    <a href="#"><span>Véhicules Occasion</span> <i class="fa fa-angle-left pull-right"></i></a>
+                    <a href="#"><span>Tous les véhicules</span> <i class="fa fa-angle-left pull-right"></i></a>
                     <ul class="treeview-menu">
-                        <li><a href="/admin/vehocc/add">Ajouter</a></li>
-                        <li><a href="/admin/vehocc/list">Voir</a></li>
+                        <li><a href="/admin/veh/add">Ajouter</a></li>
+                        <li><a href="/admin/veh/list">Voir</a></li>
                     </ul>
                 </li>
             </ul>
@@ -253,6 +254,10 @@ desired effect
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js" type="text/javascript"></script>
 <!-- AdminLTE App -->
 <script src="{{asset('js/app.min.js')}}" type="text/javascript"></script>
+
+<script src="{{asset('js/Admin.js')}}" type="text/javascript"></script>
+
+<script src="{{asset('bower_components/dropzone/dist/dropzone.js')}}" type="text/javascript"></script>
 
 <!-- Optionally, you can add Slimscroll and FastClick plugins.
       Both of these plugins are recommended to enhance the

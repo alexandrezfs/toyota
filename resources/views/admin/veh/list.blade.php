@@ -17,6 +17,7 @@
                         <td>Prix</td>
                         <td>KM</td>
                         <td>Année</td>
+                        <td>Type</td>
                         <td>Ajouté le</td>
                     </tr>
                 </thead>
@@ -41,12 +42,15 @@
                                 {{$car['annee']}}
                             </td>
                             <td>
-                                {{$car['date']}} {{$car['time']}}
+                                {{$car['type']}}
                             </td>
                             <td>
-                                <a href="{{url('/admin/vehocc/edit/' . $car['id'])}}">(Editer)</a>
+                                {{$car['created_at']}}
+                            </td>
+                            <td>
+                                <a href="{{url('/admin/veh/edit/' . $car['id'])}}">(Editer)</a>
                                 <br>
-                                <a href="{{url('/admin/vehocc/delete/' . $car['id'])}}">(Supprimer)</a>
+                                <a href="{{url('/admin/veh/delete/' . $car['id'])}}">(Supprimer)</a>
                             </td>
                         </tr>
                     @endforeach

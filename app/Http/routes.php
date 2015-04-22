@@ -26,6 +26,8 @@ Route::post('/admin/action/login', 'AdminController@loginAction');
 Route::get('/admin/vehocc/list', 'AdminController@vehoccListAction');
 Route::get('/admin/vehocc/add', 'AdminController@vehoccAddAction');
 Route::post('/admin/vehocc/add', 'AdminController@vehoccAddPostAction');
+Route::get('/admin/vehocc/edit/{id}', 'AdminController@vehoccEditAction');
+Route::post('/admin/vehocc/edit', 'AdminController@vehoccEditPostAction');
 
 
 Route::controllers([

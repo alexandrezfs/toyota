@@ -1,4 +1,4 @@
-@extends('admin/app')
+@extends('admin.app')
 
 @section('content')
 
@@ -44,9 +44,9 @@
                                 {{$car['date']}} {{$car['time']}}
                             </td>
                             <td>
-                                <a href="/action/vehocc/edit/{{$car['id']}}">(Editer)</a>
+                                <a href="{{url('/admin/vehocc/edit/' . $car['id'])}}">(Editer)</a>
                                 <br>
-                                <a href="/action/vehocc/delete/{{$car['id']}}">(Supprimer)</a>
+                                <a href="{{url('/admin/vehocc/delete/' . $car['id'])}}">(Supprimer)</a>
                             </td>
                         </tr>
                     @endforeach

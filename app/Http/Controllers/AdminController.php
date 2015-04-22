@@ -53,13 +53,12 @@ class AdminController extends Controller
         $cars = VehOccaz::all();
         View::share('cars', $cars);
 
-        return view('admin/vehoccList');
+        return view('admin/vehocc/list');
     }
 
     public function vehoccAddAction()
     {
-
-        return view('admin/vehoccAdd');
+        return view('admin/vehocc/add');
     }
 
     public function vehoccAddPostAction()
@@ -72,6 +71,32 @@ class AdminController extends Controller
         $car->annee = Input::get('annee');
         $car->time = date("H:i");
         $car->date = date("Y-m-d");
+
+        $car->save();
+
+        return redirect('admin/vehocc/list');
+    }
+
+    public function vehoccEditAction($id) {
+
+        $car = VehOccaz::find($id);
+
+        View::share('car', $car);
+
+        return view('admin/vehocc/edit');
+    }
+
+    public function vehoccEditPostAction() {
+
+        $id = Input::get("id");
+
+        $car = VehOccaz::find($id);
+
+        $car->titre = Input::get("titre");
+        $car->description = Input::get("description");
+        $car->km = Input::get("km");
+        $car->prix = Input::get("prix");
+        $car->annee = Input::get("annee");
 
         $car->save();
 

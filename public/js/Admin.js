@@ -4,7 +4,6 @@ $(document).ready(function () {
 
         var myDropzone = new Dropzone("div#my-dropzone", { url: "/admin/upload"});
 
-
         Dropzone.options.myDropzone = {
             paramName: "file", // The name that will be used to transfer the file
             maxFilesize: 200, // MB
@@ -20,6 +19,11 @@ $(document).ready(function () {
 
         myDropzone.on('success', function(file, response) {
             console.log(response);
+
+            var images = JSON.parse($("#images").val());
+            images.push(response);
+            $("#images").val(JSON.stringify(images));
+
         });
 
     }

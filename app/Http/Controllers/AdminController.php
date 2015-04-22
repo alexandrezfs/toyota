@@ -13,6 +13,7 @@ use Input;
 use Request;
 use DB;
 use App\Car;
+use App\Image;
 use View;
 
 class AdminController extends Controller
@@ -112,6 +113,15 @@ class AdminController extends Controller
         $filepath = $uploadPath . '/' . $filename;
 
         Request::file('file')->move($uploadPath, $filename);
+
+        //Register into database
+        /*
+        $image = new Image();
+        $image->filename = $filename;
+        $image->absolute_path = $filepath;
+        $image->uri = Request::root() . '/upload/' . $filename;
+        $image->object_name = Input::get("object_name");
+        */
 
         $response = array("filepath" => $filepath, "filename" => $filename, "uploadPath" => $uploadPath);
 

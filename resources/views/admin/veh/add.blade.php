@@ -33,6 +33,8 @@
 
                 </div>
 
+                <input type="hidden" name="images" id="images" value="[]">
+
                 <button type="submit" class="btn btn-success">Valider</button>
             </form>
 

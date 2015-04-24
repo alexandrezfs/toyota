@@ -33,7 +33,12 @@
 
                 </div>
 
+                <div id="images-uploaded">
+
+                </div>
+
                 <input type="hidden" name="images" id="images" value="[]">
+                <input type="hidden" name="object_name" id="object_name" value="car">
 
                 <button type="submit" class="btn btn-success">Valider</button>
             </form>

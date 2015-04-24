@@ -4,3 +4,14 @@
     margin-top: 10px;
     margin-bottom: 10px;
 }
+
+.dz-preview {
+    display: none;
+}
+
+.image-uploaded-unit img {
+    max-width: 100px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}

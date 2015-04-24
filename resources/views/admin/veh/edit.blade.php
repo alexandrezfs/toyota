@@ -26,6 +26,20 @@
                     <option value="sans-permis">Sans permis</option>
                 </select>
 
+                <input type="hidden" id="token" name="_token" value="{{ csrf_token() }}">
+
+                <label for="dropzone">Faites glisser une ou plusieurs photos dans cette zone</label>
+                <div id="my-dropzone" class="the-dropzone">
+
+                </div>
+
+                <div id="images-uploaded">
+
+                </div>
+
+                <input type="hidden" name="images" id="images" value="{{ $car['images_json'] }}">
+                <input type="hidden" name="object_name" id="object_name" value="car">
+
                 <input type="hidden" name="_token" value="{{ csrf_token() }}">
                 <input type="hidden" name="id" value="{{ $car['id']  }}">
                 <button type="submit" class="btn btn-success">Valider</button>

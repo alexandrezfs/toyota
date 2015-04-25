@@ -4,13 +4,17 @@
 
     <div class="container">
 
-        <div class="col-lg-12">
+        <div class="row">
 
-            <h4>Liste des véhicules occasion</h4>
+            <div class="col-lg-12">
 
-            <table class="table table-bordered table-striped">
+                <h4>Liste des véhicules occasion</h4>
 
-                <thead>
+                <p><a href="/admin/forfaits/add"><i class="fa fa-plus-circle"></i> Ajouter</a></p>
+
+                <table class="table table-bordered table-striped">
+
+                    <thead>
                     <tr>
                         <td>Titre</td>
                         <td>Description</td>
@@ -21,9 +25,9 @@
                         <td>Ajouté le</td>
                         <td>#</td>
                     </tr>
-                </thead>
+                    </thead>
 
-                <tbody>
+                    <tbody>
 
                     @foreach ($cars as $car)
                         <tr>
@@ -56,9 +60,11 @@
                         </tr>
                     @endforeach
 
-                </tbody>
+                    </tbody>
 
-            </table>
+                </table>
+
+            </div>
 
         </div>
 

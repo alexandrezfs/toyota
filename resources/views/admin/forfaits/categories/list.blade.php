@@ -8,6 +8,8 @@
 
             <h4>Liste des catégories de forfait</h4>
 
+            <p><a href="/admin/forfaits/categories/add"><i class="fa fa-plus-circle"></i> Ajouter</a></p>
+
             <table class="table table-bordered table-striped">
 
                 <thead>

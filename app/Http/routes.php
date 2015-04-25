@@ -37,7 +37,12 @@ Route::get('/admin/forfaits/list', 'AdminController@listForfaitsAction');
 Route::get('/admin/forfaits/categories/add', 'AdminController@addForfaitCategorieAction');
 Route::post('/admin/forfaits/categories/add', 'AdminController@addForfaitCategoriePostAction');
 Route::get('/admin/forfaits/categories/list', 'AdminController@listForfaitCategoriesAction');
-
+Route::get('/admin/news/list', 'AdminController@newsListAction');
+Route::get('/admin/news/add', 'AdminController@newsAddAction');
+Route::post('/admin/news/add', 'AdminController@newsAddPostAction');
+Route::get('/admin/news/edit/{id}', 'AdminController@newsEditAction');
+Route::post('/admin/news/edit', 'AdminController@newsEditPostAction');
+Route::get('/admin/analytics', 'AdminController@analytics');
 
 Route::controllers([
     'auth' => 'Auth\AuthController',

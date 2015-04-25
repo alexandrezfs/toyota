@@ -17,6 +17,7 @@ use App\Image;
 use View;
 use App\ForfaitCategorie;
 use App\Forfait;
+use App\News;
 
 class AdminController extends Controller
 {
@@ -80,17 +81,7 @@ class AdminController extends Controller
         $images_json = Input::get('images');
         $images = array_map('json_decode', json_decode($images_json));
 
-        foreach ($images as $key => $image_json) {
-
-            $image = new Image();
-            $image->filename = $image_json->filename;
-            $image->absolute_path = $image_json->filepath;
-            $image->uri = $image_json->uri;
-            $image->object_name = Input::get("object_name");
-            $image->object_id = $car->id;
-
-            $image->save();
-        }
+        Image::saveImages($images, Input::get("object_name"), $car->id);
 
         return redirect('admin/veh/list');
     }
@@ -98,7 +89,6 @@ class AdminController extends Controller
     public function vehEditAction($id)
     {
         $car = Car::find($id);
-        //$images = Image::whereRaw('object_name = "car" and object_id = ?', [$id])->get();
 
         View::share('car', $car);
 
@@ -127,17 +117,7 @@ class AdminController extends Controller
         $images_json = Input::get('images');
         $images = array_map('json_decode', json_decode($images_json));
 
-        foreach ($images as $key => $image_json) {
-
-            $image = new Image();
-            $image->filename = $image_json->filename;
-            $image->absolute_path = $image_json->filepath;
-            $image->uri = $image_json->uri;
-            $image->object_name = Input::get("object_name");
-            $image->object_id = $car->id;
-
-            $image->save();
-        }
+        Image::saveImages($images, Input::get("object_name"), $car->id);
 
         $car->save();
 
@@ -148,7 +128,7 @@ class AdminController extends Controller
 
         $categories = ForfaitCategorie::all();
 
-        View::share('$categories', $categories);
+        View::share('categories', $categories);
 
         return view('admin/forfaits/add');
     }
@@ -167,17 +147,7 @@ class AdminController extends Controller
 
         $forfait->save();
 
-        foreach ($images as $key => $image_json) {
-
-            $image = new Image();
-            $image->filename = $image_json->filename;
-            $image->absolute_path = $image_json->filepath;
-            $image->uri = $image_json->uri;
-            $image->object_name = Input::get("object_name");
-            $image->object_id = $forfait->id;
-
-            $image->save();
-        }
+        Image::saveImages($images, Input::get("object_name"), $forfait->id);
 
         return redirect('admin/forfaits/list');
     }
@@ -198,7 +168,6 @@ class AdminController extends Controller
         $categories = ForfaitCategorie::all();
 
         View::share('categories', $categories);
-
         View::share('forfait', $forfait);
 
         return view('admin/forfaits/edit');
@@ -219,17 +188,7 @@ class AdminController extends Controller
 
         $forfait->save();
 
-        foreach ($images as $key => $image_json) {
-
-            $image = new Image();
-            $image->filename = $image_json->filename;
-            $image->absolute_path = $image_json->filepath;
-            $image->uri = $image_json->uri;
-            $image->object_name = Input::get("object_name");
-            $image->object_id = $forfait->id;
-
-            $image->save();
-        }
+        Image::saveImages($images, Input::get("object_name"), $forfait->id);
 
         return redirect('admin/forfaits/list');
     }
@@ -257,6 +216,66 @@ class AdminController extends Controller
         return view('admin/forfaits/categories/list');
     }
 
+    function newsAddAction() {
+
+        return view('admin/news/add');
+    }
+
+    function newsAddPostAction() {
+
+        $news = new News();
+
+        $images_json = Input::get('images');
+        $images = array_map('json_decode', json_decode($images_json));
+
+        $news->images_json = $images_json;
+        $news->titre = Input::get('titre');
+        $news->contenu = Input::get('contenu');
+
+        $news->save();
+
+        Image::saveImages($images, Input::get("object_name"), $news->id);
+
+        return redirect('admin/news/list');
+    }
+
+    function newsEditAction($id) {
+
+        $news = News::find($id);
+
+        View::share("news", $news);
+
+        return view('admin/news/edit');
+    }
+
+    function newsEditPostAction() {
+
+        $id = Input::get("id");
+        $news = News::find($id);
+
+        $images_json = Input::get('images');
+        $images = array_map('json_decode', json_decode($images_json));
+
+        $news->images_json = $images_json;
+        $news->titre = Input::get('titre');
+        $news->contenu = Input::get('contenu');
+
+        $news->save();
+
+        Image::saveImages($images, Input::get("object_name"), $news->id);
+
+        return redirect('admin/news/list');
+    }
+
+    function newsListAction() {
+
+        $news = News::all();
+
+        View::share("news", $news);
+
+        return view('admin/news/list');
+    }
+
     public function upload()
     {
         $extension = Input::file('file')->getClientOriginalExtension();
@@ -270,5 +289,10 @@ class AdminController extends Controller
         $response = array("filepath" => $filepath, "filename" => $filename, "uploadPath" => $uploadPath, "uri" => Request::root() . '/upload/' . $filename);
 
         return json_encode($response);
+    }
+
+    public function analytics() {
+
+        return view("admin/analytics");
     }
 }

@@ -6,25 +6,16 @@
 
         <div class="row">
 
-            <div class="col-lg-4 col-lg-offset-4">
+            <div class="col-lg-12">
 
-                <h4>Ajouter un forfait</h4>
+                <h4>Ajouter une news</h4>
 
-                <form action="{{url('/admin/forfaits/add')}}" method="POST">
+                <form action="{{url('/admin/news/add')}}" method="POST">
                     <label for="titre">Titre</label>
                     <input type="text" id="titre" name="titre" class="form-control" placeholder="Titre" required
                            autofocus>
-
                     <label for="contenu">Contenu</label>
-                    <textarea type="text" id="contenu" name="contenu" class="form-control" placeholder="Contenu"
-                              required></textarea>
-
-                    <label for="categorie">Catégorie</label>
-                    <select type="text" id="categorie" name="categorie_id" class="form-control" required>
-                        @foreach ($categories as $categorie)
-                            <option value="{{$categorie['id']}}">{{$categorie['nom']}}</option>
-                        @endforeach
-                    </select>
+                    <textarea type="text" id="contenu" name="contenu"></textarea>
 
                     <input type="hidden" id="token" name="_token" value="{{ csrf_token() }}">
 
@@ -47,7 +38,12 @@
             </div>
 
         </div>
+        <!-- /container -->
 
-    </div> <!-- /container -->
+    </div>
+
+    <script>
+        CKEDITOR.replace('contenu');
+    </script>
 
 @endsection

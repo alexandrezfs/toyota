@@ -107,14 +107,35 @@ class AdminController extends Controller
     {
         $id = Input::get("id");
 
+        //remove all car images
+        Image::where('object_id', '=', $id)->delete();
+
         $car = Car::find($id);
 
-        $car->titre = Input::get("titre");
-        $car->description = Input::get("description");
-        $car->km = Input::get("km");
-        $car->prix = Input::get("prix");
-        $car->annee = Input::get("annee");
+        $car->titre = Input::get('titre');
+        $car->description = Input::get('description');
+        $car->km = Input::get('km');
+        $car->prix = Input::get('prix');
+        $car->annee = Input::get('annee');
         $car->type = Input::get('type');
+        $car->images_json = Input::get('images');
+
+        $car->save();
+
+        $images_json = Input::get('images');
+        $images = array_map('json_decode', json_decode($images_json));
+
+        foreach ($images as $key => $image_json) {
+
+            $image = new Image();
+            $image->filename = $image_json->filename;
+            $image->absolute_path = $image_json->filepath;
+            $image->uri = $image_json->uri;
+            $image->object_name = Input::get("object_name");
+            $image->object_id = $car->id;
+
+            $image->save();
+        }
 
         $car->save();
 

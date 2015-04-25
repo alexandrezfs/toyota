@@ -10,7 +10,7 @@
 
                 <h4>Ajouter une news</h4>
 
-                <form action="{{url('/admin/news/add')}}" method="POST">
+                <form action="{{url('/admin/news/edit')}}" method="POST">
                     <label for="titre">Titre</label>
                     <input type="text" id="titre" name="titre" class="form-control" placeholder="Titre"
                            value="{{ $news['titre'] }}" required autofocus>

@@ -42,6 +42,11 @@ Route::get('/admin/news/add', 'AdminController@newsAddAction');
 Route::post('/admin/news/add', 'AdminController@newsAddPostAction');
 Route::get('/admin/news/edit/{id}', 'AdminController@newsEditAction');
 Route::post('/admin/news/edit', 'AdminController@newsEditPostAction');
+Route::get('/admin/produits/list', 'AdminController@produitsListAction');
+Route::get('/admin/produits/add', 'AdminController@produitsAddAction');
+Route::post('/admin/produits/add', 'AdminController@produitsAddPostAction');
+Route::get('/admin/produits/edit/{id}', 'AdminController@produitsEditAction');
+Route::post('/admin/produits/edit', 'AdminController@produitsEditPostAction');
 Route::get('/admin/analytics', 'AdminController@analytics');
 Route::get('/admin/logout', 'AdminController@logout');
 

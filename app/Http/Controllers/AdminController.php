@@ -18,6 +18,7 @@ use View;
 use App\ForfaitCategorie;
 use App\Forfait;
 use App\News;
+use App\Produit;
 
 class AdminController extends Controller
 {
@@ -274,6 +275,79 @@ class AdminController extends Controller
         View::share("news", $news);
 
         return view('admin/news/list');
+    }
+
+    function produitsAddAction() {
+
+        return view('admin/produits/add');
+    }
+
+    function produitsAddPostAction() {
+
+        $produit = new Produit();
+
+        $images_json = Input::get('images');
+        $images = array_map('json_decode', json_decode($images_json));
+
+        $produit->images_json = $images_json;
+        $produit->titre = Input::get('titre');
+        $produit->description = Input::get('description');
+        $produit->prix = Input::get('prix');
+        $produit->prix_port = Input::get('prix_port');
+        $produit->sold_count = 0;
+        $produit->code = Input::get('code');
+        $produit->en_magasin = Input::get('en_magasin') ? true : false;
+        $produit->en_stock = Input::get('en_stock');
+        $produit->date_limite_fin = Input::get('date_limite_fin');
+
+        $produit->save();
+
+        Image::saveImages($images, Input::get("object_name"), $produit->id);
+
+        return redirect('admin/produits/list');
+    }
+
+    function produitsEditAction($id) {
+
+        $produit = Produit::find($id);
+
+        View::share("produit", $produit);
+
+        return view('admin/produits/edit');
+    }
+
+    function produitsEditPostAction() {
+
+        $id = Input::get("id");
+        $produit = Produit::find($id);
+
+        $images_json = Input::get('images');
+        $images = array_map('json_decode', json_decode($images_json));
+
+        $produit->images_json = $images_json;
+        $produit->titre = Input::get('titre');
+        $produit->description = Input::get('description');
+        $produit->prix = Input::get('prix');
+        $produit->prix_port = Input::get('prix_port');
+        $produit->code = Input::get('code');
+        $produit->en_magasin = Input::get('en_magasin') ? true : false;
+        $produit->en_stock = Input::get('en_stock');
+        $produit->date_limite_fin = Input::get('date_limite_fin');
+
+        $produit->save();
+
+        Image::saveImages($images, Input::get("object_name"), $produit->id);
+
+        return redirect('admin/produits/list');
+    }
+
+    function produitsListAction() {
+
+        $produits = Produit::all();
+
+        View::share("produits", $produits);
+
+        return view('admin/produits/list');
     }
 
     public function upload()

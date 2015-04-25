@@ -23,6 +23,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
     -->
     <link href="{{asset('css/skins/skin-blue.min.css')}}" rel="stylesheet" type="text/css"/>
     <link href="{{asset('css/Admin.css')}}" rel="stylesheet" type="text/css"/>
+    <link href="{{asset('css/jquery.datetimepicker.css')}}" type="text/css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -31,7 +32,24 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
     <![endif]-->
 
+    <!-- jQuery 2.1.3 -->
+    <script src="//code.jquery.com/jquery-2.1.3.min.js"></script>
+    <!-- Bootstrap 3.3.2 JS -->
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js" type="text/javascript"></script>
+    <!-- AdminLTE App -->
+    <script src="{{asset('js/app.min.js')}}" type="text/javascript"></script>
+
+    <script src="{{asset('js/Admin.js')}}" type="text/javascript"></script>
+
+    <script src="{{asset('bower_components/dropzone/dist/dropzone.js')}}" type="text/javascript"></script>
+
+    <!-- Optionally, you can add Slimscroll and FastClick plugins.
+          Both of these plugins are recommended to enhance the
+          user experience -->
+
     <script src="//cdn.ckeditor.com/4.4.7/standard/ckeditor.js"></script>
+    <script type="text/javascript" src="{{asset('js/jquery.datetimepicker.js')}}"></script>
+
 </head>
 <!--
 BODY TAG OPTIONS:
@@ -119,6 +137,11 @@ desired effect
                     <li><a href="/admin/veh/add"><i class="fa fa-car"></i> Ajouter un véhicule</a></li>
                     <li><a href="/admin/veh/list"><i class="fa fa-eye"></i> Voir les véhicules</a></li>
                     </li>
+                    <li class="header">Magasin</li>
+                    <li class="treeview">
+                    <li><a href="/admin/produits/add"><i class="fa fa-dropbox"></i> Ajouter un produit</a></li>
+                    <li><a href="/admin/produits/list"><i class="fa fa-eye"></i> Voir les produits</a></li>
+                    </li>
                     <li class="header">News</li>
                     <li class="treeview">
                     <li><a href="/admin/news/add"><i class="fa fa-newspaper-o"></i> Ajouter une news</a></li>
@@ -179,23 +202,6 @@ desired effect
     </footer>
 
 </div>
-<!-- ./wrapper -->
 
-<!-- REQUIRED JS SCRIPTS -->
-
-<!-- jQuery 2.1.3 -->
-<script src="//code.jquery.com/jquery-2.1.3.min.js"></script>
-<!-- Bootstrap 3.3.2 JS -->
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js" type="text/javascript"></script>
-<!-- AdminLTE App -->
-<script src="{{asset('js/app.min.js')}}" type="text/javascript"></script>
-
-<script src="{{asset('js/Admin.js')}}" type="text/javascript"></script>
-
-<script src="{{asset('bower_components/dropzone/dist/dropzone.js')}}" type="text/javascript"></script>
-
-<!-- Optionally, you can add Slimscroll and FastClick plugins.
-      Both of these plugins are recommended to enhance the
-      user experience -->
 </body>
 </html>

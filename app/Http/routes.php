@@ -29,6 +29,14 @@ Route::get('/admin/veh/add', 'AdminController@vehAddAction');
 Route::post('/admin/veh/add', 'AdminController@vehAddPostAction');
 Route::get('/admin/veh/edit/{id}', 'AdminController@vehEditAction');
 Route::post('/admin/veh/edit', 'AdminController@vehEditPostAction');
+Route::get('/admin/forfaits/add', 'AdminController@addForfaitAction');
+Route::post('/admin/forfaits/add', 'AdminController@addForfaitPostAction');
+Route::get('/admin/forfaits/edit/{id}', 'AdminController@editForfaitAction');
+Route::post('/admin/forfaits/edit', 'AdminController@editForfaitPostAction');
+Route::get('/admin/forfaits/list', 'AdminController@listForfaitsAction');
+Route::get('/admin/forfaits/categories/add', 'AdminController@addForfaitCategorieAction');
+Route::post('/admin/forfaits/categories/add', 'AdminController@addForfaitCategoriePostAction');
+Route::get('/admin/forfaits/categories/list', 'AdminController@listForfaitCategoriesAction');
 
 
 Route::controllers([

@@ -19,6 +19,7 @@
                         <td>Année</td>
                         <td>Type</td>
                         <td>Ajouté le</td>
+                        <td>#</td>
                     </tr>
                 </thead>
 

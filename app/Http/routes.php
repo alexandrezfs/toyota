@@ -43,6 +43,7 @@ Route::post('/admin/news/add', 'AdminController@newsAddPostAction');
 Route::get('/admin/news/edit/{id}', 'AdminController@newsEditAction');
 Route::post('/admin/news/edit', 'AdminController@newsEditPostAction');
 Route::get('/admin/analytics', 'AdminController@analytics');
+Route::get('/admin/logout', 'AdminController@logout');
 
 Route::controllers([
     'auth' => 'Auth\AuthController',

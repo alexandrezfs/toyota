@@ -70,7 +70,20 @@ desired effect
             </a>
             <!-- Navbar Right Menu -->
             <div class="navbar-custom-menu">
-
+                <ul class="nav navbar-nav">
+                    <li class="dropdown messages-menu">
+                        <a href="{{ url("/")  }}">
+                            <i class="fa fa-desktop"></i> Voir le site
+                        </a>
+                    </li>
+                    @if(Session::has('username'))
+                        <li class="dropdown messages-menu">
+                            <a href="{{ url("/admin/logout") }}">
+                                <i class="fa fa-sign-out"></i> Déconnexion
+                            </a>
+                        </li>
+                    @endif
+                </ul>
             </div>
         </nav>
     </header>
@@ -99,33 +112,36 @@ desired effect
             /.search form -->
 
             <!-- Sidebar Menu -->
-            <ul class="sidebar-menu">
-                <li class="header">Véhicules</li>
-                <li class="treeview">
+            @if(Session::has('username'))
+                <ul class="sidebar-menu">
+                    <li class="header">Véhicules</li>
+                    <li class="treeview">
                     <li><a href="/admin/veh/add"><i class="fa fa-car"></i> Ajouter un véhicule</a></li>
                     <li><a href="/admin/veh/list"><i class="fa fa-eye"></i> Voir les véhicules</a></li>
-                </li>
-                <li class="header">News</li>
-                <li class="treeview">
+                    </li>
+                    <li class="header">News</li>
+                    <li class="treeview">
                     <li><a href="/admin/news/add"><i class="fa fa-newspaper-o"></i> Ajouter une news</a></li>
                     <li><a href="/admin/news/list"><i class="fa fa-eye"></i> Voir les news</a></li>
-                </li>
-                <li class="header">Forfaits</li>
-                <li class="treeview">
+                    </li>
+                    <li class="header">Forfaits</li>
+                    <li class="treeview">
                     <li><a href="/admin/forfaits/add"><i class="fa fa-credit-card"></i> Ajouter un forfait</a></li>
                     <li><a href="/admin/forfaits/list"><i class="fa fa-eye"></i> Voir les forfaits</a></li>
-                </li>
-                <li class="header">Catégories de forfaits</li>
-                <li class="treeview">
-                    <li><a href="/admin/forfaits/categories/add"><i class="fa fa-list-ol"></i> Ajouter une catégorie</a></li>
+                    </li>
+                    <li class="header">Catégories de forfaits</li>
+                    <li class="treeview">
+                    <li><a href="/admin/forfaits/categories/add"><i class="fa fa-list-ol"></i> Ajouter une catégorie</a>
+                    </li>
                     <li><a href="/admin/forfaits/categories/list"><i class="fa fa-eye"></i> Voir les catégories</a></li>
-                </li>
-                <li class="header">Analytics</li>
-                <li class="treeview">
+                    </li>
+                    <li class="header">Analytics</li>
+                    <li class="treeview">
                     <li><a href="/admin/analytics"><i class="fa fa-area-chart"></i> Analytics</a></li>
-                </li>
-            </ul>
-            <!-- /.sidebar-menu -->
+                    </li>
+                </ul>
+                @endif
+                <!-- /.sidebar-menu -->
         </section>
         <!-- /.sidebar -->
     </aside>

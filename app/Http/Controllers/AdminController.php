@@ -295,4 +295,11 @@ class AdminController extends Controller
 
         return view("admin/analytics");
     }
+
+    public function logout() {
+
+        Session::flush();
+
+        return redirect("admin");
+    }
 }

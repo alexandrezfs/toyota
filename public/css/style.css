@@ -780,13 +780,13 @@ header.affix-top .bottom-header .navbar-default .navbar-brand .logo .primary_tex
 }
 
 header .bottom-header .navbar-default .navbar-brand .logo .primary_text {
-	font-family: 'Yellowtail', cursive;
+	font-family: 'Avenir', sans-serif;
+    font-weight: bold;
+    letter-spacing: 3px;
 	color: #FFF;
 	font-size: 40px;
 	display: block;
 	margin-bottom: 10px;
-	text-align: center;
-	padding-right: 5px;
 	transition-duration: 0s;
 }
 

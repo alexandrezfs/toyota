@@ -4,12 +4,14 @@
     <section class="banner-wrap">
         <div class="banner">
             <div class="tp-banner-container">
-                <div class="tp-banner" >
+                <div class="tp-banner">
                     <ul>
                         <!-- SLIDE  -->
-                        <li data-transition="fade" data-slotamount="5" data-masterspeed="700" >
+                        <li data-transition="fade" data-slotamount="5" data-masterspeed="700">
                             <!-- MAIN IMAGE -->
-                            <img src="http://demo.themesuite.com/automotive/images/slide-show1.jpg"   alt="slidebg1"  data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat">
+                            <img src="http://www.hdcarwallpapers.com/download/2014_toyota_land_cruiser-1920x1080.jpg"
+                                 alt="slidebg1" data-bgfit="cover" data-bgposition="center center"
+                                 data-bgrepeat="no-repeat">
 
                             <!-- LAYERS -->
                             <div class="tp-caption mediumlarge_light_white_center domainate customin customout start"
@@ -22,10 +24,11 @@
                                  data-speed="1000"
                                  data-start="500"
                                  data-easing="Back.easeInOut"
-                                 data-endspeed="300">DOMINATE </div>
+                                 data-endspeed="300">ROULEZ
+                            </div>
 
                             <!-- LAYER NR. 1 -->
-                            <div class="tp-caption internet  fade"
+                            <div class="tp-caption internet fade"
                                  data-x="0"
                                  data-y="282"
                                  data-speed="500"
@@ -34,7 +37,8 @@
                                  data-endspeed="300"
                                  data-endeasing="Power1.easeIn"
                                  data-captionhidden="off"
-                                 style="z-index: 6; letter-spacing: -3px;">THE INTERNET </div>
+                                 style="z-index: 6; letter-spacing: -3px;">SANS SOUCIS
+                            </div>
                             <!-- LAYER NR. 2 -->
                             <div class="tp-caption attract sfl"
                                  data-x="0"
@@ -45,7 +49,8 @@
                                  data-endspeed="300"
                                  data-endeasing="Power1.easeIn"
                                  data-captionhidden="off"
-                                 style="z-index: 6; top: 371px; ">Attract, Engage, &amp; Convert </div>
+                                 style="z-index: 6; top: 371px; ">Garanties, forfaits entretien
+                            </div>
                             <!-- LAYER NR. 3 -->
                             <div class="tp-caption more skewfromright "
                                  data-x="100"
@@ -56,7 +61,8 @@
                                  data-endspeed="300"
                                  data-endeasing="Power1.easeIn"
                                  data-captionhidden="off"
-                                 style="z-index: 6; left:186px;">more </div>
+                                 style="z-index: 6; left:186px;">près
+                            </div>
                             <!-- LAYER NR. 4 -->
                             <div class="tp-caption qualified skewfromright"
                                  data-x="0"
@@ -67,82 +73,14 @@
                                  data-endspeed="300"
                                  data-endeasing="Power1.easeIn"
                                  data-captionhidden="off"
-                                 style="z-index: 6">qualified vehicle shoppers </div>
+                                 style="z-index: 6">de Lyon et de ses environs
+                            </div>
                         </li>
-                        <li data-transition="fade" data-slotamount="5" data-masterspeed="700" >
+                        <li data-transition="fade" data-slotamount="5" data-masterspeed="700">
                             <!-- MAIN IMAGE -->
-                            <img src="http://demo.themesuite.com/automotive/images/slide-show2.jpg" alt="slidebg1" data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat">
-
-                            <!-- LAYERS -->
-                            <div class="tp-caption mediumlarge_light_white_center invest start"
-                                 data-x="543"
-                                 data-hoffset="0"
-                                 data-y="160"
-
-                                 data-speed="1000"
-                                 data-start="500"
-                                 data-easing="Back.easeInQuart"
-                                 data-endspeed="300">Time to invest in a website built to </div>
-
-                            <!-- LAYER NR. 1 -->
-                            <div class="tp-caption move mediumlarge_light_white_center fade"
-                                 data-x="480"
-                                 data-y="230"
-                                 data-speed="500"
-                                 data-start="800"
-                                 data-easing="Power4.easeOut"
-                                 data-endspeed="300"
-                                 data-endeasing="Power1.easeIn"
-                                 data-captionhidden="off"
-                                 style="z-index: 6; letter-spacing: -3px;">MOVE </div>
-                            <!-- LAYER NR. 2 -->
-                            <div class="tp-caption light_brown mediumlarge_light_white_center sfl"
-                                 data-x="615"
-                                 data-y="230"
-                                 data-speed="500"
-                                 data-start="1200"
-                                 data-easing="Power4.easeOut"
-                                 data-endspeed="300"
-                                 data-endeasing="Power1.easeIn"
-                                 data-captionhidden="off"
-                                 style="z-index: 6; top: 371px; ">YOUR </div>
-                            <!-- LAYER NR. 3 -->
-                            <div class="tp-caption dark_brown mediumlarge_light_white_center skewfromright "
-                                 data-x="735"
-                                 data-y="230"
-                                 data-speed="800"
-                                 data-start="1900"
-                                 data-easing="Elastic.easeOut"
-                                 data-endspeed="300"
-                                 data-endeasing="Power1.easeIn"
-                                 data-captionhidden="off"
-                                 style="z-index: 6; left:186px;">INVENTORY </div>
-                            <!-- LAYER NR. 4 -->
-                            <div class="tp-caption faster mediumlarge_light_white_center skewfromright"
-                                 data-x="960"
-                                 data-y="230"
-                                 data-speed="800"
-                                 data-start="2600"
-                                 data-easing="Power4.easeOut"
-                                 data-endspeed="300"
-                                 data-endeasing="Power1.easeIn"
-                                 data-captionhidden="off"
-                                 style="z-index: 6">FASTER </div>
-                            <!-- LAYER NR. 5 -->
-                            <div class="tp-caption brown_line skewfromright"
-                                 data-x="482"
-                                 data-y="261"
-                                 data-speed="800"
-                                 data-start="2600"
-                                 data-easing="Power4.easeOut"
-                                 data-endspeed="300"
-                                 data-endeasing="Power1.easeIn"
-                                 data-captionhidden="off"
-                                 style="z-index: 6"><img src="http://demo.themesuite.com/automotive/images/brown_line.jpg" alt="underline"> </div>
-                        </li>
-                        <li data-transition="fade" data-slotamount="5" data-masterspeed="700" >
-                            <!-- MAIN IMAGE -->
-                            <img src="http://demo.themesuite.com/automotive/images/slide-show3.jpg"   alt="slidebg1"  data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat">
+                            <img src="http://static.hdw.eweb4.com/media/wallpapers_1920x1200/cars/1/1/toyota-celica-supra-corolla-and-ft-86-concept-car-hd-wallpaper-1920x1200-8437.jpg"
+                                 alt="slidebg1" data-bgfit="cover" data-bgposition="center center"
+                                 data-bgrepeat="no-repeat">
 
                             <!-- LAYERS -->
                             <div class="tp-caption customin customout start green"
@@ -155,7 +93,8 @@
                                  data-speed="1000"
                                  data-start="500"
                                  data-easing="Back.easeInOut"
-                                 data-endspeed="300">Wow Factor?</div>
+                                 data-endspeed="300">Faire entretenir son auto
+                            </div>
 
                             <!-- LAYER NR. 1 -->
                             <div class="tp-caption big_white fade"
@@ -167,65 +106,95 @@
                                  data-endspeed="300"
                                  data-endeasing="Power1.easeIn"
                                  data-captionhidden="off"
-                                 style="z-index: 6;">STANDARD. </div>
+                                 style="z-index: 6;">SIMPLE.
+                            </div>
                         </li>
-                        <li data-transition="fade" data-slotamount="5" data-masterspeed="700" >
+                        <li data-transition="fade" data-slotamount="5" data-masterspeed="700">
                             <!-- MAIN IMAGE -->
-                            <img src="http://demo.themesuite.com/automotive/images/slide-show4.jpg"   alt="slidebg1"  data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat">
+                            <img src="http://www.carpicturesites.com/wp-content/uploads/2015/01/2015-Toyota-Tundra-Trd-Pro-Front-Car-Wallpaper.jpg"
+                                 alt="slidebg1" data-bgfit="cover" data-bgposition="center center"
+                                 data-bgrepeat="no-repeat">
 
                             <!-- LAYERS -->
-                            <div class="tp-caption customin customout start big_white"
-                                 data-x="0"
+                            <div class="tp-caption mediumlarge_light_white_center invest start"
+                                 data-x="500"
                                  data-hoffset="0"
-                                 data-y="235"
+                                 data-y="160"
 
-                                 data-customin="x:0;y:0;z:0;rotationX:90;rotationY:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
-                                 data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
                                  data-speed="1000"
                                  data-start="500"
-                                 data-easing="Back.easeInOut"
-                                 data-endspeed="300">UNLOCK</div>
+                                 data-easing="Back.easeInQuart"
+                                 data-endspeed="300">Toute la gamme Toyota chez Stamcar
+                            </div>
 
                             <!-- LAYER NR. 1 -->
-                            <div class="tp-caption thin_red fade"
-                                 data-x="300"
-                                 data-y="235"
+                            <div class="tp-caption move mediumlarge_light_white_center fade"
+                                 data-x="215"
+                                 data-y="230"
                                  data-speed="500"
                                  data-start="800"
                                  data-easing="Power4.easeOut"
                                  data-endspeed="300"
                                  data-endeasing="Power1.easeIn"
                                  data-captionhidden="off"
-                                 style="z-index: 6;">THE POTENTIAL</div>
-
+                                 style="z-index: 6; letter-spacing: -3px;">FAITES
+                            </div>
                             <!-- LAYER NR. 2 -->
-                            <div class="tp-caption thin_white skewfromright"
-                                 data-x="0"
-                                 data-y="510"
+                            <div class="tp-caption light_brown mediumlarge_light_white_center sfl"
+                                 data-x="365"
+                                 data-y="230"
                                  data-speed="500"
-                                 data-start="800"
+                                 data-start="1200"
                                  data-easing="Power4.easeOut"
                                  data-endspeed="300"
                                  data-endeasing="Power1.easeIn"
                                  data-captionhidden="off"
-                                 style="z-index: 6;">business from your</div>
-
+                                 style="z-index: 6; top: 371px; ">DISPARAITRE
+                            </div>
                             <!-- LAYER NR. 3 -->
-                            <div class="tp-caption cursive skewfromright"
-                                 data-x="400"
-                                 data-y="570"
-                                 data-speed="500"
-                                 data-start="800"
+                            <div class="tp-caption dark_brown mediumlarge_light_white_center skewfromright "
+                                 data-x="620"
+                                 data-y="230"
+                                 data-speed="800"
+                                 data-start="1900"
+                                 data-easing="Elastic.easeOut"
+                                 data-endspeed="300"
+                                 data-endeasing="Power1.easeIn"
+                                 data-captionhidden="off"
+                                 style="z-index: 6; left:186px;">LES PANNES
+                            </div>
+                            <!-- LAYER NR. 4 -->
+                            <div class="tp-caption faster mediumlarge_light_white_center skewfromright"
+                                 data-x="850"
+                                 data-y="230"
+                                 data-speed="800"
+                                 data-start="2600"
                                  data-easing="Power4.easeOut"
                                  data-endspeed="300"
                                  data-endeasing="Power1.easeIn"
                                  data-captionhidden="off"
-                                 style="z-index: 6;">website</div>
+                                 style="z-index: 6">RAPIDEMENT
+                            </div>
+                            <!-- LAYER NR. 5 -->
+                            <div class="tp-caption brown_line skewfromright"
+                                 data-x="715"
+                                 data-y="261"
+                                 data-speed="800"
+                                 data-start="2600"
+                                 data-easing="Power4.easeOut"
+                                 data-endspeed="300"
+                                 data-endeasing="Power1.easeIn"
+                                 data-captionhidden="off"
+                                 style="z-index: 6"><img
+                                        src="http://demo.themesuite.com/automotive/images/brown_line.jpg"
+                                        alt="underline"></div>
                         </li>
                         <!-- SLIDE  -->
-                        <li data-transition="fade" data-slotamount="5" data-masterspeed="700" >
+                        <li data-transition="fade" data-slotamount="5" data-masterspeed="700">
                             <!-- MAIN IMAGE -->
-                            <img src="http://demo.themesuite.com/automotive/images/slide-show5.jpg"   alt="slidebg1"  data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat">
+                            <img src="http://www.latoro.com/wallpapers/cars/16449-desktop-wallpapers-toyota-avensis.jpg"
+                                 alt="slidebg1" data-bgfit="cover" data-bgposition="center center"
+                                 data-bgrepeat="no-repeat">
 
                             <!-- LAYERS -->
                             <div class="tp-caption mediumlarge_light_white_center domainate customin customout start"
@@ -238,11 +207,12 @@
                                  data-speed="1000"
                                  data-start="500"
                                  data-easing="Back.easeInOut"
-                                 data-endspeed="300">REALITY </div>
+                                 data-endspeed="300">PARTEZ
+                            </div>
 
                             <!-- LAYER NR. 1 -->
                             <div class="tp-caption thin_dark_blue fade"
-                                 data-x="270"
+                                 data-x="260"
                                  data-y="210"
                                  data-speed="500"
                                  data-start="800"
@@ -250,7 +220,8 @@
                                  data-endspeed="300"
                                  data-endeasing="Power1.easeIn"
                                  data-captionhidden="off"
-                                 style="z-index: 6; letter-spacing: 0;">IS JUST</div>
+                                 style="z-index: 6; letter-spacing: 0;">EN VACANCES
+                            </div>
                             <!-- LAYER NR. 2 -->
                             <div class="tp-caption thinner_white sfl"
                                  data-x="05"
@@ -261,7 +232,8 @@
                                  data-endspeed="300"
                                  data-endeasing="Power1.easeIn"
                                  data-captionhidden="off"
-                                 style="z-index: 6; top: 371px; ">your perception</div>
+                                 style="z-index: 6; top: 371px; ">l'esprit tranquille
+                            </div>
                         </li>
                     </ul>
                 </div>
@@ -270,19 +242,19 @@
 
                 var revapi;
 
-                jQuery(document).ready(function() {
+                jQuery(document).ready(function () {
 
                     revapi = jQuery('.tp-banner').revolution(
                             {
-                                delay:8000,
-                                startwidth:1170,
-                                startheight:645,
-                                hideThumbs:10,
-                                fullWidth:"off",
-                                fullScreen:"off",
+                                delay: 8000,
+                                startwidth: 1170,
+                                startheight: 645,
+                                hideThumbs: 10,
+                                fullWidth: "off",
+                                fullScreen: "off",
                                 fullScreenOffsetContainer: "",
                                 hideTimerBar: "on",
-                                navigationType:"none",
+                                navigationType: "none",
                                 stopAtSlide: 1
 
                             });
@@ -300,8 +272,12 @@
     <section class="message-wrap">
         <div class="container">
             <div class="row">
-                <h2 class="col-lg-9 col-md-8 col-sm-12 col-xs-12 xs-padding-left-15">Discover a website for car dealers that converts visitors to <span class="alternate-font">customers</span></h2>
-                <div class="col-lg-3 col-md-4 col-sm-12 col-xs-12 xs-padding-right-15"> <a href="#" class="default-btn pull-right action_button lg-button">Schedule a Test Drive</a> </div>
+                <h2 class="col-lg-9 col-md-8 col-sm-12 col-xs-12 xs-padding-left-15">Votre garage toutes marques
+                    accessible <span class="alternate-font">facilement</span></h2>
+
+                <div class="col-lg-3 col-md-4 col-sm-12 col-xs-12 xs-padding-right-15"><a
+                            href="{{url('/infos-pratiques')}}" class="default-btn pull-right action_button lg-button">Nous
+                        rejoindre</a></div>
             </div>
         </div>
         <div class="message-shadow"></div>
@@ -316,47 +292,63 @@
                             <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 margin-bottom-none">
                                 <div class="flip margin-bottom-30">
                                     <div class="card">
-                                        <div class="face front"><img class="img-responsive" src="http://demo.themesuite.com/automotive/images/car1.jpg" alt=""></div>
+                                        <div class="face front"><img class="img-responsive"
+                                                                     src="{{asset('images/toyota/toyota1.jpg')}}"
+                                                                     alt=""></div>
                                         <div class="face back">
-                                            <div class='hover_title'>Race Ready</div>
-                                            <a href="inventory-listing.html"><i class="fa fa-link button_icon"></i></a> <a href="images/car1-lrg.jpg" class="fancybox"><i class="fa fa-arrows-alt button_icon"></i></a> </div>
+                                            <div class='hover_title'>Emplacement</div>
+                                            <a href="{{ url('/infos-pratiques')  }}"><i
+                                                        class="fa fa-link button_icon"></i></a>
+                                        </div>
                                     </div>
                                 </div>
-                                <h4><a href="#">FACTORY READY FOR TRACK DAY</a></h4>
-                                <p class="margin-bottom-none">Sea veniam lucilius neglegentur ad, an per sumo volum
-                                    voluptatibus. Qui cu everti repudiare. Eam ut cibo nobis
-                                    aperiam, elit qualisque at cum. Possit antiopam id est.
-                                    Illud delicata ea mel, sed novum mucius id. Nullam qua.</p>
+                                <h4><a href="#">Garage toutes marques bien placé</a></h4>
+
+                                <p class="margin-bottom-none">STAMCAR, situé en plein coeur d'un large réseau de
+                                    transports, tel l'axe national N346 qui relie l'entreprise à Lyon, repose en plein
+                                    coeur de nombreux commerces. (Zone d'activité) 16 Rue Paul Cezanne, 69330 Meyzieu
+                                    derrière le centre Leclerc.</p>
                             </div>
                             <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 margin-bottom-none">
                                 <div class="flip horizontal margin-bottom-30">
                                     <div class="card">
-                                        <div class="face front"><img class="img-responsive" src="http://demo.themesuite.com/automotive/images/car2.jpg" alt=""></div>
+                                        <div class="face front"><img class="img-responsive"
+                                                                     src="{{asset('images/toyota/toyota2.jpg')}}"
+                                                                     alt=""></div>
                                         <div class="face back">
-                                            <div class='hover_title'>Family Oriented</div>
-                                            <a href="inventory-listing.html"><i class="fa fa-link button_icon"></i></a> <a href="images/car2-lrg.jpg" class="fancybox"><i class="fa fa-arrows-alt button_icon"></i></a> </div>
+                                            <div class='hover_title'>Experts Toyota</div>
+                                            <a href="{{ url('/infos-pratiques')  }}"><i
+                                                        class="fa fa-link button_icon"></i></a>
+                                        </div>
                                     </div>
                                 </div>
-                                <h4><a href="#">A SPORT UTILITY FOR THE FAMILY</a></h4>
-                                <p class="margin-bottom-none">Cum ut tractatos imperdiet, no tamquam facilisi qui.
-                                    Eum tibique consectetuer in, an legimus referrentur vis,
-                                    vocent deseruisse ex mel. Sed te idque graecis. Vel ne
-                                    libris dolores, in mel graece dolorum.</p>
+                                <h4><a href="#">Des experts à votre écoute</a></h4>
+
+                                <p class="margin-bottom-none">Spécialisé dans la réparation de tous les véhicules y
+                                    compris les véhicules sans permis, notre savoir faire sur les entretiens des
+                                    véhicules de toutes marques et spécialement de la marque Toyota. En partenariat avec
+                                    notre fournisseur IGOL, nos produits sont de hautes qualités, pour une longévité de
+                                    votre véhicule.</p>
                             </div>
                             <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 margin-bottom-none">
-                                <div class="flip margin-bottom-30">
+                                <div class="flip horizontal margin-bottom-30">
                                     <div class="card">
-                                        <div class="face front"><img class="img-responsive" src="http://demo.themesuite.com/automotive/images/car3.jpg" alt=""></div>
+                                        <div class="face front"><img class="img-responsive"
+                                                                     src="{{asset('images/toyota/toyota3.jpg')}}"
+                                                                     alt=""></div>
                                         <div class="face back">
-                                            <div class='hover_title'>World Class</div>
-                                            <a href="inventory-listing.html"><i class="fa fa-link button_icon"></i></a> <a href="images/car3-lrg.jpg" class="fancybox"><i class="fa fa-arrows-alt button_icon"></i></a> </div>
+                                            <div class='hover_title'>Horaires</div>
+                                            <a href="{{ url('/infos-pratiques')  }}"><i
+                                                        class="fa fa-link button_icon"></i></a>
+                                        </div>
                                     </div>
                                 </div>
-                                <h4><a href="#">MAKE AN EXECUTIVE STATEMENT</a></h4>
-                                <p class="margin-bottom-none">Te inermis cotidieque cum, sed ea utroque atomorum
-                                    sadipscing. Qui id oratio everti scaevola, vim ea augue
-                                    ponderum vituperatoribus, quo adhuc abhorreant
-                                    omittantur ad. No his fierent perpetua consequat, et nis.</p>
+                                <h4><a href="#">Des horaires adaptés à vos besoins</a></h4>
+
+                                <p class="margin-bottom-none">Du Lundi au Jeudi 8h-12h 14h-19h sauf Vendredi fermeture à
+                                    18h, et Samedi 8h-12h fermeture après midi.
+                                    *À l'occasion de certaines journées (jours fériés, vacances d'été), le garage est
+                                    susceptible de fermer ses portes.</p>
                             </div>
                         </div>
                     </div>
@@ -364,37 +356,41 @@
 
                 <!--car-block-wrap ends-->
                 <div class="row parallax_parent design_2 margin-bottom-40 margin-top-30">
-                    <div class="parallax_scroll clearfix" data-velocity="-.5" data-offset="-200" data-image="http://demo.themesuite.com/automotive/images/parallax1.jpg">
+                    <div class="parallax_scroll clearfix" data-velocity="-.5" data-offset="-200"
+                         data-image="http://demo.themesuite.com/automotive/images/parallax1.jpg">
                         <div class="overlay">
                             <div class="container">
                                 <div class="row">
-                                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 padding-left-none xs-margin-bottom-none xs-padding-top-30 scroll_effect bounceInLeft"> <span class="align-center"><i class="fa fa-6x fa-bar-chart-o"></i></span>
-                                        <h3>Results Driven</h3>
-                                        <p>Sed ut perspiciatis unde om nis
-                                            natus error sit volup atem accusant
-                                            dolorem que laudantium. Totam
-                                            aperiam, eaque ipsa quae ai.</p>
+                                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 padding-left-none xs-margin-bottom-none xs-padding-top-30 scroll_effect bounceInLeft">
+                                        <span class="align-center"><i class="fa fa-6x fa-bar-chart-o"></i></span>
+
+                                        <h3>Résultats garantis</h3>
+
+                                        <p>Nos experts TOYOTA s'assurent que votre véhicule sort de notre atelier dans
+                                            ses meilleures conditions.</p>
                                     </div>
-                                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 xs-margin-bottom-none xs-padding-top-30 scroll_effect bounceInLeft" data-wow-delay=".2s"> <span class="align-center"><i class="fa fa-6x fa-road"></i></span>
-                                        <h3>Proven Technology</h3>
-                                        <p>Sed ut perspiciatis unde om nis
-                                            natus error sit volup atem accusant
-                                            dolorem que laudantium. Totam
-                                            aperiam, eaque ipsa quae ai.</p>
+                                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 xs-margin-bottom-none xs-padding-top-30 scroll_effect bounceInLeft"
+                                         data-wow-delay=".2s"><span class="align-center"><i
+                                                    class="fa fa-6x fa-road"></i></span>
+
+                                        <h3>Economies</h3>
+
+                                        <p>Grâce à la technologie hybride, réduisez votre consommation de carburant.</p>
                                     </div>
-                                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 xs-margin-bottom-none xs-padding-top-30 scroll_effect bounceInRight" data-wow-delay=".2s"> <span class="align-center"><i class="fa fa-6x fa-flag-checkered"></i></span>
-                                        <h3>Winning Culture</h3>
-                                        <p>Sed ut perspiciatis unde om nis
-                                            natus error sit volup atem accusant
-                                            dolorem que laudantium. Totam
-                                            aperiam, eaque ipsa quae ai.</p>
+                                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 xs-margin-bottom-none xs-padding-top-30 scroll_effect bounceInRight"
+                                         data-wow-delay=".2s"><span class="align-center"><i
+                                                    class="fa fa-6x fa-flag-checkered"></i></span>
+
+                                        <h3>Rapidité</h3>
+
+                                        <p>Nos techniciens s'occupent de votre véhicule rapidement.</p>
                                     </div>
-                                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 xs-margin-bottom-none xs-padding-top-30 padding-right-none scroll_effect bounceInRight"> <span class="align-center"><i class="fa fa-6x fa-dashboard"></i></span>
-                                        <h3>Top Performance</h3>
-                                        <p>Sed ut perspiciatis unde om nis
-                                            natus error sit volup atem accusant
-                                            dolorem que laudantium. Totam
-                                            aperiam, eaque ipsa quae ai.</p>
+                                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 xs-margin-bottom-none xs-padding-top-30 padding-right-none scroll_effect bounceInRight">
+                                        <span class="align-center"><i class="fa fa-6x fa-dashboard"></i></span>
+
+                                        <h3>Tests</h3>
+
+                                        <p>Votre véhicule est testé et approuvé par notre chaîne de travail.</p>
                                     </div>
                                 </div>
                             </div>
@@ -405,28 +401,30 @@
                 <section class="welcome-wrap padding-top-30 sm-horizontal-15">
                     <div class="row">
                         <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 welcome padding-left-none padding-bottom-40 scroll_effect fadeInUp">
-                            <h4 class="margin-bottom-25 margin-top-none"><strong>WELCOME</strong> TO YOUR NEW WEBSITE</h4>
-                            <p>Lorem ipsum dolor sit amet, falli tollit cetero te eos. Ea ullum liber aperiri mi, impetus
-                                ate philosophia ad duo, quem regione ne ius. Vis quis lobortis dissentias ex, in du aft
-                                philosophia, malis necessitatibus no mei. Volumus sensibus qui ex, eum duis doming
-                                ad. Modo liberavisse eu mel, no viris prompta sit. Pro labore sadipscing et. Ne peax
-                                egat usu te mel <span class="alternate-font">vivendo scriptorem</span>. Pro labore sadipscing et. Ne pertinax egat usu te
-                                mel vivendo scriptorem.</p>
-                            <p>Cum ut tractatos imperdiet, no tamquam facilisi qui. Eum tibique consectetuer in, an
-                                referrentur vis, vocent deseruisse ex mel. Sed te <span class="alternate-font">idque graecis</span>. Vel ne libris dolores,
-                                mel graece mel vivendo scriptorem dolorum.</p>
+                            <h4 class="margin-bottom-25 margin-top-none"><strong>Bienvenue</strong> Sur notre site.</h4>
+
+                            <p>Consultez notre gamme de véhicules <span class="alternate-font">Occasion</span>. Nous
+                                disposons également d'un <span class="alternate-font">magasin en ligne</span> sur lequel
+                                vous pouvez commander en ligne.</p>
+
+                            <p>Consultez également la <span class="alternate-font">gamme Toyota</span>. ou la gamme
+                                <span class="alternate-font">sans permis</span>. STAMCAR est un atelier agréé par la
+                                marque de véhicules Toyota.</p>
                         </div>
                         <!--welcome ends-->
-                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 padding-right-none sm-padding-left-none md-padding-left-15 xs-padding-left-none padding-bottom-40 scroll_effect fadeInUp" data-wow-delay='.2s' style="z-index:100">
-                            <h4 class="margin-bottom-25 margin-top-none"><strong>SEARCH</strong> OUR INVENTORY</h4>
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 padding-right-none sm-padding-left-none md-padding-left-15 xs-padding-left-none padding-bottom-40 scroll_effect fadeInUp"
+                             data-wow-delay='.2s' style="z-index:100">
+                            <h4 class="margin-bottom-25 margin-top-none"><strong>Rechercher</strong> dans notre
+                                inventaire</h4>
+
                             <div class="search-form margin-top-20 padding-vertical-20">
                                 <form method="post" action="#">
                                     <div class="select-wrapper clearfix">
                                         <div class="col-md-6">
                                             <div class="min-price select-dropdown">
                                                 <div class="my-dropdown min-price-dropdown min-dropdown">
-                                                    <select name="min-year" class="css-dropdowns" tabindex="1" >
-                                                        <option value="">Min Year</option>
+                                                    <select name="min-year" class="css-dropdowns" tabindex="1">
+                                                        <option value="">Année min</option>
                                                         <option>2015</option>
                                                         <option>2014</option>
                                                         <option>2013</option>
@@ -441,10 +439,11 @@
                                                         <option>2004</option>
                                                     </select>
                                                 </div>
-                                                <span class="my-dropdown">to</span>
+                                                <span class="my-dropdown">à</span>
+
                                                 <div class="my-dropdown max-price-dropdown min-dropdown">
-                                                    <select name="max-year" class="css-dropdowns" tabindex="1" >
-                                                        <option value="">Max Year</option>
+                                                    <select name="max-year" class="css-dropdowns" tabindex="1">
+                                                        <option value="">Année max</option>
                                                         <option>2015</option>
                                                         <option>2014</option>
                                                         <option>2013</option>
@@ -464,40 +463,41 @@
                                         <div class="col-md-6">
                                             <div class="min-price select-dropdown">
                                                 <div class="my-dropdown min-price-dropdown min-dropdown">
-                                                    <select name="min-price" class="css-dropdowns" tabindex="1" >
-                                                        <option value="">Min Price</option>
+                                                    <select name="min-price" class="css-dropdowns" tabindex="1">
+                                                        <option value="">Prix min</option>
                                                         <option>0</option>
-                                                        <option>&lt; 10,000</option>
-                                                        <option>&lt; 20,000</option>
-                                                        <option>&lt; 30,000</option>
-                                                        <option>&lt; 40,000</option>
-                                                        <option>&lt; 50,000</option>
-                                                        <option>&lt; 60,000</option>
-                                                        <option>&lt; 70,000</option>
-                                                        <option>&lt; 80,000</option>
-                                                        <option>&lt; 90,000</option>
-                                                        <option>&lt; 100,000</option>
-                                                        <option>&lt; 120,000</option>
-                                                        <option>&lt; 150,000</option>
+                                                        <option>&lt; 10 000</option>
+                                                        <option>&lt; 20 000</option>
+                                                        <option>&lt; 30 000</option>
+                                                        <option>&lt; 40 000</option>
+                                                        <option>&lt; 50 000</option>
+                                                        <option>&lt; 60 000</option>
+                                                        <option>&lt; 70 000</option>
+                                                        <option>&lt; 80 000</option>
+                                                        <option>&lt; 90 000</option>
+                                                        <option>&lt; 100 000</option>
+                                                        <option>&lt; 120 000</option>
+                                                        <option>&lt; 150 000</option>
                                                     </select>
                                                 </div>
-                                                <span class="my-dropdown">to</span>
+                                                <span class="my-dropdown">à</span>
+
                                                 <div class="my-dropdown max-price-dropdown min-dropdown">
-                                                    <select name="max-price" class="css-dropdowns" tabindex="1" >
-                                                        <option value="">Max Price</option>
+                                                    <select name="max-price" class="css-dropdowns" tabindex="1">
+                                                        <option value="">Prix max</option>
                                                         <option>0</option>
-                                                        <option>&lt; 10,000</option>
-                                                        <option>&lt; 20,000</option>
-                                                        <option>&lt; 30,000</option>
-                                                        <option>&lt; 40,000</option>
-                                                        <option>&lt; 50,000</option>
-                                                        <option>&lt; 60,000</option>
-                                                        <option>&lt; 70,000</option>
-                                                        <option>&lt; 80,000</option>
-                                                        <option>&lt; 90,000</option>
-                                                        <option>&lt; 100,000</option>
-                                                        <option>&lt; 120,000</option>
-                                                        <option>&lt; 150,000</option>
+                                                        <option>&lt; 10 000</option>
+                                                        <option>&lt; 20 000</option>
+                                                        <option>&lt; 30 000</option>
+                                                        <option>&lt; 40 000</option>
+                                                        <option>&lt; 50 000</option>
+                                                        <option>&lt; 60 000</option>
+                                                        <option>&lt; 70 000</option>
+                                                        <option>&lt; 80 000</option>
+                                                        <option>&lt; 90 000</option>
+                                                        <option>&lt; 100 000</option>
+                                                        <option>&lt; 120 000</option>
+                                                        <option>&lt; 150 000</option>
                                                     </select>
                                                 </div>
                                             </div>
@@ -506,122 +506,59 @@
                                     <div class="select-wrapper clearfix">
                                         <div class="col-md-6">
                                             <div class="my-dropdown make-dropdown">
-                                                <select name="body_style" class="css-dropdowns" tabindex="1" >
-                                                    <option value="">Body Style</option>
-                                                    <option>Cargo</option>
-                                                    <option>Compact</option>
-                                                    <option>Convertible</option>
-                                                    <option>Coupe</option>
-                                                    <option>Hatchback</option>
-                                                    <option>Minivan</option>
-                                                    <option>Sedan</option>
-                                                    <option>SUV</option>
-                                                    <option>Truck</option>
-                                                    <option>Van</option>
-                                                    <option>Wagon</option>
+                                                <select name="body_style" class="css-dropdowns" tabindex="1">
+                                                    <option value="">Marque</option>
+                                                    <option>Toyota</option>
                                                 </select>
                                             </div>
                                         </div>
                                         <div class="col-md-6">
                                             <div class="min-price select-dropdown">
                                                 <div class="my-dropdown min-price-dropdown min-dropdown">
-                                                    <select name="min-mileage" class="css-dropdowns" tabindex="1" >
-                                                        <option value="">Min Mileage</option>
+                                                    <select name="min-mileage" class="css-dropdowns" tabindex="1">
+                                                        <option value="">KM min</option>
                                                         <option>0</option>
-                                                        <option>&lt; 10,000</option>
-                                                        <option>&lt; 20,000</option>
-                                                        <option>&lt; 30,000</option>
-                                                        <option>&lt; 40,000</option>
-                                                        <option>&lt; 50,000</option>
-                                                        <option>&lt; 60,000</option>
-                                                        <option>&lt; 70,000</option>
-                                                        <option>&lt; 80,000</option>
-                                                        <option>&lt; 90,000</option>
-                                                        <option>&lt; 100,000</option>
-                                                        <option>&lt; 120,000</option>
-                                                        <option>&lt; 150,000</option>
+                                                        <option>&lt; 10 000</option>
+                                                        <option>&lt; 20 000</option>
+                                                        <option>&lt; 30 000</option>
+                                                        <option>&lt; 40 000</option>
+                                                        <option>&lt; 50 000</option>
+                                                        <option>&lt; 60 000</option>
+                                                        <option>&lt; 70 000</option>
+                                                        <option>&lt; 80 000</option>
+                                                        <option>&lt; 90 000</option>
+                                                        <option>&lt; 100 000</option>
+                                                        <option>&lt; 120 000</option>
+                                                        <option>&lt; 150 000</option>
                                                     </select>
                                                 </div>
                                                 <span class="my-dropdown">to</span>
+
                                                 <div class="my-dropdown max-price-dropdown min-dropdown">
-                                                    <select name="max-mileage" class="css-dropdowns" tabindex="1" >
-                                                        <option value="">Max Mileage</option>
+                                                    <select name="max-mileage" class="css-dropdowns" tabindex="1">
+                                                        <option value="">KM max</option>
                                                         <option>0</option>
-                                                        <option>&lt; 10,000</option>
-                                                        <option>&lt; 20,000</option>
-                                                        <option>&lt; 30,000</option>
-                                                        <option>&lt; 40,000</option>
-                                                        <option>&lt; 50,000</option>
-                                                        <option>&lt; 60,000</option>
-                                                        <option>&lt; 70,000</option>
-                                                        <option>&lt; 80,000</option>
-                                                        <option>&lt; 90,000</option>
-                                                        <option>&lt; 100,000</option>
-                                                        <option>&lt; 120,000</option>
-                                                        <option>&lt; 150,000</option>
+                                                        <option>&lt; 10 000</option>
+                                                        <option>&lt; 20 000</option>
+                                                        <option>&lt; 30 000</option>
+                                                        <option>&lt; 40 000</option>
+                                                        <option>&lt; 50 000</option>
+                                                        <option>&lt; 60 000</option>
+                                                        <option>&lt; 70 000</option>
+                                                        <option>&lt; 80 000</option>
+                                                        <option>&lt; 90 000</option>
+                                                        <option>&lt; 100 000</option>
+                                                        <option>&lt; 120 000</option>
+                                                        <option>&lt; 150 000</option>
                                                     </select>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="select-wrapper clearfix">
-                                        <div class="col-md-6">
-                                            <div class="my-dropdown make-dropdown">
-                                                <select name="model" class="css-dropdowns" tabindex="1" >
-                                                    <option value="">Model</option>
-                                                    <option>Lorem</option>
-                                                    <option>ipsum</option>
-                                                    <option>dolor</option>
-                                                    <option>sit</option>
-                                                    <option>amet</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="my-dropdown make-dropdown">
-                                                <select name="transmission" class="css-dropdowns" tabindex="1" >
-                                                    <option value="">Transmission</option>
-                                                    <option>Automatic</option>
-                                                    <option>Manual</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="select-wrapper clearfix">
-                                        <div class="col-md-6">
-                                            <div class="my-dropdown make-dropdown">
-                                                <select name="make" class="css-dropdowns" tabindex="1" >
-                                                    <option value="">Make</option>
-                                                    <option>Lorem</option>
-                                                    <option>ipsum</option>
-                                                    <option>dolor</option>
-                                                    <option>sit</option>
-                                                    <option>amet</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="my-dropdown">
-                                                <input class="full-width" type="search" value="" placeholder="Refine with keywords">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="clear"></div>
-                                    <div class="select-wrapper clearfix">
-                                        <div class="form-element clearfix">
-                                            <input type="checkbox" id="check">
-                                            <label for="check">Certified</label>
-                                        </div>
                                         <div class="form-element">
-                                            <input type="checkbox" id="check2">
-                                            <label for="check2">CARFAX&reg; Verified</label>
-                                        </div>
-                                        <div class="form-element">
-                                            <input type="checkbox" id="check3">
-                                            <label for="check3">Brand New</label>
-                                        </div>
-                                        <div class="form-element">
-                                            <input type="submit" value="Find My New Vehicle" class="find_new_vehicle pull-right md-button">
+                                            <input type="submit" value="Trouver mon nouveau véhicule"
+                                                   class="find_new_vehicle pull-right md-button">
                                         </div>
                                     </div>
                                 </form>
@@ -633,277 +570,177 @@
                     <div class="recent-vehicles-wrap margin-top-30 sm-padding-left-none padding-bottom-40">
                         <div class="row">
                             <div class="col-lg-2 col-md-2 col-sm-4 col-xs-12 recent-vehicles padding-left-none">
-                                <h5 class="margin-top-none">Recent Vehicles</h5>
-                                <p>Browse through the vast
-                                    selection of vehicles that
-                                    have recently been added
-                                    to our inventory.</p>
-                                <div class="arrow3 clearfix margin-top-15 xs-margin-bottom-25" id="slideControls3"><span class="prev-btn"></span><span class="next-btn"></span></div>
+                                <h5 class="margin-top-none">Gamme Toyota</h5>
+
+                                <p>Parcourez la vaste séléction de véhicules Toyota.</p>
+
+                                <div class="arrow3 clearfix margin-top-15 xs-margin-bottom-25" id="slideControls3"><span
+                                            class="prev-btn"></span><span class="next-btn"></span></div>
                             </div>
                             <div class="col-md-10 col-sm-8 padding-right-none xs-padding-left-none">
                                 <div class="carasouel-slider3">
-                                    <div class="slide">
-                                        <div class="car-block">
-                                            <div class="img-flex"> <a href="inventory-listing.html"><span class="align-center"><i class="fa fa-3x fa-plus-square-o"></i></span></a> <img src="http://demo.themesuite.com/automotive/images/c-car1.jpg" alt="" class="img-responsive"> </div>
+                                    @foreach($cars as $car)
+                                        <div class="slide">
+                                            <div class="car-block">
+                                                <div class="img-flex"><a href="{{url('/vehicule/' . $car['slug'])}}"><span
+                                                                class="align-center"><i
+                                                                    class="fa fa-3x fa-plus-square-o"></i></span></a>
+                                                    @if(count($car['images']) > 0)
+                                                        <img src="{{$car['images'][0]['uri']}}" alt=""
+                                                             class="img-responsive"></div>
+                                                    @else
+                                                        <img src="http://placehold.it/350x200" alt=""
+                                                             class="img-responsive"></div>
+                                                    @endif
                                             <div class="car-block-bottom">
-                                                <h6><strong>2012 Porsche Cayenne GTS</strong></h6>
-                                                <h6>1 Owner, 26,273 miles</h6>
-                                                <h5>$ 102,995</h5>
+                                                <h6><strong>{{$car['titre']}}</strong></h6>
+                                                <h5>à partir de {{$car['prix']}} €</h5>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="slide">
-                                        <div class="car-block">
-                                            <div class="img-flex"> <a href="inventory-listing.html"><span class="align-center"><i class="fa fa-3x fa-plus-square-o"></i></span></a> <img src="http://demo.themesuite.com/automotive/images/c-car2.jpg" alt="" class="img-responsive"> </div>
-                                            <div class="car-block-bottom">
-                                                <h6><strong>2009 Porsche Boxster</strong></h6>
-                                                <h6>New Tires, 26,273 miles</h6>
-                                                <h5>$ 34,995</h5>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="slide">
-                                        <div class="car-block">
-                                            <div class="img-flex"> <a href="inventory-listing.html"><span class="align-center"><i class="fa fa-3x fa-plus-square-o"></i></span></a> <img src="http://demo.themesuite.com/automotive/images/c-car3.jpg" alt="" class="img-responsive"> </div>
-                                            <div class="car-block-bottom">
-                                                <h6><strong>2013 Porsche Panamera S</strong></h6>
-                                                <h6>Demonstrator, 7,088 miles</h6>
-                                                <h5>$ 63,995</h5>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="slide">
-                                        <div class="car-block">
-                                            <div class="img-flex"> <a href="inventory-listing.html"><span class="align-center"><i class="fa fa-3x fa-plus-square-o"></i></span></a> <img src="http://demo.themesuite.com/automotive/images/c-car4.jpg" alt="" class="img-responsive"> </div>
-                                            <div class="car-block-bottom">
-                                                <h6><strong>2010 Porsche Carrera 4S</strong></h6>
-                                                <h6>AWD, 21,900 miles</h6>
-                                                <h5>$ 73,995</h5>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="slide">
-                                        <div class="car-block">
-                                            <div class="img-flex"> <a href="inventory-listing.html"><span class="align-center"><i class="fa fa-3x fa-plus-square-o"></i></span></a> <img src="http://demo.themesuite.com/automotive/images/c-car5.jpg" alt="" class="img-responsive"> </div>
-                                            <div class="car-block-bottom">
-                                                <h6><strong>2012 Porsche Carrera S</strong></h6>
-                                                <h6>Convertible, 22,158 miles</h6>
-                                                <h5>$ 56,995</h5>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="slide">
-                                        <div class="car-block">
-                                            <div class="img-flex"> <a href="inventory-listing.html"><span class="align-center"><i class="fa fa-3x fa-plus-square-o"></i></span></a> <img src="http://demo.themesuite.com/automotive/images/c-car6.jpg" alt="" class="img-responsive"> </div>
-                                            <div class="car-block-bottom">
-                                                <h6><strong>2013 Porsche Panamera GTS</strong></h6>
-                                                <h6>1 Owner, 3,914 miles</h6>
-                                                <h5>$ 94,995</h5>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="slide">
-                                        <div class="car-block">
-                                            <div class="img-flex"> <a href="inventory-listing.html"><span class="align-center"><i class="fa fa-3x fa-plus-square-o"></i></span></a> <img src="http://demo.themesuite.com/automotive/images/c-car7.jpg" alt="" class="img-responsive"> </div>
-                                            <div class="car-block-bottom">
-                                                <h6><strong>2014 Porsche Cayenne GTS</strong></h6>
-                                                <h6>1 Owner, 7 miles</h6>
-                                                <h5>$ 114,995</h5>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="slide">
-                                        <div class="car-block">
-                                            <div class="img-flex"> <a href="inventory-listing.html"><span class="align-center"><i class="fa fa-3x fa-plus-square-o"></i></span></a> <img src="http://demo.themesuite.com/automotive/images/c-car8.jpg" alt="" class="img-responsive"> </div>
-                                            <div class="car-block-bottom">
-                                                <h6><strong>2014 Porsche GTS</strong></h6>
-                                                <h6>1 Owner, 5 miles</h6>
-                                                <h5>$ 99,995</h5>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="slide">
-                                        <div class="car-block">
-                                            <div class="img-flex"> <a href="inventory-listing.html"><span class="align-center"><i class="fa fa-3x fa-plus-square-o"></i></span></a> <img src="http://demo.themesuite.com/automotive/images/c-car9.jpg" alt="" class="img-responsive"> </div>
-                                            <div class="car-block-bottom">
-                                                <h6><strong>2009 Porsche Carrera 4S</strong></h6>
-                                                <h6>1 Owner, 114,239 miles</h6>
-                                                <h5>$ 39,995</h5>
-                                            </div>
-                                        </div>
-                                    </div>
                                 </div>
+                                @endforeach
                             </div>
-                        </div>
-                    </div>
-
-                    <!-- Footer Map -->
-                    <div class='fullwidth_element_parent margin-top-30 padding-bottom-40'>
-                        <div id='google-map-listing' class='fullwidth_element' data-longitude='-79.38' data-latitude='43.65' data-zoom='12' style='height: 390px;' data-scroll='false' data-style='[{"featureType":"landscape","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"transit","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"poi","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"stylers":[{"hue":"#F0F0F0"},{"saturation":-100},{"gamma":2.15},{"lightness":12}]},{"featureType":"road","elementType":"labels.text.fill","stylers":[{"visibility":"on"},{"lightness":24}]},{"featureType":"road","elementType":"geometry","stylers":[{"lightness":57}]}]'></div>
-                    </div>
-                    <div class="car-rate-block clearfix margin-top-30 padding-bottom-40">
-                        <div class="col-lg-2 col-md-2 col-sm-6 col-xs-12 xs-margin-bottom-40 sm-margin-bottom-none padding-left-none scroll_effect bounceInLeft">
-                            <div class="small-block clearfix">
-                                <h4 class="margin-bottom-25 margin-top-none">Financing.</h4>
-                                <a href="#"><span class="align-center"><i class="fa fa-tag fa-7x"></i></span></a> </div>
-                        </div>
-                        <div class="col-lg-2 col-md-2 col-sm-6 col-xs-12 xs-margin-bottom-40 sm-margin-bottom-none scroll_effect bounceInLeft" data-wow-delay=".2s">
-                            <div class="small-block clearfix">
-                                <h4 class="margin-bottom-25 margin-top-none">Warranty.</h4>
-                                <a href="#"><span class="align-center"><i class="fa fa-cogs fa-7x"></i></span></a> </div>
-                        </div>
-                        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 padding-left-none padding-right-none hours_operation">
-                            <div class="small-block clearfix">
-                                <h4 class="margin-bottom-25 margin-top-none">What are our Hours of Operation?</h4>
-                                <div class="row">
-                                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 xs-margin-bottom-40 sm-margin-bottom-40 md-margin-bottom-none scroll_effect bounceInUp" data-wow-delay=".4s">
-                                        <table class="table table-bordered no-border font-13px margin-bottom-none">
-                                            <thead>
-                                            <tr>
-                                                <td colspan="2"><strong>Sales Department</strong></td>
-                                            </tr>
-                                            </thead>
-                                            <tbody>
-                                            <tr>
-                                                <td>Mon:</td>
-                                                <td>8:00am - 5:00pm</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Tue:</td>
-                                                <td>8:00am - 9:00pm</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Wed:</td>
-                                                <td>8:00am - 5:00pm</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Thu:</td>
-                                                <td>8:00am - 9:00pm</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Fri:</td>
-                                                <td>8:00am - 6:00pm</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Sat:</td>
-                                                <td>9:00am - 5:00pm</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Sun:</td>
-                                                <td>Closed</td>
-                                            </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 xs-margin-bottom-40 sm-margin-bottom-none scroll_effect bounceInUp" data-wow-delay=".4s">
-                                        <table class="table table-bordered no-border font-13px margin-bottom-none">
-                                            <thead>
-                                            <tr>
-                                                <td colspan="2"><strong>Service Department</strong></td>
-                                            </tr>
-                                            </thead>
-                                            <tbody>
-                                            <tr>
-                                                <td>Mon:</td>
-                                                <td>8:00am - 5:00pm</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Tue:</td>
-                                                <td>8:00am - 9:00pm</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Wed:</td>
-                                                <td>8:00am - 5:00pm</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Thu:</td>
-                                                <td>8:00am - 9:00pm</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Fri:</td>
-                                                <td>8:00am - 6:00pm</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Sat:</td>
-                                                <td>9:00am - 5:00pm</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Sun:</td>
-                                                <td>Closed</td>
-                                            </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-2 col-md-2 col-sm-6 col-xs-12 xs-margin-bottom-40 sm-margin-bottom-none scroll_effect bounceInRight" data-wow-delay=".2s">
-                            <div class="small-block clearfix">
-                                <h4 class="margin-bottom-25 margin-top-none">About Us.</h4>
-                                <a href="#"><span class="align-center"><i class="fa fa-users fa-7x"></i></span></a> </div>
-                        </div>
-                        <div class="col-lg-2 col-md-2 col-sm-6 col-xs-12 xs-margin-bottom-40 sm-margin-bottom-none padding-right-none scroll_effect bounceInRight">
-                            <div class="small-block clearfix">
-                                <h4 class="margin-bottom-25 margin-top-none">Find Us.</h4>
-                                <a href="#"><span class="align-center"><i class="fa fa-map-marker fa-7x"></i></span></a> </div>
                         </div>
                     </div>
                 </section>
-                <!--welcome-wrap ends-->
+            </div>
 
-                <div class="row parallax_parent margin-top-30">
-                    <div class="parallax_scroll clearfix" data-velocity="-.5" data-offset="-300" data-no-repeat="true" data-image="http://demo.themesuite.com/automotive/images/parallax2.jpg">
-                        <div class="overlay">
-                            <div class="container">
+            <!-- Footer Map -->
+            <div class='fullwidth_element_parent margin-top-30 padding-bottom-40'>
+                <div id='google-map-listing' class='fullwidth_element' data-longitude='4.986016'
+                     data-latitude='45.766984' data-zoom='12' style='height: 390px;' data-scroll='false'
+                     data-style='[{"featureType":"landscape","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"transit","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"poi","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"stylers":[{"hue":"#F0F0F0"},{"saturation":-100},{"gamma":2.15},{"lightness":12}]},{"featureType":"road","elementType":"labels.text.fill","stylers":[{"visibility":"on"},{"lightness":24}]},{"featureType":"road","elementType":"geometry","stylers":[{"lightness":57}]}]'></div>
+            </div>
+            <div class="car-rate-block clearfix margin-top-30 padding-bottom-40">
+                <div class="col-lg-2 col-md-2 col-sm-6 col-xs-12 xs-margin-bottom-40 sm-margin-bottom-none padding-left-none scroll_effect bounceInLeft">
+                    <div class="small-block clearfix">
+                        <h4 class="margin-bottom-25 margin-top-none">Financements.</h4>
+                        <a href="{{url('/infos-pratiques')}}"><span class="align-center"><i class="fa fa-tag fa-7x"></i></span></a></div>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-6 col-xs-12 xs-margin-bottom-40 sm-margin-bottom-none scroll_effect bounceInLeft"
+                     data-wow-delay=".2s">
+                    <div class="small-block clearfix">
+                        <h4 class="margin-bottom-25 margin-top-none">Garanties.</h4>
+                        <a href="{{url('/infos-pratiques')}}"><span class="align-center"><i class="fa fa-cogs fa-7x"></i></span></a></div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 padding-left-none padding-right-none hours_operation">
+                    <div class="small-block clearfix">
+                        <h4 class="margin-bottom-25 margin-top-none">Quels sont nos horaires d'ouverture ?</h4>
 
-                                <div class="row">
+                        <div class="row">
+                            <div class="col-lg-12 col-lg-offset-2 xs-margin-bottom-40 sm-margin-bottom-40 md-margin-bottom-none scroll_effect bounceInUp"
+                                 data-wow-delay=".4s">
+                                <table class="table table-bordered no-border font-13px margin-bottom-none">
+                                    <thead>
+                                    <tr>
+                                        <td colspan="2"><strong>Atelier</strong></td>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>Lundi</td>
+                                        <td>8H - 12H 14H - 19H</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Mardi</td>
+                                        <td>8H - 12H 14H - 19H</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Mercredi</td>
+                                        <td>8H - 12H 14H - 19H</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Jeudi</td>
+                                        <td>8H - 12H 14H - 19H</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Vendredi</td>
+                                        <td>8H - 12H 14H - 18H</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Samedi</td>
+                                        <td>8H - 12H</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Dimanche</td>
+                                        <td>Fermé</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-6 col-xs-12 xs-margin-bottom-40 sm-margin-bottom-none scroll_effect bounceInRight"
+                     data-wow-delay=".2s">
+                    <div class="small-block clearfix">
+                        <h4 class="margin-bottom-25 margin-top-none">Nous rejoindre.</h4>
+                        <a href="{{url('/infos-pratiques')}}"><span class="align-center"><i class="fa fa-users fa-7x"></i></span></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-6 col-xs-12 xs-margin-bottom-40 sm-margin-bottom-none padding-right-none scroll_effect bounceInRight">
+                    <div class="small-block clearfix">
+                        <h4 class="margin-bottom-25 margin-top-none">Nous contacter.</h4>
+                        <a href="{{url('/contact')}}"><span class="align-center"><i class="fa fa-map-marker fa-7x"></i></span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--welcome-wrap ends-->
 
-                                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 padding-left-none margin-vertical-60">
-                                        <i class="fa fa-car"></i>
+    <div class="row parallax_parent margin-top-30">
+        <div class="parallax_scroll clearfix" data-velocity="-.5" data-offset="-300" data-no-repeat="true"
+             data-image="http://demo.themesuite.com/automotive/images/parallax2.jpg">
+            <div class="overlay">
+                <div class="container">
+
+                    <div class="row">
+
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 padding-left-none margin-vertical-60">
+                            <i class="fa fa-car"></i>
 
                                     <span class="animate_number margin-vertical-15">
-                                        <span class="number">2,000</span>
+                                        <span class="number">14000</span>
                                     </span>
 
-                                        Cars Sold
-                                    </div>
+                            Voitures traîtées
+                        </div>
 
-                                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 margin-vertical-60">
-                                        <i class="fa fa-money"></i>
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 margin-vertical-60">
+                            <i class="fa fa-money"></i>
 
                                     <span class="animate_number margin-vertical-15">
-                                        $<span class="number">750,000</span>
+                                        <span class="number">35</span>€
                                     </span>
 
-                                        Amount Sold
-                                    </div>
+                            Prix minimum
+                        </div>
 
-                                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 margin-vertical-60">
-                                        <i class="fa fa-users"></i>
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 margin-vertical-60">
+                            <i class="fa fa-users"></i>
 
                                     <span class="animate_number margin-vertical-15">
                                         <span class="number">100</span>%
                                     </span>
 
-                                        Customer Satisfaction
-                                    </div>
+                            De satisfaction
+                        </div>
 
-                                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 padding-right-none margin-vertical-60">
-                                        <i class="fa fa-tint"></i>
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 padding-right-none margin-vertical-60">
+                            <i class="fa fa-tint"></i>
 
                                     <span class="animate_number margin-vertical-15">
-                                        <span class="number">3,600</span>
+                                        <span class="number">7500</span>
                                     </span>
 
-                                        Oil Changes
-                                    </div>
-
-                                </div>
-                            </div>
+                            Changements d'huile
                         </div>
+
                     </div>
                 </div>
             </div>
         </div>
+    </div>
     </section>
 @endsection

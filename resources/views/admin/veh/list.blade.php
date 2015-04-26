@@ -8,9 +8,9 @@
 
             <div class="col-lg-12">
 
-                <h4>Liste des véhicules occasion</h4>
+                <h4>Liste des véhicules</h4>
 
-                <p><a href="/admin/forfaits/add"><i class="fa fa-plus-circle"></i> Ajouter</a></p>
+                <p><a href="/admin/veh/add"><i class="fa fa-plus-circle"></i> Ajouter</a></p>
 
                 <table class="table table-bordered table-striped">
 
@@ -21,6 +21,9 @@
                         <td>Prix</td>
                         <td>KM</td>
                         <td>Année</td>
+                        <td>Moteur</td>
+                        <td>Transmission</td>
+                        <td>Chassis</td>
                         <td>Type</td>
                         <td>Ajouté le</td>
                         <td>#</td>
@@ -45,6 +48,15 @@
                             </td>
                             <td>
                                 {{$car['annee']}}
+                            </td>
+                            <td>
+                                {{$car['moteur']}}
+                            </td>
+                            <td>
+                                {{$car['transmission']}}
+                            </td>
+                            <td>
+                                {{$car['chassis']}}
                             </td>
                             <td>
                                 {{$car['type']}}

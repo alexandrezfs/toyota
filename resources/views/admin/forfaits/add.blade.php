@@ -39,7 +39,7 @@
                     </div>
 
                     <input type="hidden" name="images" id="images" value="[]">
-                    <input type="hidden" name="object_name" id="object_name" value="news">
+                    <input type="hidden" name="object_name" id="object_name" value="forfait">
 
                     <button type="submit" class="btn btn-success">Valider</button>
                 </form>

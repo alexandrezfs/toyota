@@ -9,6 +9,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Support\Facades\Session;
+use Illuminate\Support\Facades\Redirect;
+use Cocur\Slugify\Slugify;
 use Input;
 use Request;
 use DB;
@@ -37,6 +39,10 @@ class AdminController extends Controller
 
     public function login()
     {
+        if(Session::get('username')) {
+            return redirect('/admin/home');
+        }
+
         return view('admin/login');
     }
 
@@ -68,14 +74,20 @@ class AdminController extends Controller
 
     public function vehAddPostAction()
     {
+        $slugify = new Slugify();
+
         $car = new Car();
         $car->titre = Input::get('titre');
         $car->description = Input::get('description');
         $car->km = Input::get('km');
         $car->prix = Input::get('prix');
         $car->annee = Input::get('annee');
+        $car->moteur = Input::get('moteur');
+        $car->transmission = Input::get('transmission');
+        $car->chassis = Input::get('chassis');
         $car->type = Input::get('type');
         $car->images_json = Input::get('images');
+        $car->slug = $slugify->slugify($car->titre, '_');
 
         $car->save();
 
@@ -98,6 +110,8 @@ class AdminController extends Controller
 
     public function vehEditPostAction()
     {
+        $slugify = new Slugify();
+
         $id = Input::get("id");
 
         //remove all car images
@@ -111,7 +125,11 @@ class AdminController extends Controller
         $car->prix = Input::get('prix');
         $car->annee = Input::get('annee');
         $car->type = Input::get('type');
+        $car->moteur = Input::get('moteur');
+        $car->transmission = Input::get('transmission');
+        $car->chassis = Input::get('chassis');
         $car->images_json = Input::get('images');
+        $car->slug = $slugify->slugify($car->titre, '_');
 
         $car->save();
 
@@ -136,6 +154,8 @@ class AdminController extends Controller
 
     function addForfaitPostAction() {
 
+        $slugify = new Slugify();
+
         $forfait = new Forfait();
 
         $images_json = Input::get('images');
@@ -145,6 +165,7 @@ class AdminController extends Controller
         $forfait->categorie_id = Input::get('categorie_id');
         $forfait->titre = Input::get('titre');
         $forfait->contenu = Input::get('contenu');
+        $forfait->slug = $slugify->slugify($forfait->titre, '_');
 
         $forfait->save();
 
@@ -176,6 +197,8 @@ class AdminController extends Controller
 
     function editForfaitPostAction() {
 
+        $slugify = new Slugify();
+
         $id = Input::get('id');
         $forfait = Forfait::find($id);
 
@@ -186,6 +209,7 @@ class AdminController extends Controller
         $forfait->categorie_id = Input::get('categorie_id');
         $forfait->titre = Input::get('titre');
         $forfait->contenu = Input::get('contenu');
+        $forfait->slug = $slugify->slugify($forfait->titre, '_');
 
         $forfait->save();
 
@@ -224,6 +248,8 @@ class AdminController extends Controller
 
     function newsAddPostAction() {
 
+        $slugify = new Slugify();
+
         $news = new News();
 
         $images_json = Input::get('images');
@@ -232,6 +258,7 @@ class AdminController extends Controller
         $news->images_json = $images_json;
         $news->titre = Input::get('titre');
         $news->contenu = Input::get('contenu');
+        $news->slug = $slugify->slugify($news->titre, '_');
 
         $news->save();
 
@@ -251,6 +278,8 @@ class AdminController extends Controller
 
     function newsEditPostAction() {
 
+        $slugify = new Slugify();
+
         $id = Input::get("id");
         $news = News::find($id);
 
@@ -260,6 +289,7 @@ class AdminController extends Controller
         $news->images_json = $images_json;
         $news->titre = Input::get('titre');
         $news->contenu = Input::get('contenu');
+        $news->slug = $slugify->slugify($news->titre, '_');
 
         $news->save();
 
@@ -284,6 +314,8 @@ class AdminController extends Controller
 
     function produitsAddPostAction() {
 
+        $slugify = new Slugify();
+
         $produit = new Produit();
 
         $images_json = Input::get('images');
@@ -299,6 +331,7 @@ class AdminController extends Controller
         $produit->en_magasin = Input::get('en_magasin') ? true : false;
         $produit->en_stock = Input::get('en_stock');
         $produit->date_limite_fin = Input::get('date_limite_fin');
+        $produit->slug = $slugify->slugify($produit->titre, '_');
 
         $produit->save();
 
@@ -318,6 +351,8 @@ class AdminController extends Controller
 
     function produitsEditPostAction() {
 
+        $slugify = new Slugify();
+
         $id = Input::get("id");
         $produit = Produit::find($id);
 
@@ -333,6 +368,7 @@ class AdminController extends Controller
         $produit->en_magasin = Input::get('en_magasin') ? true : false;
         $produit->en_stock = Input::get('en_stock');
         $produit->date_limite_fin = Input::get('date_limite_fin');
+        $produit->slug = $slugify->slugify($produit->titre, '_');
 
         $produit->save();
 

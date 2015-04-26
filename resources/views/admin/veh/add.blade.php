@@ -8,21 +8,35 @@
 
             <div class="col-lg-4 col-lg-offset-4">
 
-                <h4>Ajouter un véhicule occasion</h4>
+                <h4>Ajouter un véhicule</h4>
 
                 <form action="{{url('/admin/veh/add')}}" method="POST">
                     <label for="titre">Titre</label>
                     <input type="text" id="titre" name="titre" class="form-control" placeholder="Titre" required
                            autofocus>
+
                     <label for="description">Description</label>
                     <textarea type="text" id="description" name="description" class="form-control"
                               placeholder="Description" required></textarea>
+
                     <label for="prix">Prix</label>
                     <input type="text" id="prix" name="prix" class="form-control" placeholder="Prix" required>
+
                     <label for="km">KM</label>
-                    <input type="text" id="km" name="km" class="form-control" placeholder="KM" required>
+                    <input type="number" id="km" name="km" class="form-control" placeholder="KM" required>
+
                     <label for="annee">Année</label>
-                    <input type="text" id="annee" name="annee" class="form-control" placeholder="Année" required>
+                    <input type="number" id="annee" name="annee" class="form-control" placeholder="Année" required>
+
+                    <label for="moteur">Moteur</label>
+                    <input type="text" id="moteur" name="moteur" class="form-control" placeholder="Moteur" required>
+
+                    <label for="transmission">Transmission</label>
+                    <input type="text" id="transmission" name="transmission" class="form-control" placeholder="Transmission" required>
+
+                    <label for="chassis">Chassis</label>
+                    <input type="text" id="chassis" name="chassis" class="form-control" placeholder="Chassis" required>
+
                     <label for="type">Type</label>
                     <select type="text" id="type" name="type" class="form-control" required>
                         <option value="neuf">Véhicule Neuf</option>

@@ -15,11 +15,16 @@ Route::get('/', 'HomeController@index');
 Route::get('/gamme-toyota', 'HomeController@gammeToyota');
 Route::get('/sans-permis', 'HomeController@sansPermis');
 Route::get('/vehicules-occasion', 'HomeController@occasion');
-Route::get('/toutes-les-pieces', 'HomeController@pieces');
+Route::get('/magasin', 'HomeController@pieces');
 Route::get('/infos-pratiques', 'HomeController@infosPratiques');
 Route::get('/actu', 'HomeController@actu');
 Route::get('/forfaits', 'HomeController@forfaits');
+Route::get('/vehicule/{slug}', 'HomeController@vehicule');
 Route::get('/contact', 'HomeController@contact');
+Route::post('/newsletter/signup', 'HomeController@signupNewsletter');
+Route::post('/contact/send', 'HomeController@sendContactEmail');
+
+
 Route::get('/admin', 'AdminController@login');
 Route::get('/admin/home', 'AdminController@home');
 Route::post('/admin/upload', 'AdminController@upload');
@@ -49,6 +54,7 @@ Route::get('/admin/produits/edit/{id}', 'AdminController@produitsEditAction');
 Route::post('/admin/produits/edit', 'AdminController@produitsEditPostAction');
 Route::get('/admin/analytics', 'AdminController@analytics');
 Route::get('/admin/logout', 'AdminController@logout');
+
 
 Route::controllers([
     'auth' => 'Auth\AuthController',

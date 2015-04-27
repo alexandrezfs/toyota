@@ -78,6 +78,7 @@ class AdminController extends Controller
 
         $car = new Car();
         $car->titre = Input::get('titre');
+        $car->marque = Input::get('marque');
         $car->description = Input::get('description');
         $car->km = Input::get('km');
         $car->prix = Input::get('prix');
@@ -120,6 +121,7 @@ class AdminController extends Controller
         $car = Car::find($id);
 
         $car->titre = Input::get('titre');
+        $car->marque = Input::get('marque');
         $car->description = Input::get('description');
         $car->km = Input::get('km');
         $car->prix = Input::get('prix');

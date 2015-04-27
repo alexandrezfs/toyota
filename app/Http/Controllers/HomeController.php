@@ -10,6 +10,7 @@ use App\Produit;
 use App\EmailNewsletter;
 use Illuminate\Support\Facades\Input;
 use Illuminate\Support\Facades\Mail;
+use Illuminate\Support\Facades\DB;
 
 class HomeController extends Controller {
 
@@ -53,6 +54,15 @@ class HomeController extends Controller {
         }
 
         View::share('cars', $cars);
+
+
+        $carsBrands = Car::distinct()->select('marque')->get();
+        $marques = array();
+        foreach($carsBrands as $carsBrand) {
+            $marques[] = $carsBrand->marque;
+        }
+
+        View::share('marques', $marques);
 
         return view('home');
 	}
@@ -181,14 +191,109 @@ class HomeController extends Controller {
 
     public function vehicule($slug) {
 
+        $cars = Car::take(4)->orderBy('created_at', 'desc')->get();
+
+        //populate with images
+        foreach($cars as $car) {
+            $images = Image::where("object_name", "car")->where("object_id", $car['id'])->get();
+            $car->images = $images;
+        }
+
+
         $news = News::take(3)->orderBy('created_at', 'desc')->get();
         View::share('news', $news);
 
+
         $vehicule = Car::where('slug', $slug)->first();
 
+        //populate with images
+        $images = Image::where("object_name", "car")->where("object_id", $vehicule['id'])->get();
+        $vehicule->images = $images;
+
         View::share('vehicule', $vehicule);
+        View::share('cars', $cars);
 
         return view('vehicule');
+    }
+
+    public function article($slug) {
+
+        $cars = Car::take(4)->orderBy('created_at', 'desc')->get();
+
+        //populate with images
+        foreach($cars as $car) {
+            $images = Image::where("object_name", "car")->where("object_id", $car['id'])->get();
+            $car->images = $images;
+        }
+
+        $news = News::take(3)->orderBy('created_at', 'desc')->get();
+        View::share('news', $news);
+
+
+        $article = News::where('slug', $slug)->first();
+
+        //populate with images
+        $images = Image::where("object_name", "article")->where("object_id", $article['id'])->get();
+        $article->images = $images;
+
+        View::share('article', $article);
+
+        return view('vehicule');
+    }
+
+    public function produit($slug) {
+
+        $news = News::take(3)->orderBy('created_at', 'desc')->get();
+        View::share('news', $news);
+
+        $produit = Produit::where('en_magasin', '>', 0)->where('en_stock', '>', 0)->where('slug', $slug)->first();
+        $images = Image::where("object_name", "produit")->where("object_id", $produit['id'])->get();
+        $produit->images = $images;
+
+
+        //TODO: get products instead
+        $cars = Car::take(4)->orderBy('created_at', 'desc')->get();
+
+        //populate with images
+        foreach($cars as $car) {
+            $images = Image::where("object_name", "car")->where("object_id", $car['id'])->get();
+            $car->images = $images;
+        }
+
+
+        View::share('produit', $produit);
+        View::share('cars', $cars);
+
+        return view('produit');
+    }
+
+    public function forfait($slug) {
+
+        $news = News::take(3)->orderBy('created_at', 'desc')->get();
+        View::share('news', $news);
+
+        $forfait = Forfait::where('slug', $slug)->first();
+        $images = Image::where("object_name", "forfait")->where("object_id", $forfait['id'])->get();
+        $forfait->images = $images;
+
+
+        //TODO: get products instead
+        $cars = Car::take(4)->orderBy('created_at', 'desc')->get();
+
+        //populate with images
+        foreach($cars as $car) {
+            $images = Image::where("object_name", "car")->where("object_id", $car['id'])->get();
+            $car->images = $images;
+        }
+
+
+        $forfaits = Forfait::take(4)->orderBy('created_at', 'desc')->get();
+
+        View::share('forfait', $forfait);
+        View::share('forfaits', $forfaits);
+        View::share('cars', $cars);
+
+        return view('forfait');
     }
 
     public function signupNewsletter() {
@@ -219,9 +324,56 @@ class HomeController extends Controller {
         Mail::raw('Nouveau message du site stamcar.fr: NOM: [' . $nom . '] EMAIL: [' . $email . '] MESSAGE: [' . $message . ']', function($message)
         {
             $message->from('noreply@mandrillapp.com', 'Message du site stamcar.fr');
-            $message->to('alex.zhixin@gmail.com');
+            $message->to('stamcar.toyota@neuf.fr');
         });
 
         return view('contactOk');
+    }
+
+    public function searchVeh() {
+
+        $news = News::take(3)->orderBy('created_at', 'desc')->get();
+        View::share('news', $news);
+
+        $anneeMax = Input::get('anneeMax');
+        $anneeMin = Input::get('anneeMin');
+
+        $kmMax = Input::get('kmMax');
+        $kmMin = Input::get('kmMin');
+
+        $prixMax = Input::get('prixMax');
+        $prixMin = Input::get('prixMin');
+
+        $marque = Input::get('marque');
+
+        $foundCars = Car::where('annee', '>=', $anneeMin)
+            ->where('annee', '<=', $anneeMax)
+            ->where('km', '>=', $kmMin)
+            ->where('km', '<=', $kmMax)
+            ->where('prix', '>=', $prixMin)
+            ->where('prix', '<=', $prixMax)
+            ->where('marque', $marque)->get();
+
+        //populate with images
+        foreach($foundCars as $car) {
+            $images = Image::where("object_name", "car")->where("object_id", $car['id'])->get();
+            $car->images = $images;
+        }
+
+        View::share('foundCars', $foundCars);
+
+        return view('searchVeh');
+    }
+
+    function search($keyword) {
+
+        $news = News::take(3)->orderBy('created_at', 'desc')->get();
+        View::share('news', $news);
+
+        $foundCars = Car::where('titre', 'like', '%' . $keyword . '%')->get();
+
+        View::share('foundCars', $foundCars);
+
+        return view('search');
     }
 }

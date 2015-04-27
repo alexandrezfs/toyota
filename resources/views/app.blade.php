@@ -13,7 +13,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <title>STAMCAR TOYOTA LYON EST - Vente d'accessoires et pièces auto</title>
     <meta name="description"
-          content="Vente d'accessoire et pièces automobiles en ligne, véhicules neufs et d'occasions, réparateur véhicules agréé Toyota et JDM.">
+          content="Vente d'accessoires et pièces automobiles en ligne, véhicules neufs et d'occasions, réparateur véhicules agréé Toyota et JDM.">
     <meta name="author" content="">
     <link rel="shortcut icon" href="{{asset('images/favicon.ico')}}">
     <!-- Bootstrap core CSS -->
@@ -68,10 +68,10 @@
             <div class="row">
                 <div class="col-lg-6 left_bar">
                     <ul class="left-none">
-                        <li><a href="#"><i class="fa fa-user"></i> Se connecter</a></li>
-                        <li><a href="#"><i class="fa fa-globe"></i> S'inscrire</a></li>
+                        <!--<li><a href="#"><i class="fa fa-user"></i> Se connecter</a></li>
+                        <li><a href="#"><i class="fa fa-globe"></i> S'inscrire</a></li>-->
                         <li><i class="fa fa-search"></i>
-                            <input type="search" placeholder="Rechercher..." class="search_box">
+                            <input type="search" placeholder="Rechercher..." class="search_box" id="search_box">
                         </li>
                     </ul>
                 </div>
@@ -161,7 +161,7 @@
                 <p>En vous inscrivant à notre newsletter, soyez au courant des dernières offres de Stamcar.</p>
 
                 <form method="POST" action="{{url('/newsletter/signup')}}" class="form_contact">
-                    <input type="email" value="" name="email" placeholder="Email Address" style="margin-right: 3px; margin-top: 2px; width: 150px;">
+                    <input type="email" value="" name="email" placeholder="Email Address" style="margin-right: 3px; margin-top: 2px; width: 150px;" required>
                     <input type="submit" value="S'inscrire" class="md-button">
                     <input type="hidden" id="token" name="_token" value="{{ csrf_token() }}">
                 </form>
@@ -240,5 +240,28 @@
 <script type="text/javascript" src="{{asset('js/jquery.mousewheel.js')}}"></script>
 <script type="text/javascript" src="{{asset('js/jquery.easing.js')}}"></script>
 <script src="{{asset('js/jquery.mixitup.min.js')}}" type="text/javascript"></script>
+
+<script>
+    $("#search_box").keypress(function(e) {
+        if(e.which == 13) {
+            document.location.href = "/search/" + $("#search_box").val();
+        }
+    });
+</script>
+
+<script type="text/javascript">
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-33101201-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+
+</script>
+
 </body>
 </html>

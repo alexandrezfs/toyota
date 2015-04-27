@@ -9,7 +9,7 @@
                         <!-- SLIDE  -->
                         <li data-transition="fade" data-slotamount="5" data-masterspeed="700">
                             <!-- MAIN IMAGE -->
-                            <img src="http://www.hdcarwallpapers.com/download/2014_toyota_land_cruiser-1920x1080.jpg"
+                            <img src="{{asset('/images/slides/slide1.jpg')}}"
                                  alt="slidebg1" data-bgfit="cover" data-bgposition="center center"
                                  data-bgrepeat="no-repeat">
 
@@ -78,7 +78,7 @@
                         </li>
                         <li data-transition="fade" data-slotamount="5" data-masterspeed="700">
                             <!-- MAIN IMAGE -->
-                            <img src="http://static.hdw.eweb4.com/media/wallpapers_1920x1200/cars/1/1/toyota-celica-supra-corolla-and-ft-86-concept-car-hd-wallpaper-1920x1200-8437.jpg"
+                            <img src="{{asset('/images/slides/slide2.jpg')}}"
                                  alt="slidebg1" data-bgfit="cover" data-bgposition="center center"
                                  data-bgrepeat="no-repeat">
 
@@ -111,7 +111,7 @@
                         </li>
                         <li data-transition="fade" data-slotamount="5" data-masterspeed="700">
                             <!-- MAIN IMAGE -->
-                            <img src="http://www.carpicturesites.com/wp-content/uploads/2015/01/2015-Toyota-Tundra-Trd-Pro-Front-Car-Wallpaper.jpg"
+                            <img src="{{asset('/images/slides/slide3.jpg')}}"
                                  alt="slidebg1" data-bgfit="cover" data-bgposition="center center"
                                  data-bgrepeat="no-repeat">
 
@@ -192,7 +192,7 @@
                         <!-- SLIDE  -->
                         <li data-transition="fade" data-slotamount="5" data-masterspeed="700">
                             <!-- MAIN IMAGE -->
-                            <img src="http://www.latoro.com/wallpapers/cars/16449-desktop-wallpapers-toyota-avensis.jpg"
+                            <img src="{{asset('/images/slides/slide4.jpg')}}"
                                  alt="slidebg1" data-bgfit="cover" data-bgposition="center center"
                                  data-bgrepeat="no-repeat">
 
@@ -357,7 +357,7 @@
                 <!--car-block-wrap ends-->
                 <div class="row parallax_parent design_2 margin-bottom-40 margin-top-30">
                     <div class="parallax_scroll clearfix" data-velocity="-.5" data-offset="-200"
-                         data-image="http://demo.themesuite.com/automotive/images/parallax1.jpg">
+                         data-image="{{url('images/parallax1.jpg')}}">
                         <div class="overlay">
                             <div class="container">
                                 <div class="row">
@@ -418,44 +418,27 @@
                                 inventaire</h4>
 
                             <div class="search-form margin-top-20 padding-vertical-20">
-                                <form method="post" action="#">
+                                <form method="POST" action="{{url('/veh/search')}}">
+                                    <input type="hidden" name="_token" value="{{ csrf_token() }}">
                                     <div class="select-wrapper clearfix">
                                         <div class="col-md-6">
                                             <div class="min-price select-dropdown">
                                                 <div class="my-dropdown min-price-dropdown min-dropdown">
-                                                    <select name="min-year" class="css-dropdowns" tabindex="1">
+                                                    <select name="anneeMin" class="css-dropdowns" tabindex="1">
                                                         <option value="">Année min</option>
-                                                        <option>2015</option>
-                                                        <option>2014</option>
-                                                        <option>2013</option>
-                                                        <option>2012</option>
-                                                        <option>2011</option>
-                                                        <option>2010</option>
-                                                        <option>2009</option>
-                                                        <option>2008</option>
-                                                        <option>2007</option>
-                                                        <option>2006</option>
-                                                        <option>2005</option>
-                                                        <option>2004</option>
+                                                        @for($a = date('Y'); $a > date('Y')-50; $a--)
+                                                            <option value="{{$a}}">{{$a}}</option>
+                                                        @endfor
                                                     </select>
                                                 </div>
                                                 <span class="my-dropdown">à</span>
 
                                                 <div class="my-dropdown max-price-dropdown min-dropdown">
-                                                    <select name="max-year" class="css-dropdowns" tabindex="1">
+                                                    <select name="anneeMax" class="css-dropdowns" tabindex="1">
                                                         <option value="">Année max</option>
-                                                        <option>2015</option>
-                                                        <option>2014</option>
-                                                        <option>2013</option>
-                                                        <option>2012</option>
-                                                        <option>2011</option>
-                                                        <option>2010</option>
-                                                        <option>2009</option>
-                                                        <option>2008</option>
-                                                        <option>2007</option>
-                                                        <option>2006</option>
-                                                        <option>2005</option>
-                                                        <option>2004</option>
+                                                        @for($a = date('Y'); $a > date('Y')-50; $a--)
+                                                            <option value="{{$a}}">{{$a}}</option>
+                                                        @endfor
                                                     </select>
                                                 </div>
                                             </div>
@@ -463,41 +446,41 @@
                                         <div class="col-md-6">
                                             <div class="min-price select-dropdown">
                                                 <div class="my-dropdown min-price-dropdown min-dropdown">
-                                                    <select name="min-price" class="css-dropdowns" tabindex="1">
+                                                    <select name="prixMin" class="css-dropdowns" tabindex="1">
                                                         <option value="">Prix min</option>
-                                                        <option>0</option>
-                                                        <option>&lt; 10 000</option>
-                                                        <option>&lt; 20 000</option>
-                                                        <option>&lt; 30 000</option>
-                                                        <option>&lt; 40 000</option>
-                                                        <option>&lt; 50 000</option>
-                                                        <option>&lt; 60 000</option>
-                                                        <option>&lt; 70 000</option>
-                                                        <option>&lt; 80 000</option>
-                                                        <option>&lt; 90 000</option>
-                                                        <option>&lt; 100 000</option>
-                                                        <option>&lt; 120 000</option>
-                                                        <option>&lt; 150 000</option>
+                                                        <option value="0">0</option>
+                                                        <option value="10000">&lt; 10 000</option>
+                                                        <option value="20000">&lt; 20 000</option>
+                                                        <option value="30000">&lt; 30 000</option>
+                                                        <option value="40000">&lt; 40 000</option>
+                                                        <option value="50000">&lt; 50 000</option>
+                                                        <option value="60000">&lt; 60 000</option>
+                                                        <option value="70000">&lt; 70 000</option>
+                                                        <option value="80000">&lt; 80 000</option>
+                                                        <option value="90000">&lt; 90 000</option>
+                                                        <option value="100000">&lt; 100 000</option>
+                                                        <option value="120000">&lt; 120 000</option>
+                                                        <option value="150000">&lt; 150 000</option>
                                                     </select>
                                                 </div>
                                                 <span class="my-dropdown">à</span>
 
                                                 <div class="my-dropdown max-price-dropdown min-dropdown">
-                                                    <select name="max-price" class="css-dropdowns" tabindex="1">
+                                                    <select name="prixMax" class="css-dropdowns" tabindex="1">
                                                         <option value="">Prix max</option>
-                                                        <option>0</option>
-                                                        <option>&lt; 10 000</option>
-                                                        <option>&lt; 20 000</option>
-                                                        <option>&lt; 30 000</option>
-                                                        <option>&lt; 40 000</option>
-                                                        <option>&lt; 50 000</option>
-                                                        <option>&lt; 60 000</option>
-                                                        <option>&lt; 70 000</option>
-                                                        <option>&lt; 80 000</option>
-                                                        <option>&lt; 90 000</option>
-                                                        <option>&lt; 100 000</option>
-                                                        <option>&lt; 120 000</option>
-                                                        <option>&lt; 150 000</option>
+                                                        <option value="0">0</option>
+                                                        <option value="10000">&lt; 10 000</option>
+                                                        <option value="20000">&lt; 20 000</option>
+                                                        <option value="30000">&lt; 30 000</option>
+                                                        <option value="40000">&lt; 40 000</option>
+                                                        <option value="50000">&lt; 50 000</option>
+                                                        <option value="60000">&lt; 60 000</option>
+                                                        <option value="70000">&lt; 70 000</option>
+                                                        <option value="80000">&lt; 80 000</option>
+                                                        <option value="90000">&lt; 90 000</option>
+                                                        <option value="100000">&lt; 100 000</option>
+                                                        <option value="120000">&lt; 120 000</option>
+                                                        <option value="150000">&lt; 150 000</option>
                                                     </select>
                                                 </div>
                                             </div>
@@ -506,50 +489,52 @@
                                     <div class="select-wrapper clearfix">
                                         <div class="col-md-6">
                                             <div class="my-dropdown make-dropdown">
-                                                <select name="body_style" class="css-dropdowns" tabindex="1">
+                                                <select name="marque" class="css-dropdowns" tabindex="1">
                                                     <option value="">Marque</option>
-                                                    <option>Toyota</option>
+                                                    @foreach($marques as $marque)
+                                                        <option value="{{$marque}}">{{$marque}}</option>
+                                                    @endforeach
                                                 </select>
                                             </div>
                                         </div>
                                         <div class="col-md-6">
                                             <div class="min-price select-dropdown">
                                                 <div class="my-dropdown min-price-dropdown min-dropdown">
-                                                    <select name="min-mileage" class="css-dropdowns" tabindex="1">
+                                                    <select name="kmMin" class="css-dropdowns" tabindex="1">
                                                         <option value="">KM min</option>
-                                                        <option>0</option>
-                                                        <option>&lt; 10 000</option>
-                                                        <option>&lt; 20 000</option>
-                                                        <option>&lt; 30 000</option>
-                                                        <option>&lt; 40 000</option>
-                                                        <option>&lt; 50 000</option>
-                                                        <option>&lt; 60 000</option>
-                                                        <option>&lt; 70 000</option>
-                                                        <option>&lt; 80 000</option>
-                                                        <option>&lt; 90 000</option>
-                                                        <option>&lt; 100 000</option>
-                                                        <option>&lt; 120 000</option>
-                                                        <option>&lt; 150 000</option>
+                                                        <option value="0">0</option>
+                                                        <option value="10000">&lt; 10 000</option>
+                                                        <option value="20000">&lt; 20 000</option>
+                                                        <option value="30000">&lt; 30 000</option>
+                                                        <option value="40000">&lt; 40 000</option>
+                                                        <option value="50000">&lt; 50 000</option>
+                                                        <option value="60000">&lt; 60 000</option>
+                                                        <option value="70000">&lt; 70 000</option>
+                                                        <option value="80000">&lt; 80 000</option>
+                                                        <option value="90000">&lt; 90 000</option>
+                                                        <option value="100000">&lt; 100 000</option>
+                                                        <option value="120000">&lt; 120 000</option>
+                                                        <option value="150000">&lt; 150 000</option>
                                                     </select>
                                                 </div>
                                                 <span class="my-dropdown">to</span>
 
                                                 <div class="my-dropdown max-price-dropdown min-dropdown">
-                                                    <select name="max-mileage" class="css-dropdowns" tabindex="1">
+                                                    <select name="kmMax" class="css-dropdowns" tabindex="1">
                                                         <option value="">KM max</option>
-                                                        <option>0</option>
-                                                        <option>&lt; 10 000</option>
-                                                        <option>&lt; 20 000</option>
-                                                        <option>&lt; 30 000</option>
-                                                        <option>&lt; 40 000</option>
-                                                        <option>&lt; 50 000</option>
-                                                        <option>&lt; 60 000</option>
-                                                        <option>&lt; 70 000</option>
-                                                        <option>&lt; 80 000</option>
-                                                        <option>&lt; 90 000</option>
-                                                        <option>&lt; 100 000</option>
-                                                        <option>&lt; 120 000</option>
-                                                        <option>&lt; 150 000</option>
+                                                        <option value="0">0</option>
+                                                        <option value="10000">&lt; 10 000</option>
+                                                        <option value="20000">&lt; 20 000</option>
+                                                        <option value="30000">&lt; 30 000</option>
+                                                        <option value="40000">&lt; 40 000</option>
+                                                        <option value="50000">&lt; 50 000</option>
+                                                        <option value="60000">&lt; 60 000</option>
+                                                        <option value="70000">&lt; 70 000</option>
+                                                        <option value="80000">&lt; 80 000</option>
+                                                        <option value="90000">&lt; 90 000</option>
+                                                        <option value="100000">&lt; 100 000</option>
+                                                        <option value="120000">&lt; 120 000</option>
+                                                        <option value="150000">&lt; 150 000</option>
                                                     </select>
                                                 </div>
                                             </div>
@@ -594,7 +579,7 @@
                                                     @endif
                                             <div class="car-block-bottom">
                                                 <h6><strong>{{$car['titre']}}</strong></h6>
-                                                <h5>à partir de {{$car['prix']}} €</h5>
+                                                <h5>À partir de {{$car['prix']}} €</h5>
                                             </div>
                                         </div>
                                 </div>
@@ -691,7 +676,7 @@
 
     <div class="row parallax_parent margin-top-30">
         <div class="parallax_scroll clearfix" data-velocity="-.5" data-offset="-300" data-no-repeat="true"
-             data-image="http://demo.themesuite.com/automotive/images/parallax2.jpg">
+             data-image="{{url('images/parallax2.jpg')}}">
             <div class="overlay">
                 <div class="container">
 

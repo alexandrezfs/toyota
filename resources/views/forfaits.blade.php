@@ -27,7 +27,7 @@
                     @foreach($forfaits as $forfait)
                         <div class="col-md-4 convertible sports-car mix margin-bottom-50">
                             <div class="box clearfix">
-                                <a href="{{url('/article/' . $forfait['slug'])}}">
+                                <a href="{{url('/forfait/' . $forfait['slug'])}}">
                                     @if(count($forfait['images']) > 0)
                                         <img src="{{$forfait['images'][0]['uri']}}" alt=""
                                              class="img-responsive">

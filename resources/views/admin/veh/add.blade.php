@@ -15,6 +15,9 @@
                     <input type="text" id="titre" name="titre" class="form-control" placeholder="Titre" required
                            autofocus>
 
+                    <label for="titre">Marque</label>
+                    <input type="text" id="marque" name="marque" class="form-control" placeholder="Marque" required>
+
                     <label for="description">Description</label>
                     <textarea type="text" id="description" name="description" class="form-control"
                               placeholder="Description" required></textarea>

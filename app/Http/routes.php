@@ -20,9 +20,14 @@ Route::get('/infos-pratiques', 'HomeController@infosPratiques');
 Route::get('/actu', 'HomeController@actu');
 Route::get('/forfaits', 'HomeController@forfaits');
 Route::get('/vehicule/{slug}', 'HomeController@vehicule');
+Route::get('/produit/{slug}', 'HomeController@produit');
+Route::get('/article/{slug}', 'HomeController@article');
+Route::get('/forfait/{slug}', 'HomeController@forfait');
 Route::get('/contact', 'HomeController@contact');
 Route::post('/newsletter/signup', 'HomeController@signupNewsletter');
 Route::post('/contact/send', 'HomeController@sendContactEmail');
+Route::post('/veh/search', 'HomeController@searchVeh');
+Route::get('/search/{keyword}', 'HomeController@search');
 
 
 Route::get('/admin', 'AdminController@login');

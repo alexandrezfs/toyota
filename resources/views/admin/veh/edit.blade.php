@@ -11,9 +11,14 @@
                 <h4>Editer un véhicule occasion</h4>
 
                 <form action="{{url('/admin/veh/edit')}}" method="POST">
+
                     <label for="titre">Titre</label>
                     <input type="text" id="titre" name="titre" class="form-control" placeholder="Titre"
                            value="{{$car['titre']}}" required autofocus>
+
+                    <label for="titre">Marque</label>
+                    <input type="text" id="marque" name="marque" class="form-control" placeholder="Marque" required>
+
                     <label for="description">Description</label>
                     <textarea type="text" id="description" name="description" class="form-control"
                               placeholder="Description" required>{{$car['description']}}</textarea>

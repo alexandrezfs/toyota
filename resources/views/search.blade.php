@@ -1,5 +1,10 @@
 @extends('app')
 
+@section('seo')
+    <title>Recherche - STAMCAR TOYOTA LYON EST</title>
+    <meta name="description" content="Recherchez votre futur véhicule.">
+@endsection
+
 @section('content')
 
     <section id="secondary-banner" class="dynamic-image-1">

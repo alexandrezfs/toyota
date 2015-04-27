@@ -1,5 +1,10 @@
 @extends('app')
 
+@section('seo')
+    <title>Nous contacter - STAMCAR TOYOTA LYON EST</title>
+    <meta name="description" content="Nous sommes joignables par téléphone et mail. Remplissez notre formulaire de contact et contactez un conseiller.">
+@endsection
+
 @section('content')
 
     <!--Header End-->

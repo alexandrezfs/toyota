@@ -1,5 +1,10 @@
 @extends('app')
 
+@section('seo')
+    <title>Newsletter - STAMCAR TOYOTA LYON EST</title>
+    <meta name="description" content="Vous êtes maintenant abonné à notre newsletter.">
+@endsection
+
 @section('content')
 
     <section id="secondary-banner" class="dynamic-image-1">

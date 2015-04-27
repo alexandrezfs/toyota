@@ -1,5 +1,10 @@
 @extends('app')
 
+@section('seo')
+    <title>{{$article['titre']}} - STAMCAR TOYOTA LYON EST</title>
+    <meta name="description" content="{{substr(preg_replace('/(<.*?>)|(&.*?;)/', '', $article['contenu']), 0, 150)}} [...]">
+@endsection
+
 @section('content')
     <section id="secondary-banner" class="dynamic-image-9"><!--for other images just change the class name of this section block like, class="dynamic-image-2" and add css for the changed class-->
         <div class="container">

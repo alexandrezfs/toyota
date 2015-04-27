@@ -1,5 +1,10 @@
 @extends('app')
 
+@section('seo')
+    <title>Merci - STAMCAR TOYOTA LYON EST</title>
+    <meta name="description" content="Merci pour votre message.">
+@endsection
+
 @section('content')
 
     <section id="secondary-banner" class="dynamic-image-1">

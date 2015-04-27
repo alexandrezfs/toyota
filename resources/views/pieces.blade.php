@@ -1,5 +1,10 @@
 @extends('app')
 
+@section('seo')
+    <title>Magasin - STAMCAR TOYOTA LYON EST</title>
+    <meta name="description" content="Achetez nos pièces et accessoires en ligne. Prix compétitifs.">
+@endsection
+
 @section('content')
 
     <section id="secondary-banner" class="dynamic-image-1">

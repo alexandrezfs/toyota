@@ -1,5 +1,10 @@
 @extends('app')
 
+@section('seo')
+    <title>Nous rejoindre, Horaires, infos pratiques - STAMCAR TOYOTA LYON EST</title>
+    <meta name="description" content="Horaires d'ouverture, localisation, carte. Trouvez-nous facilement.">
+@endsection
+
 @section('content')
 
     <div class="clearfix"></div>

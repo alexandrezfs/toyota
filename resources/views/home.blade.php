@@ -1,5 +1,10 @@
 @extends('app')
 
+@section('seo')
+    <title>STAMCAR TOYOTA LYON EST - Vente d'accessoires et pièces auto</title>
+    <meta name="description" content="Vente d'accessoires et pièces automobiles en ligne, véhicules neufs et d'occasions, réparateur véhicules agréé Toyota et JDM.">
+@endsection
+
 @section('content')
     <section class="banner-wrap">
         <div class="banner">

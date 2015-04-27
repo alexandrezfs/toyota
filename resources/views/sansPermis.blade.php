@@ -1,5 +1,10 @@
 @extends('app')
 
+@section('seo')
+    <title>Sans Permis - STAMCAR TOYOTA LYON EST</title>
+    <meta name="description" content="Découvrez notre gamme de véhicules sans permis.">
+@endsection
+
 @section('content')
 
     <section id="secondary-banner" class="dynamic-image-1">

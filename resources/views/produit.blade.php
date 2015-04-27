@@ -1,5 +1,10 @@
 @extends('app')
 
+@section('seo')
+    <title>{{$produit['titre']}} - STAMCAR TOYOTA LYON EST</title>
+    <meta name="description" content="{{substr($produit['description'], 0, 100)}} [...]">
+@endsection
+
 @section('content')
 
     <section id="secondary-banner" class="dynamic-image-11"><!--for other images just change the class name of this section block like, class="dynamic-image-2" and add css for the changed class-->

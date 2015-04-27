@@ -1,5 +1,10 @@
 @extends('app')
 
+@section('seo')
+    <title>Actualité - STAMCAR TOYOTA LYON EST</title>
+    <meta name="description" content="L'actu STAMCAR en live sur notre site web, nos dernières offres, news, etc.">
+@endsection
+
 @section('content')
 
     <section id="secondary-banner" class="dynamic-image-10"><!--for other images just change the class name of this section block like, class="dynamic-image-2" and add css for the changed class-->

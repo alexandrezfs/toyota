@@ -11,8 +11,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <title>STAMCAR TOYOTA LYON EST - Vente d'accessoires et pièces auto</title>
-    <meta name="description" content="Vente d'accessoires et pièces automobiles en ligne, véhicules neufs et d'occasions, réparateur véhicules agréé Toyota et JDM.">
+
+    @yield('seo')
 
     <link rel="shortcut icon" href="{{asset('images/favicon.png')}}">
     <!-- Bootstrap core CSS -->

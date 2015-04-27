@@ -1,5 +1,10 @@
 @extends('app')
 
+@section('seo')
+    <title>Véhicules Occasion - STAMCAR TOYOTA LYON EST</title>
+    <meta name="description" content="Découvrez notre gamme de véhicules occasion chez STAMCAR.">
+@endsection
+
 @section('content')
 
     <section id="secondary-banner" class="dynamic-image-1">

@@ -29,9 +29,6 @@
                     <div class="row">
                         @foreach($foundCars as $car)
                             <div class="inventory margin-bottom-20 clearfix scroll_effect fadeIn">
-                                <input type="checkbox" name="a" class="checkbox compare_vehicle input-checkbox"
-                                       id="vehicle_1"/>
-                                <label for="vehicle_1"></label>
                                 <a class="inventory" href="{{url('/vehicule/' . $car['slug'])}}">
                                     <div class="title">{{$car['titre']}}</div>
                                     @if(count($car['images']) > 0)
@@ -56,7 +53,7 @@
                                         </tr>
                                         <tr>
                                             <td class="option primary">Kilométrage</td>
-                                            <td class="spec">{{$car['km']}}</td>
+                                            <td class="spec">{{$car['km']}} KM</td>
                                         </tr>
                                     </table>
                                     <table class="options-secondary">

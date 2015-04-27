@@ -27,7 +27,7 @@
                     @foreach($newsfeed as $new)
                     <div class="col-md-4 convertible sports-car mix margin-bottom-50">
                         <div class="box clearfix">
-                            <a href="{{url('/article/' . $new['id'])}}">
+                            <a href="{{url('/article/' . $new['slug'])}}">
                                 @if(count($new['images']) > 0)
                                     <img src="{{$new['images'][0]['uri']}}" alt=""
                                          class="img-responsive">

@@ -7,7 +7,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-md-8 col-sm-6 col-xs-12">
-                    <h2>Inventaire de pièces</h2>
+                    <h2>Magasin</h2>
                     <h4>N'hésitez pas à nous contacter pour plus d'informations</h4>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">

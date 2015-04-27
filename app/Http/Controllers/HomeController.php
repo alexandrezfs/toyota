@@ -44,8 +44,8 @@ class HomeController extends Controller {
 	{
         $news = News::take(3)->orderBy('created_at', 'desc')->get();
         View::share('news', $news);
-
-        $cars = Car::where('type', '=', 'neuf')->orderBy('created_at', 'desc')->get();
+        
+	$cars = Car::where('type', '=', 'neuf')->orderBy('created_at', 'desc')->get();
 
         //populate with images
         foreach($cars as $car) {
@@ -55,7 +55,6 @@ class HomeController extends Controller {
 
         View::share('cars', $cars);
 
-
         $carsBrands = Car::distinct()->select('marque')->get();
         $marques = array();
         foreach($carsBrands as $carsBrand) {
@@ -63,8 +62,8 @@ class HomeController extends Controller {
         }
 
         View::share('marques', $marques);
-
-        return view('home');
+        
+	return view('home');
 	}
 
     public function gammeToyota()
@@ -90,7 +89,7 @@ class HomeController extends Controller {
         $news = News::take(3)->orderBy('created_at', 'desc')->get();
         View::share('news', $news);
 
-        $cars = Car::where('type', '=', 'neuf')->orderBy('created_at', 'desc')->get();
+        $cars = Car::where('type', '=', 'sans-permis')->orderBy('created_at', 'desc')->get();
 
         //populate with images
         foreach($cars as $car) {
@@ -144,6 +143,12 @@ class HomeController extends Controller {
         $news = News::take(3)->orderBy('created_at', 'desc')->get();
         View::share('news', $news);
 
+        //populate with images
+        foreach($news as $new) {
+            $images = Image::where("object_name", "news")->where("object_id", $new['id'])->get();
+            $new->images = $images;
+        }
+
         return view('infosPratiques');
     }
 
@@ -157,7 +162,7 @@ class HomeController extends Controller {
 
         //populate with images
         foreach($newsfeed as $new) {
-            $images = Image::where("object_name", "car")->where("object_id", $new['id'])->get();
+            $images = Image::where("object_name", "news")->where("object_id", $new['id'])->get();
             $new->images = $images;
         }
 
@@ -233,12 +238,12 @@ class HomeController extends Controller {
         $article = News::where('slug', $slug)->first();
 
         //populate with images
-        $images = Image::where("object_name", "article")->where("object_id", $article['id'])->get();
+        $images = Image::where("object_name", "news")->where("object_id", $article['id'])->get();
         $article->images = $images;
 
         View::share('article', $article);
 
-        return view('vehicule');
+        return view('article');
     }
 
     public function produit($slug) {
@@ -372,6 +377,12 @@ class HomeController extends Controller {
 
         $foundCars = Car::where('titre', 'like', '%' . $keyword . '%')->get();
 
+        //populate with images
+        foreach($foundCars as $car) {
+            $images = Image::where("object_name", "car")->where("object_id", $car['id'])->get();
+            $car->images = $images;
+        }
+        
         View::share('foundCars', $foundCars);
 
         return view('search');

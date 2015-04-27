@@ -106,14 +106,20 @@
                                 <li>
                                     <div class="blog-list">
                                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 list-info padding-bottom-15 padding-horizontal-5">
-                                            <div class="thumb-image"><img
-                                                        src="http://demo.themesuite.com/automotive/images/thumb-img-1.jpg"
-                                                        alt=""></div>
-                                            <h4>{{$new['titre']}}</h4>
-                                            <span>{{$new['created_at']}}</span>
+                                            <a href="{{url('/article/' . $new['slug'])}}">
+                                                <div class="thumb-image">
+                                                @if(count($new['images']) > 0)
+                                                    <img src="{{$new['images'][0]['uri']}}" style="max-width:80px;" alt="">
+                                                @else
+                                                    <img src="http://placehold.it/50x50" alt=""
+                                                         class="img-responsive">
+                                                @endif
+                                                </div>
+                                                <h4>{{$new['titre']}}</h4>
+                                                <span>{{$new['created_at']}}</span>
 
-                                            <p>{{substr($new['titre'], 0, 100)}}<a
-                                                        href="{{url('/news/' . $new['slug'])}}">[...]</a></p>
+                                                <p>{{substr(preg_replace('/(<.*?>)|(&.*?;)/', '', $new['contenu']), 0, 250)}}<a href="{{url('/article/' . $new['slug'])}}"> [...]</a></p>
+                                            </a>
                                         </div>
                                     </div>
                                     <div class="clearfix"></div>

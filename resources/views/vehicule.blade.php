@@ -68,15 +68,15 @@
                         <div class="related_post margin-top-30 clearfix">
                             @foreach($cars as $car)
                                 <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 scroll_effect fadeInRight" data-wow-delay=".2s">
-                                    <div class="car-block margin-bottom-10"><a href="#">
+                                    <div class="car-block margin-bottom-10"><a href="{{url('/vehicule/' . $car['slug'])}}">
                                             <div class="img-flex">
                                                 <span class="align-center"><i class="fa fa-3x fa-picture-o"></i></span>
                                                 @if(count($car['images']) > 0)
                                                     <img src="{{$car['images'][0]['uri']}}" alt=""
                                                          class="img-responsive">
-                                                    @else
-                                                        <img src="http://placehold.it/350x200" alt=""
-                                                             class="img-responsive">
+                                                @else
+                                                    <img src="http://placehold.it/350x200" alt=""
+                                                         class="img-responsive">
                                                 @endif
                                             </div>
                                             <div class="car-block-bottom">

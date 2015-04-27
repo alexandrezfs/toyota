@@ -26,8 +26,8 @@
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padding-left-none padding-right-none">
                     <div class="blog-content">
                         <div class="post-entry clearfix">
-                            @if(count($new['images']) > 0)
-                                <img src="{{$new['images'][0]['uri']}}" alt=""
+                            @if(count($article['images']) > 0)
+                                <img src="{{$article['images'][0]['uri']}}" alt=""
                                      class="img-responsive">
                             @else
                                 <img src="http://placehold.it/350x200" alt=""
@@ -36,7 +36,7 @@
                             <div class="blog-title">
                                 <h2 class="margin-top-40">{{$article['titre']}}</h2>
                                 <p>{{$article['created_at']}}</p>
-                                <p>{!! $article['description'] !!}</p>
+                                <p>{!! $article['contenu'] !!}</p>
                             </div>
                         </div>
                     </div>

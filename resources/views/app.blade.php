@@ -12,10 +12,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <title>STAMCAR TOYOTA LYON EST - Vente d'accessoires et pièces auto</title>
-    <meta name="description"
-          content="Vente d'accessoires et pièces automobiles en ligne, véhicules neufs et d'occasions, réparateur véhicules agréé Toyota et JDM.">
-    <meta name="author" content="">
-    <link rel="shortcut icon" href="{{asset('images/favicon.ico')}}">
+    <meta name="description" content="Vente d'accessoires et pièces automobiles en ligne, véhicules neufs et d'occasions, réparateur véhicules agréé Toyota et JDM.">
+
+    <link rel="shortcut icon" href="{{asset('images/favicon.png')}}">
     <!-- Bootstrap core CSS -->
     <link href="{{asset('css/bootstrap.min.css')}}" rel="stylesheet">
 
@@ -78,7 +77,7 @@
                 <div class="col-lg-6 ">
                     <ul class="right-none pull-right company_info">
                         <li><a href="tel:0478316165"><i class="fa fa-phone"></i> 04 78 31 61 65</a></li>
-                        <li class="address"><a href="{{url('/contact')}}l"><i class="fa fa-map-marker"></i> 16 Rue Paul
+                        <li class="address"><a href="{{url('/contact')}}"><i class="fa fa-map-marker"></i> 16 Rue Paul
                                 Cezanne,
                                 69330 Meyzieu</a></li>
                     </ul>
@@ -173,7 +172,7 @@
                     @foreach($news as $new)
                         <div>
                             <i class="fa fa-rss"></i>
-                            <p><a href="{{url('/article/' . $new['slug'])}}" style="text-decoration: none; color: #ffffff;">{{ $new['titre']  }}</a></p>
+                            <p><a href="{{url('/article/' . $new['slug'])}}" style="text-decoration: none; color: #ffffff;">{{ $new['titre'] }}</a></p>
                         </div>
                     @endforeach
                 </div>
@@ -186,7 +185,7 @@
                         <li><i class="fa fa-map-marker"></i> <strong>Addresse: 16 Rue Paul Cezanne, 69330 Meyzieu
                                 derrière le centre Leclerc.</strong>
                         </li>
-                        <li><i class="fa fa-phone"></i> <strong>Téléphone:</strong>04 78 31 61 65</li>
+                        <li><i class="fa fa-phone"></i> <strong>Téléphone:</strong><a href="tel:0478316165">04 78 31 61 65</a></li>
                         <li><i class="fa fa-envelope-o"></i> <strong>Email:</strong><a href="mailto:stamcar.toyota@neuf.fr">stamcar.toyota@neuf.fr</a></li>
                     </ul>
 

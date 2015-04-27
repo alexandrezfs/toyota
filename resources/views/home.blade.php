@@ -367,7 +367,7 @@
                                         <h3>Résultats garantis</h3>
 
                                         <p>Nos experts TOYOTA s'assurent que votre véhicule sort de notre atelier dans
-                                            ses meilleures conditions.</p>
+                                            de meilleures conditions.</p>
                                     </div>
                                     <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 xs-margin-bottom-none xs-padding-top-30 scroll_effect bounceInLeft"
                                          data-wow-delay=".2s"><span class="align-center"><i
@@ -408,8 +408,7 @@
                                 vous pouvez commander en ligne.</p>
 
                             <p>Consultez également la <span class="alternate-font">gamme Toyota</span>. ou la gamme
-                                <span class="alternate-font">sans permis</span>. STAMCAR est un atelier agréé par la
-                                marque de véhicules Toyota.</p>
+                                <span class="alternate-font">sans permis</span>. STAMCAR est un atelier agréé Toyota.</p>
                         </div>
                         <!--welcome ends-->
                         <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 padding-right-none sm-padding-left-none md-padding-left-15 xs-padding-left-none padding-bottom-40 scroll_effect fadeInUp"
@@ -557,7 +556,7 @@
                             <div class="col-lg-2 col-md-2 col-sm-4 col-xs-12 recent-vehicles padding-left-none">
                                 <h5 class="margin-top-none">Gamme Toyota</h5>
 
-                                <p>Parcourez la vaste séléction de véhicules Toyota.</p>
+                                <p>Visitez toute la séléction de véhicules Toyota.</p>
 
                                 <div class="arrow3 clearfix margin-top-15 xs-margin-bottom-25" id="slideControls3"><span
                                             class="prev-btn"></span><span class="next-btn"></span></div>

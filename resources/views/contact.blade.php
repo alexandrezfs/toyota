@@ -54,7 +54,7 @@
                                 </div>
                                 <div class="address clearfix address_details margin-right-25 padding-bottom-40">
                                     <ul class="margin-bottom-none">
-                                        <li><i class="fa fa-phone"></i><strong>Téléphone:</strong> <span>04 78 31 61 65</span></li>
+                                        <li><i class="fa fa-phone"></i><strong>Téléphone:</strong> <span><a href="tel:0478316165">04 78 31 61 65</a></span></li>
                                         <li><i class="fa fa-envelope-o"></i><strong>Email:</strong> <a href="mailto:stamcar.toyota@neuf.fr">stamcar.toyota@neuf.fr</a></li>
                                         <li class="padding-bottom-none"><i class="fa fa-laptop"></i><strong>Web:</strong> <a href="http://www.stamcar.fr">www.stamcar.fr</a></li>
                                     </ul>

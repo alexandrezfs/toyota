@@ -6,8 +6,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-md-8 col-sm-6 col-xs-12">
-                    <h2>Actualité</h2>
-                    <h4>Tenez-vous au courant des activités TOYOTA</h4>
+                    <h2>Forfaits</h2>
+                    <h4>Faites des économies avec les forfaits TOYOTA</h4>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-6 ">
                     <ul class="breadcrumb">

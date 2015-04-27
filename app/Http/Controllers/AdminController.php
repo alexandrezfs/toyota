@@ -88,7 +88,7 @@ class AdminController extends Controller
         $car->chassis = Input::get('chassis');
         $car->type = Input::get('type');
         $car->images_json = Input::get('images');
-        $car->slug = $slugify->slugify($car->titre, '_');
+        $car->slug = $slugify->slugify($car->titre);
 
         $car->save();
 
@@ -131,7 +131,7 @@ class AdminController extends Controller
         $car->transmission = Input::get('transmission');
         $car->chassis = Input::get('chassis');
         $car->images_json = Input::get('images');
-        $car->slug = $slugify->slugify($car->titre, '_');
+        $car->slug = $slugify->slugify($car->titre);
 
         $car->save();
 
@@ -167,7 +167,7 @@ class AdminController extends Controller
         $forfait->categorie_id = Input::get('categorie_id');
         $forfait->titre = Input::get('titre');
         $forfait->contenu = Input::get('contenu');
-        $forfait->slug = $slugify->slugify($forfait->titre, '_');
+        $forfait->slug = $slugify->slugify($forfait->titre);
 
         $forfait->save();
 
@@ -211,7 +211,7 @@ class AdminController extends Controller
         $forfait->categorie_id = Input::get('categorie_id');
         $forfait->titre = Input::get('titre');
         $forfait->contenu = Input::get('contenu');
-        $forfait->slug = $slugify->slugify($forfait->titre, '_');
+        $forfait->slug = $slugify->slugify($forfait->titre);
 
         $forfait->save();
 
@@ -260,7 +260,7 @@ class AdminController extends Controller
         $news->images_json = $images_json;
         $news->titre = Input::get('titre');
         $news->contenu = Input::get('contenu');
-        $news->slug = $slugify->slugify($news->titre, '_');
+        $news->slug = $slugify->slugify($news->titre);
 
         $news->save();
 
@@ -291,7 +291,7 @@ class AdminController extends Controller
         $news->images_json = $images_json;
         $news->titre = Input::get('titre');
         $news->contenu = Input::get('contenu');
-        $news->slug = $slugify->slugify($news->titre, '_');
+        $news->slug = $slugify->slugify($news->titre);
 
         $news->save();
 
@@ -333,7 +333,7 @@ class AdminController extends Controller
         $produit->en_magasin = Input::get('en_magasin') ? true : false;
         $produit->en_stock = Input::get('en_stock');
         $produit->date_limite_fin = Input::get('date_limite_fin');
-        $produit->slug = $slugify->slugify($produit->titre, '_');
+        $produit->slug = $slugify->slugify($produit->titre);
 
         $produit->save();
 
@@ -370,7 +370,7 @@ class AdminController extends Controller
         $produit->en_magasin = Input::get('en_magasin') ? true : false;
         $produit->en_stock = Input::get('en_stock');
         $produit->date_limite_fin = Input::get('date_limite_fin');
-        $produit->slug = $slugify->slugify($produit->titre, '_');
+        $produit->slug = $slugify->slugify($produit->titre);
 
         $produit->save();
 

@@ -63,7 +63,7 @@ class HomeController extends Controller {
 
         View::share('marques', $marques);
         
-	return view('home');
+	    return view('home');
 	}
 
     public function gammeToyota()
@@ -382,7 +382,7 @@ class HomeController extends Controller {
             $images = Image::where("object_name", "car")->where("object_id", $car['id'])->get();
             $car->images = $images;
         }
-        
+
         View::share('foundCars', $foundCars);
 
         return view('search');

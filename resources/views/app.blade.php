@@ -16,7 +16,7 @@
 
     <link rel="shortcut icon" href="{{asset('images/favicon.png')}}">
     <!-- Bootstrap core CSS -->
-    <link href="{{asset('css/bootstrap.min.css')}}" rel="stylesheet">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- HTML5 shiv and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -39,7 +39,7 @@
     <link href="{{asset('css/animate.min.css')}}" rel="stylesheet">
     <link href="{{asset('css/ts.css')}}" type="text/css" rel="stylesheet">
     <script type="text/javascript" src="{{asset('js/jquery.min.js')}}"></script>
-    <script src="{{asset('js/bootstrap.min.js')}}"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="{{asset('js/jquery.themepunch.tools.min.js')}}"></script>
     <script type="text/javascript" src="{{asset('js/jquery.themepunch.revolution.min.js')}}"></script>
     <script type="text/javascript" src="{{asset('js/wow.min.js')}}"></script>
@@ -93,7 +93,7 @@
                     <!-- Brand and toggle get grouped for better mobile display -->
                     <div class="navbar-header">
                         <button type="button" class="navbar-toggle" data-toggle="collapse"
-                                data-target="#bs-example-navbar-collapse-1"><span
+                                data-target="#stamcar-navbar-menu"><span
                                     class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span
                                     class="icon-bar"></span> <span class="icon-bar"></span></button>
                         <a class="navbar-brand" href="{{url('/')}}">
@@ -105,7 +105,7 @@
                     </div>
 
                     <!-- Collect the nav links, forms, and other content for toggling -->
-                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <div class="collapse navbar-collapse" id="stamcar-navbar-menu">
                         <ul class="nav navbar-nav pull-right">
                             <li class="active"><a href="{{ url('/infos-pratiques')  }}" title="infos-pratiques">Infos Pratiques</a></li>
                             <li class="dropdown"><a href="#" title="Nos véhicules" class="dropdown-toggle"

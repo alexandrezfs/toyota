@@ -17,35 +17,35 @@
                            value="{{$car['titre']}}" required autofocus>
 
                     <label for="titre">Marque</label>
-                    <input type="text" id="marque" name="marque" class="form-control" placeholder="Marque" required>
+                    <input type="text" id="marque" name="marque" value="{{$car['marque']}}" class="form-control" placeholder="Marque" required>
 
                     <label for="description">Description</label>
                     <textarea type="text" id="description" name="description" class="form-control"
                               placeholder="Description" required>{{$car['description']}}</textarea>
 
                     <label for="prix">Prix</label>
-                    <input type="text" id="prix" name="prix" class="form-control" placeholder="Prix" required>
+                    <input type="text" id="prix" name="prix" value="{{$car['prix']}}" class="form-control" placeholder="Prix" required>
 
                     <label for="km">KM</label>
-                    <input type="number" id="km" name="km" class="form-control" placeholder="KM" required>
+                    <input type="number" id="km" name="km" value="{{$car['km']}}" class="form-control" placeholder="KM" required>
 
                     <label for="annee">Année</label>
-                    <input type="number" id="annee" name="annee" class="form-control" placeholder="Année" required>
+                    <input type="number" id="annee" name="annee" value="{{$car['annee']}}" class="form-control" placeholder="Année" required>
 
                     <label for="moteur">Moteur</label>
-                    <input type="text" id="moteur" name="moteur" class="form-control" placeholder="Moteur" required>
+                    <input type="text" id="moteur" name="moteur" value="{{$car['moteur']}}" class="form-control" placeholder="Moteur" required>
 
                     <label for="transmission">Transmission</label>
-                    <input type="text" id="transmission" name="transmission" class="form-control" placeholder="Transmission" required>
+                    <input type="text" id="transmission" name="transmission" value="{{$car['transmission']}}" class="form-control" placeholder="Transmission" required>
 
                     <label for="chassis">Chassis</label>
-                    <input type="text" id="chassis" name="chassis" class="form-control" placeholder="Chassis" required>
+                    <input type="text" id="chassis" name="chassis" class="form-control" value="{{$car['chassis']}}" placeholder="Chassis" required>
 
                     <label for="type">Type</label>
                     <select type="text" id="type" name="type" class="form-control" required>
-                        <option value="neuf">Véhicule Neuf</option>
-                        <option value="occasion">Véhicule Occasion</option>
-                        <option value="sans-permis">Sans permis</option>
+                        <option value="neuf" @if($car['type'] == 'neuf') selected @endif>Véhicule Neuf</option>
+                        <option value="occasion" @if($car['type'] == 'occasion') selected @endif>Véhicule Occasion</option>
+                        <option value="sans-permis" @if($car['type'] == 'sans-permis') selected @endif>Sans permis</option>
                     </select>
 
                     <input type="hidden" id="token" name="_token" value="{{ csrf_token() }}">

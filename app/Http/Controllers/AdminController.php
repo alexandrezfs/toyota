@@ -145,6 +145,14 @@ class AdminController extends Controller
         return redirect('admin/veh/list');
     }
 
+    public function vehDeleteAction($id)
+    {
+        $car = Car::find($id);
+        $car->delete();
+
+        return redirect('admin/veh/list');
+    }
+
     function addForfaitAction() {
 
         $categories = ForfaitCategorie::all();
@@ -172,6 +180,14 @@ class AdminController extends Controller
         $forfait->save();
 
         Image::saveImages($images, Input::get("object_name"), $forfait->id);
+
+        return redirect('admin/forfaits/list');
+    }
+
+    public function deleteForfaitAction($id)
+    {
+        $forfait = Forfait::find($id);
+        $forfait->delete();
 
         return redirect('admin/forfaits/list');
     }
@@ -220,6 +236,14 @@ class AdminController extends Controller
         return redirect('admin/forfaits/list');
     }
 
+    public function deleteForfaitCategorieAction($id)
+    {
+        $categorie = ForfaitCategorie::find($id);
+        $categorie->delete();
+
+        return redirect('admin/forfaits/categories/list');
+    }
+
     function addForfaitCategorieAction() {
 
         return view('admin/forfaits/categories/add');
@@ -246,6 +270,14 @@ class AdminController extends Controller
     function newsAddAction() {
 
         return view('admin/news/add');
+    }
+
+    function newsDeleteAction($id) {
+
+        $news = News::find($id);
+        $news->delete();
+
+        return redirect('admin/news/list');
     }
 
     function newsAddPostAction() {
@@ -375,6 +407,14 @@ class AdminController extends Controller
         $produit->save();
 
         Image::saveImages($images, Input::get("object_name"), $produit->id);
+
+        return redirect('admin/produits/list');
+    }
+
+    function produitsDeleteAction($id) {
+
+        $produit = Produit::find($id);
+        $produit->delete();
 
         return redirect('admin/produits/list');
     }

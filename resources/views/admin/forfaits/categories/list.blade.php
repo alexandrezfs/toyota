@@ -27,7 +27,7 @@
                             {{$categorie['nom']}}
                         </td>
                         <td>
-                            <a href="{{url('/admin/forfaits/categorie/delete/' . $categorie['id'])}}">(Supprimer)</a>
+                            <a href="{{url('/admin/forfaits/categories/delete/' . $categorie['id'])}}" onclick="return(confirm('Etes-vous sûr de vouloir supprimer cette entrée?'));">(Supprimer)</a>
                         </td>
                     </tr>
                 @endforeach

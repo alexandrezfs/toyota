@@ -38,7 +38,7 @@
                             <td>
                                 <a href="{{url('/admin/forfaits/edit/' . $forfait['id'])}}">(Editer)</a>
                                 <br>
-                                <a href="{{url('/admin/forfaits/delete/' . $forfait['id'])}}">(Supprimer)</a>
+                                <a href="{{url('/admin/forfaits/delete/' . $forfait['id'])}}" onclick="return(confirm('Etes-vous sûr de vouloir supprimer cette entrée?'));">(Supprimer)</a>
                             </td>
                         </tr>
                     @endforeach

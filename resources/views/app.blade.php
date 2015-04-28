@@ -107,7 +107,7 @@
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                         <ul class="nav navbar-nav pull-right">
-                            <li class="active"><a href="{{url('/')}}" title="Page d'accueil">Accueil</a></li>
+                            <li class="active"><a href="{{ url('/infos-pratiques')  }}" title="infos-pratiques">Infos Pratiques</a></li>
                             <li class="dropdown"><a href="#" title="Nos véhicules" class="dropdown-toggle"
                                                     data-toggle="dropdown">Véhicules <b
                                             class="caret"></b></a>
@@ -129,10 +129,9 @@
                                     </li>
                                 </ul>
                             </li>
-                            <li><a href="{{ url('/actu')  }}" title="Actualité">L'actu</a></li>
+                            <li><a href="{{ url('/actu')  }}" title="Actualité">Actu</a></li>
                             <li><a href="{{ url('/forfaits')  }}" title="Forfaits">Forfaits</a></li>
                             <li><a href="{{ url('/magasin')  }}" title="Le magasin">Magasin</a></li>
-                            <li><a href="{{ url('/infos-pratiques')  }}" title="infos-pratiques">Nous rejoindre</a></li>
                             <li><a href="{{ url('/contact')  }}" title="Contact">Contact</a></li>
                         </ul>
                     </div>

@@ -790,7 +790,7 @@ header .left_bar {
 }
 
 header .bottom-header .navbar-default .navbar-brand {
-	padding: 15px 0 0 15px;
+	padding: 6px 0 0 10px;
 }
 
 .container .inner-page > .col-lg-9, .inner-page .container > .col-md-12 {
@@ -3412,7 +3412,7 @@ h1 a.logo {
 }
 
 header {
-	position: absolute;
+	position: static;
 }
 
 #secondary-banner {

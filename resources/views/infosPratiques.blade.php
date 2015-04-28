@@ -72,7 +72,7 @@
                         <div class="choose-list">
                             <ul>
                                 <li>Nous sommes agréés par de grandes marques</li>
-                                <li>Notre atelier est révisé par des professionels</li>
+                                <li>Notre atelier est révisé par des organismes agréés par l'etat</li>
                                 <li>Nous choisissons nos techniciens avec soin</li>
                                 <li>Nous fournissons une meilleure expérience en ligne</li>
                                 <li>Nos prix sont abordables</li>

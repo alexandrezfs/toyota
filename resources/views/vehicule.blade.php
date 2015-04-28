@@ -59,7 +59,7 @@
                                     <li><i class="fa fa-check-circle"></i>Kilométrage {{$vehicule['km']}} KM</li>
                                     <li><i class="fa fa-check-circle"></i>Année {{$vehicule['annee']}}</li>
                                     <li><i class="fa fa-check-circle"></i>Moteur {{$vehicule['moteur']}}</li>
-                                    <li><i class="fa fa-check-circle"></i>Trasmission {{$vehicule['transmission']}} KM</li>
+                                    <li><i class="fa fa-check-circle"></i>Trasmission {{$vehicule['transmission']}}</li>
                                     <li><i class="fa fa-check-circle"></i>Chassis {{$vehicule['chassis']}}</li>
                                     <li><i class="fa fa-check-circle"></i>À partir de {{$vehicule['prix']}} €</li>
                                 </ul>

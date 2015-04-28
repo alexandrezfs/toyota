@@ -280,9 +280,11 @@
                 <h2 class="col-lg-9 col-md-8 col-sm-12 col-xs-12 xs-padding-left-15">Votre garage toutes marques
                     accessible <span class="alternate-font">facilement</span></h2>
 
-                <div class="col-lg-3 col-md-4 col-sm-12 col-xs-12 xs-padding-right-15"><a
-                            href="{{url('/infos-pratiques')}}" class="default-btn pull-right action_button lg-button">Nous
-                        rejoindre</a></div>
+                <div class="col-lg-3 col-md-4 col-sm-12 col-xs-12 xs-padding-right-15">
+                    <a href="{{url('/infos-pratiques')}}" class="default-btn pull-right action_button lg-button">
+                        En savoir plus
+                    </a>
+                </div>
             </div>
         </div>
         <div class="message-shadow"></div>
@@ -663,7 +665,7 @@
                 <div class="col-lg-2 col-md-2 col-sm-6 col-xs-12 xs-margin-bottom-40 sm-margin-bottom-none scroll_effect bounceInRight"
                      data-wow-delay=".2s">
                     <div class="small-block clearfix">
-                        <h4 class="margin-bottom-25 margin-top-none">Nous rejoindre.</h4>
+                        <h4 class="margin-bottom-25 margin-top-none">Infos Pratiques.</h4>
                         <a href="{{url('/infos-pratiques')}}"><span class="align-center"><i class="fa fa-users fa-7x"></i></span></a>
                     </div>
                 </div>

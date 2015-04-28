@@ -107,8 +107,8 @@
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse" id="stamcar-navbar-menu">
                         <ul class="nav navbar-nav pull-right">
-                            <li class="active"><a href="{{ url('/infos-pratiques')  }}" title="infos-pratiques">Infos Pratiques</a></li>
-                            <li class="dropdown"><a href="#" title="Nos véhicules" class="dropdown-toggle"
+                            <li class="active"><a href="{{ url('/infos-pratiques') }}" title="infos-pratiques">Infos Pratiques</a></li>
+                            <li class="dropdown"><a href="{{url('/gamme-toyota')}}" title="Nos véhicules" class="dropdown-toggle"
                                                     data-toggle="dropdown">Véhicules <b
                                             class="caret"></b></a>
                                 <ul class="dropdown-menu">

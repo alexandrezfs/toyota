@@ -45,7 +45,7 @@ class HomeController extends Controller {
         $news = News::take(3)->orderBy('created_at', 'desc')->get();
         View::share('news', $news);
         
-	$cars = Car::where('type', '=', 'neuf')->orderBy('created_at', 'desc')->get();
+	    $cars = Car::where('type', '=', 'neuf')->orderBy('created_at', 'desc')->get();
 
         //populate with images
         foreach($cars as $car) {
@@ -196,15 +196,6 @@ class HomeController extends Controller {
 
     public function vehicule($slug) {
 
-        $cars = Car::take(4)->orderBy('created_at', 'desc')->get();
-
-        //populate with images
-        foreach($cars as $car) {
-            $images = Image::where("object_name", "car")->where("object_id", $car['id'])->get();
-            $car->images = $images;
-        }
-
-
         $news = News::take(3)->orderBy('created_at', 'desc')->get();
         View::share('news', $news);
 
@@ -214,6 +205,16 @@ class HomeController extends Controller {
         //populate with images
         $images = Image::where("object_name", "car")->where("object_id", $vehicule['id'])->get();
         $vehicule->images = $images;
+
+
+        $cars = Car::take(4)->where('id', '!=', $vehicule['id'])->orderBy('created_at', 'desc')->get();
+
+        //populate with images
+        foreach($cars as $car) {
+            $images = Image::where("object_name", "car")->where("object_id", $car['id'])->get();
+            $car->images = $images;
+        }
+
 
         View::share('vehicule', $vehicule);
         View::share('cars', $cars);
@@ -292,7 +293,12 @@ class HomeController extends Controller {
         }
 
 
-        $forfaits = Forfait::take(4)->orderBy('created_at', 'desc')->get();
+        $forfaits = Forfait::take(4)->where('id', '!=', $forfait['id'])->orderBy('created_at', 'desc')->groupBy('categorie_id')->get();
+
+        foreach($forfaits as $f) {
+            $images = Image::where("object_name", "forfait")->where("object_id", $f['id'])->get();
+            $f->images = $images;
+        }
 
         View::share('forfait', $forfait);
         View::share('forfaits', $forfaits);

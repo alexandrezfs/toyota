@@ -17,49 +17,62 @@
                 <div class="col-lg-4 col-md-4 col-sm-6 ">
                     <ul class="breadcrumb">
                         <li><a href="{{url('/')}}">Home</a></li>
-                        <li><a href="#">News</a></li>
+                        <li><a href="#">Forfaits</a></li>
                     </ul>
                 </div>
             </div>
         </div>
     </section>
-    <!--secondary-banner ends-->
-    <div class="message-shadow"></div>
+
+   <div class="clearfix"></div>
     <section class="content">
         <div class="container">
-            <div class="inner-page portfolio-container clearfix row">
-                @if(count($forfaits) == 0)
-                    <p>Aucun forfait n'est proposé pour le moment.
-                        <br>
-                        <a href="{{url('/')}}" title="Retour à la page d'accueil"><i class="fa fa-home"></i> Retour à la page d'accueil</a>
-                    </p>
-                @endif
-                <div class="portfolioContainer portfolio_3">
-                    @foreach($forfaits as $forfait)
-                        <div class="col-md-4 convertible sports-car mix margin-bottom-50">
-                            <div class="box clearfix">
-                                <a href="{{url('/forfait/' . $forfait['slug'])}}">
+            <div class="inner-page row">
+                <div class="content-wrap car_listings">
+                    <div class="row">
+                        @if(count($forfaits) == 0)
+                            <p>Aucun forfait n'est proposé pour le moment.
+                                <br>
+                                <a href="{{url('/')}}" title="Retour à la page d'accueil"><i class="fa fa-home"></i> Retour à la page d'accueil</a>
+                            </p>
+                        @endif
+                        @foreach($forfaits as $forfait)
+                            <div class="inventory margin-bottom-20 clearfix scroll_effect fadeIn">
+                                <a class="inventory" href="{{url('/forfait/' . $forfait['slug'])}}">
+                                    <div class="title" style="white-space:normal;">{{$forfait['titre']}}</div>
                                     @if(count($forfait['images']) > 0)
                                         <img src="{{$forfait['images'][0]['uri']}}" alt=""
-                                             class="img-responsive">
+                                             class="preview">
                                     @else
                                         <img src="http://placehold.it/350x200" alt=""
-                                             class="img-responsive">
+                                             class="preview">
                                     @endif
+                                    <table class="options-primary">
+                                        <tr>
+                                            <td class="option primary">Description</td>
+                                            <td class="spec">{{$forfait['contenu']}}</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="option primary">Disponible</td>
+                                            <td class="spec">Oui</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="option primary">Contact</td>
+                                            <td class="spec"><i class="fa fa-phone"></i> <a href="tel:0478316165" style="color:black;">04 78 31 61 65</a></td>
+                                        </tr>
+                                    </table>
+
+                                    <div class="view-details gradient_button"><i class='fa fa-plus-circle'></i> Détails
+                                    </div>
+                                    <div class="clearfix"></div>
                                 </a>
-                                <div class="padding-top-25 padding-bottom-10">
-                                    <h2>{{$forfait['titre']}}</h2>
-                                    <span>{{$forfait['created_at']}}</span> </div>
-                                <p>{{substr(preg_replace('/(<.*?>)|(&.*?;)/', '', $forfait['contenu']), 0, 100)}} [...]</p>
                             </div>
-                        </div>
-                    @endforeach
+                        @endforeach
+                    </div>
                 </div>
-                <div class="clearfix"></div>
             </div>
         </div>
         <!--container ends-->
     </section>
-    <!--content ends-->
 
 @endsection

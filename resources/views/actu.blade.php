@@ -28,6 +28,12 @@
     <section class="content">
         <div class="container">
             <div class="inner-page portfolio-container clearfix row">
+                @if(count($newsfeed) == 0)
+                    <p>Aucun article n'a été publié pour le moment.
+                        <br>
+                        <a href="{{url('/')}}" title="Retour à la page d'accueil"><i class="fa fa-home"></i> Retour à la page d'accueil</a>
+                    </p>
+                @endif
                 <div class="portfolioContainer portfolio_3">
                     @foreach($newsfeed as $new)
                     <div class="col-md-4 convertible sports-car mix margin-bottom-50">

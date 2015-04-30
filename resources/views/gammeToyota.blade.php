@@ -195,6 +195,12 @@
                     </div>
                 </form>-->
                     <div class="clearfix"></div>
+                    @if(count($cars) == 0)
+                        <p>Aucun véhicule de la gamme Toyota n'est en vente pour l'instant.
+                            <br>
+                            <a href="{{url('/')}}" title="Retour à la page d'accueil"><i class="fa fa-home"></i> Retour à la page d'accueil</a>
+                        </p>
+                    @endif
                     @foreach($cars as $car)
                         <div class="inventory_box car_listings boxed boxed_full">
                             <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">

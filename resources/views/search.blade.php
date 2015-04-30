@@ -32,6 +32,12 @@
             <div class="inner-page row">
                 <div class="content-wrap car_listings">
                     <div class="row">
+                        @if(count($foundCars) == 0)
+                            <p>Aucun véhicule n'a été trouvé.
+                                <br>
+                                <a href="{{url('/')}}" title="Retour à la page d'accueil"><i class="fa fa-home"></i> Retour à la page d'accueil</a>
+                            </p>
+                        @endif
                         @foreach($foundCars as $car)
                             <div class="inventory margin-bottom-20 clearfix scroll_effect fadeIn">
                                 <a class="inventory" href="{{url('/vehicule/' . $car['slug'])}}">

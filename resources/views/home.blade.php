@@ -111,7 +111,7 @@
                                  data-endspeed="300"
                                  data-endeasing="Power1.easeIn"
                                  data-captionhidden="off"
-                                 style="z-index: 6;">SIMPLE.
+                                 style="z-index: 6;">ZEN.
                             </div>
                         </li>
                         <li data-transition="fade" data-slotamount="5" data-masterspeed="700">

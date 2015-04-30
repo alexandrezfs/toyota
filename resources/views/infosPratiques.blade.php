@@ -89,16 +89,14 @@
                         <div class="testimonial">
                             <ul class="testimonial_slider">
                                 <li>
-                                    <blockquote class="style1"><span>STAMCAR est notre principal partenaire et gère notre parc de 40 véhicules neufs. Nous avons pleinement confiance à leurs compétence et ont su être à la hauteur à chacune de nos demandes d'intervention.</span> <strong>Jean</strong></blockquote>
+                                    <blockquote class="style1"><span>STAMCAR est notre principal partenaire et gère notre parc de 40 véhicules neufs. Nous avons pleinement confiance en leurs compétence et ont su être à la hauteur à chacune de nos demandes d'intervention.</span> <strong>Jean</strong> </blockquote>
                                 </li>
                                 <li>
-                                    <blockquote class="style1"><span>Me déplacant toute la journée mon véhicule a besoin d'être entretenu de manière soutenue. STAMCAR a su répondre à mes attentes et leurs interventions ont été rapides et efficaces.</span> <strong>Theodore</strong></blockquote>
-                                </li>
-                                <li>
-                                    <blockquote class="style1"><span>Ma voiture avait un problème que je n'avais pas pu identifier. Les mécaniciens de STAMCAR ont su identifier la panne rapidement et effectuer les réparations à des prix abordables.</span> <strong>Roger</strong></blockquote>
+                                    <blockquote class="style1"><span>Me déplacant toute la journée mon véhicule a besoin d'être entretenu de manière soutenue. STAMCAR a su répondre à mes attentes et leurs interventions ont été rapides et efficaces.</span> <strong>Roger</strong> </blockquote>
                                 </li>
                             </ul>
                         </div>
+
                         <div class="clearfix"></div>
                     </div>
                     <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 latest-news margin-padding-none xs-padding-bottom-40 xs-padding-left-none xs-padding-right-none sm-padding-left-none sm-margin-bottom-none scroll_effect fadeInUp"
@@ -143,7 +141,7 @@
 
     <!-- Footer Map -->
     <div id='google-map-listing' data-longitude='4.986016'
-         data-latitude='45.766984' data-zoom='8' style='height: 390px;'
+         data-latitude='45.766984' data-zoom='12' style='height: 390px;'
          data-scroll='false'
          data-style='[{"featureType":"landscape","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"transit","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"poi","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"stylers":[{"hue":"#F0F0F0"},{"saturation":-100},{"gamma":2.15},{"lightness":12}]},{"featureType":"road","elementType":"labels.text.fill","stylers":[{"visibility":"on"},{"lightness":24}]},{"featureType":"road","elementType":"geometry","stylers":[{"lightness":57}]}]'></div>
 

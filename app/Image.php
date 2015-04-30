@@ -8,6 +8,9 @@ class Image extends Model {
 
     public static function saveImages($images, $object_name, $object_id) {
 
+        //remove all previous images
+        Image::where('object_name', $object_name)->where('object_id', $object_id)->delete();
+
         foreach ($images as $key => $image_json) {
 
             $image = new Image();

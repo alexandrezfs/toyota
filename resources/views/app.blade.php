@@ -107,8 +107,8 @@
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse" id="stamcar-navbar-menu">
                         <ul class="nav navbar-nav pull-right">
-                            <li class="active"><a href="{{ url('/infos-pratiques') }}" title="infos-pratiques">Infos Pratiques</a></li>
-                            <li class="dropdown"><a href="#" title="Nos véhicules" class="dropdown-toggle"
+                            <li class="@if(Request::is('infos-pratiques') || Request::is('/')) active @endif"><a href="{{ url('/infos-pratiques') }}" title="infos-pratiques">Infos Pratiques</a></li>
+                            <li class="dropdown @if(Request::is('gamme-toyota') || Request::is('vehicules-occasion') || Request::is('sans-permis') || Request::is('vehicule/*')) active @endif"><a href="#" title="Nos véhicules" class="dropdown-toggle"
                                                     data-toggle="dropdown">Véhicules <b
                                             class="caret"></b></a>
                                 <ul class="dropdown-menu">
@@ -129,10 +129,10 @@
                                     </li>
                                 </ul>
                             </li>
-                            <li><a href="{{ url('/actu')  }}" title="Actualité">Actu</a></li>
-                            <li><a href="{{ url('/forfaits')  }}" title="Forfaits">Forfaits</a></li>
-                            <li><a href="{{ url('/magasin')  }}" title="Le magasin">Magasin</a></li>
-                            <li><a href="{{ url('/contact')  }}" title="Contact">Contact</a></li>
+                            <li class="@if(Request::is('actu') || Request::is('article/*')) active @endif"><a href="{{ url('/actu')  }}" title="Actualité">Actu</a></li>
+                            <li class="@if(Request::is('forfaits') || Request::is('forfait/*')) active @endif"><a href="{{ url('/forfaits')  }}" title="Forfaits">Forfaits</a></li>
+                            <li class="@if(Request::is('magasin') || Request::is('produit/*')) active @endif"><a href="{{ url('/magasin')  }}" title="Le magasin">Magasin</a></li>
+                            <li class="@if(Request::is('contact')) active @endif"><a href="{{ url('/contact')  }}" title="Contact">Contact</a></li>
                         </ul>
                     </div>
                     <!-- /.navbar-collapse -->

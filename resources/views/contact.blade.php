@@ -36,7 +36,7 @@
                         <h2 class="margin-bottom-25 margin-top-none">Nous trouver sur la carte</h2>
                         <div class="map margin-vertical-30">
                             <div id='google-map-listing' class="contact" data-longitude='4.986016'
-                                 data-latitude='45.766984' data-zoom='10' style='height: 390px;'></div>
+                                 data-latitude='45.766984' data-zoom='16' style='height: 390px;'></div>
                         </div>
                     </div>
                     <!--MAP-->

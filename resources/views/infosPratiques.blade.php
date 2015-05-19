@@ -13,7 +13,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-md-8 col-sm-6 col-xs-12">
-                    <h2>Nous rejoindre</h2>
+                    <h2>Infos pratiques</h2>
                     <h4>Faites réparer votre véhicule par des experts</h4>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">

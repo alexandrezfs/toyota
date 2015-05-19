@@ -14,6 +14,8 @@
 
     @yield('seo')
 
+    <link rel="author" href="https://plus.google.com/107464430469821078510"/>
+
     <link rel="shortcut icon" href="{{asset('images/favicon.png')}}">
     <!-- Bootstrap core CSS -->
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">

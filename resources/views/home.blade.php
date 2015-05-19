@@ -4,6 +4,7 @@
     <title>STAMCAR TOYOTA LYON EST - Garage auto sur Lyon</title>
     <meta name="description" content="Véhicules neufs et d'occasion, réparateur véhicules agréé Toyota et JDM à LYON. Réparations et entretiens toutes marques.">
     <link rel="canonical" href="http://stamcar.fr" />
+    <meta name="keywords" content="toyota lyon, toyota meyzieu, atelier toyota lyon, lyon"/>
 @endsection
 
 @section('content')
@@ -312,10 +313,10 @@
                                 </div>
                                 <h4><a href="#">Garage toutes marques bien placé</a></h4>
 
-                                <p class="margin-bottom-none">STAMCAR à LYON (Meyzieu), situé en plein coeur d'un large réseau de
+                                <p class="margin-bottom-none"><strong>TOYOTA STAMCAR à LYON</strong> (Meyzieu), situé en plein coeur d'un large réseau de
                                     transports, tel l'axe national N346 qui relie l'entreprise à Lyon, repose en plein
                                     coeur de nombreux commerces. (Zone d'activité) 16 Rue Paul Cezanne, 69330 Meyzieu
-                                    derrière le centre Leclerc.</p>
+                                    derrière le centre Leclerc et tout près <strong>d'OL Land</strong>.</p>
                             </div>
                             <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 margin-bottom-none">
                                 <div class="flip horizontal margin-bottom-30">
@@ -324,7 +325,7 @@
                                                                      src="{{asset('images/toyota/toyota2.jpg')}}"
                                                                      alt="toyota illustration 2"></div>
                                         <div class="face back">
-                                            <div class='hover_title'>Experts Toyota</div>
+                                            <div class='hover_title'>Experts Toyota à LYON</div>
                                             <a href="{{ url('/infos-pratiques')  }}"><i
                                                         class="fa fa-link button_icon" title="infos pratiques toyota lyon"></i></a>
                                         </div>
@@ -374,7 +375,7 @@
 
                                         <h3>Résultats garantis</h3>
 
-                                        <p>Nos experts TOYOTA s'assurent que votre véhicule sort de notre atelier dans
+                                        <p>Nos experts <strong>TOYOTA à LYON</strong> s'assurent que votre véhicule sort de notre atelier dans
                                             de meilleures conditions.</p>
                                     </div>
                                     <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 xs-margin-bottom-none xs-padding-top-30 scroll_effect bounceInLeft"
@@ -416,7 +417,7 @@
                                 vous pouvez commander en ligne.</p>
 
                             <p>Consultez également la <span class="alternate-font">gamme Toyota</span>. ou la gamme
-                                <span class="alternate-font">sans permis</span>. STAMCAR est un atelier agréé Toyota.</p>
+                                <span class="alternate-font">sans permis</span>. <strong>STAMCAR TOYOTA à LYON</strong> est un atelier agréé Toyota.</p>
                         </div>
                         <!--welcome ends-->
                         <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 padding-right-none sm-padding-left-none md-padding-left-15 xs-padding-left-none padding-bottom-40 scroll_effect fadeInUp"

@@ -1,8 +1,9 @@
 @extends('app')
 
 @section('seo')
-    <title>STAMCAR TOYOTA LYON EST - Vente d'accessoires et pièces auto</title>
-    <meta name="description" content="Vente d'accessoires et pièces automobiles en ligne, véhicules neufs et d'occasions, réparateur véhicules agréé Toyota et JDM.">
+    <title>STAMCAR TOYOTA LYON EST - Garage auto sur Lyon</title>
+    <meta name="description" content="Véhicules neufs et d'occasion, réparateur véhicules agréé Toyota et JDM à LYON. Réparations et entretiens toutes marques.">
+    <link rel="canonical" href="http://stamcar.fr" />
 @endsection
 
 @section('content')
@@ -15,7 +16,7 @@
                         <li data-transition="fade" data-slotamount="5" data-masterspeed="700">
                             <!-- MAIN IMAGE -->
                             <img src="{{asset('/images/slides/slide1.jpg')}}"
-                                 alt="slidebg1" data-bgfit="cover" data-bgposition="center center"
+                                 alt="slide toyota lyon" data-bgfit="cover" data-bgposition="center center"
                                  data-bgrepeat="no-repeat">
 
                             <!-- LAYERS -->
@@ -84,7 +85,7 @@
                         <li data-transition="fade" data-slotamount="5" data-masterspeed="700">
                             <!-- MAIN IMAGE -->
                             <img src="{{asset('/images/slides/slide2.jpg')}}"
-                                 alt="slidebg1" data-bgfit="cover" data-bgposition="center center"
+                                 alt="slide toyota lyon" data-bgfit="cover" data-bgposition="center center"
                                  data-bgrepeat="no-repeat">
 
                             <!-- LAYERS -->
@@ -117,7 +118,7 @@
                         <li data-transition="fade" data-slotamount="5" data-masterspeed="700">
                             <!-- MAIN IMAGE -->
                             <img src="{{asset('/images/slides/slide3.jpg')}}"
-                                 alt="slidebg1" data-bgfit="cover" data-bgposition="center center"
+                                 alt="slide toyota lyon" data-bgfit="cover" data-bgposition="center center"
                                  data-bgrepeat="no-repeat">
 
                             <!-- LAYERS -->
@@ -198,7 +199,7 @@
                         <li data-transition="fade" data-slotamount="5" data-masterspeed="700">
                             <!-- MAIN IMAGE -->
                             <img src="{{asset('/images/slides/slide4.jpg')}}"
-                                 alt="slidebg1" data-bgfit="cover" data-bgposition="center center"
+                                 alt="slide toyota lyon" data-bgfit="cover" data-bgposition="center center"
                                  data-bgrepeat="no-repeat">
 
                             <!-- LAYERS -->
@@ -277,7 +278,7 @@
     <section class="message-wrap">
         <div class="container">
             <div class="row">
-                <h2 class="col-lg-9 col-md-8 col-sm-12 col-xs-12 xs-padding-left-15">Votre garage toutes marques
+                <h2 class="col-lg-9 col-md-8 col-sm-12 col-xs-12 xs-padding-left-15">Votre garage toutes marques à Lyon
                     accessible <span class="alternate-font">facilement</span></h2>
 
                 <div class="col-lg-3 col-md-4 col-sm-12 col-xs-12 xs-padding-right-15">
@@ -301,17 +302,17 @@
                                     <div class="card">
                                         <div class="face front"><img class="img-responsive"
                                                                      src="{{asset('images/toyota/toyota1.jpg')}}"
-                                                                     alt=""></div>
+                                                                     alt="toyota illustration 1"></div>
                                         <div class="face back">
                                             <div class='hover_title'>Emplacement</div>
                                             <a href="{{ url('/infos-pratiques')  }}"><i
-                                                        class="fa fa-link button_icon"></i></a>
+                                                        class="fa fa-link button_icon" title="toyota lyon infos pratiques"></i></a>
                                         </div>
                                     </div>
                                 </div>
                                 <h4><a href="#">Garage toutes marques bien placé</a></h4>
 
-                                <p class="margin-bottom-none">STAMCAR, situé en plein coeur d'un large réseau de
+                                <p class="margin-bottom-none">STAMCAR à LYON (Meyzieu), situé en plein coeur d'un large réseau de
                                     transports, tel l'axe national N346 qui relie l'entreprise à Lyon, repose en plein
                                     coeur de nombreux commerces. (Zone d'activité) 16 Rue Paul Cezanne, 69330 Meyzieu
                                     derrière le centre Leclerc.</p>
@@ -321,11 +322,11 @@
                                     <div class="card">
                                         <div class="face front"><img class="img-responsive"
                                                                      src="{{asset('images/toyota/toyota2.jpg')}}"
-                                                                     alt=""></div>
+                                                                     alt="toyota illustration 2"></div>
                                         <div class="face back">
                                             <div class='hover_title'>Experts Toyota</div>
                                             <a href="{{ url('/infos-pratiques')  }}"><i
-                                                        class="fa fa-link button_icon"></i></a>
+                                                        class="fa fa-link button_icon" title="infos pratiques toyota lyon"></i></a>
                                         </div>
                                     </div>
                                 </div>
@@ -342,11 +343,11 @@
                                     <div class="card">
                                         <div class="face front"><img class="img-responsive"
                                                                      src="{{asset('images/toyota/toyota3.jpg')}}"
-                                                                     alt=""></div>
+                                                                     alt="toyota illustration 3"></div>
                                         <div class="face back">
                                             <div class='hover_title'>Horaires</div>
                                             <a href="{{ url('/infos-pratiques')  }}"><i
-                                                        class="fa fa-link button_icon"></i></a>
+                                                        class="fa fa-link button_icon" title="infos pratiques toyota lyon"></i></a>
                                         </div>
                                     </div>
                                 </div>
@@ -573,12 +574,12 @@
                                     @foreach($cars as $car)
                                         <div class="slide">
                                             <div class="car-block">
-                                                <div class="img-flex"><a href="{{url('/vehicule/' . $car['slug'])}}"><span
+                                                <div class="img-flex"><a href="{{url('/vehicule/' . $car['slug'])}}" title="{{$car['title']}}"><span
                                                                 class="align-center"><i
                                                                     class="fa fa-3x fa-plus-square-o"></i></span></a>
                                                     @if(count($car['images']) > 0)
                                                         <img src="{{$car['images'][0]['uri']}}" alt=""
-                                                             class="img-responsive"></div>
+                                                             class="img-responsive" alt="{{$car['title']}}"></div>
                                                     @else
                                                         <img src="http://placehold.it/350x200" alt=""
                                                              class="img-responsive"></div>
@@ -606,13 +607,13 @@
                 <div class="col-lg-2 col-md-2 col-sm-6 col-xs-12 xs-margin-bottom-40 sm-margin-bottom-none padding-left-none scroll_effect bounceInLeft">
                     <div class="small-block clearfix">
                         <h4 class="margin-bottom-25 margin-top-none">Financements.</h4>
-                        <a href="{{url('/infos-pratiques')}}"><span class="align-center"><i class="fa fa-tag fa-7x"></i></span></a></div>
+                        <a href="{{url('/infos-pratiques')}}" title="Infos pratiques toyota lyon"><span class="align-center"><i class="fa fa-tag fa-7x"></i></span></a></div>
                 </div>
                 <div class="col-lg-2 col-md-2 col-sm-6 col-xs-12 xs-margin-bottom-40 sm-margin-bottom-none scroll_effect bounceInLeft"
                      data-wow-delay=".2s">
                     <div class="small-block clearfix">
                         <h4 class="margin-bottom-25 margin-top-none">Garanties.</h4>
-                        <a href="{{url('/infos-pratiques')}}"><span class="align-center"><i class="fa fa-cogs fa-7x"></i></span></a></div>
+                        <a href="{{url('/infos-pratiques')}}" title="Infos pratiques toyota lyon"><span class="align-center"><i class="fa fa-cogs fa-7x"></i></span></a></div>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 padding-left-none padding-right-none hours_operation">
                     <div class="small-block clearfix">
@@ -666,13 +667,13 @@
                      data-wow-delay=".2s">
                     <div class="small-block clearfix">
                         <h4 class="margin-bottom-25 margin-top-none">Infos Pratiques.</h4>
-                        <a href="{{url('/infos-pratiques')}}"><span class="align-center"><i class="fa fa-users fa-7x"></i></span></a>
+                        <a href="{{url('/infos-pratiques')}}" title="Infos pratiques toyota lyon"><span class="align-center"><i class="fa fa-users fa-7x"></i></span></a>
                     </div>
                 </div>
                 <div class="col-lg-2 col-md-2 col-sm-6 col-xs-12 xs-margin-bottom-40 sm-margin-bottom-none padding-right-none scroll_effect bounceInRight">
                     <div class="small-block clearfix">
                         <h4 class="margin-bottom-25 margin-top-none">Nous contacter.</h4>
-                        <a href="{{url('/contact')}}"><span class="align-center"><i class="fa fa-map-marker fa-7x"></i></span></a>
+                        <a href="{{url('/contact')}}" title="Contact toyota lyon"><span class="align-center"><i class="fa fa-map-marker fa-7x"></i></span></a>
                     </div>
                 </div>
             </div>

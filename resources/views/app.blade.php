@@ -77,7 +77,7 @@
                 <div class="col-lg-6 ">
                     <ul class="right-none pull-right company_info">
                         <li><a href="tel:0478316165"><i class="fa fa-phone"></i> 04 78 31 61 65</a></li>
-                        <li class="address"><a href="{{url('/contact')}}"><i class="fa fa-map-marker"></i> 16 Rue Paul
+                        <li class="address"><a href="{{url('/contact')}}" title="Contact toyota lyon"><i class="fa fa-map-marker"></i> 16 Rue Paul
                                 Cezanne,
                                 69330 Meyzieu</a></li>
                     </ul>
@@ -96,7 +96,7 @@
                                 data-target="#stamcar-navbar-menu"><span
                                     class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span
                                     class="icon-bar"></span> <span class="icon-bar"></span></button>
-                        <a class="navbar-brand" href="{{url('/')}}">
+                        <a class="navbar-brand" href="{{url('/')}}" title="homepage toyota lyon">
                             <span class="logo">
                                 <span class="primary_text">STAMCAR</span>
                                 <span class="secondary_text">TOYOTA LYON EST</span>
@@ -107,7 +107,7 @@
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse" id="stamcar-navbar-menu">
                         <ul class="nav navbar-nav pull-right">
-                            <li class="@if(Request::is('infos-pratiques') || Request::is('/')) active @endif"><a href="{{ url('/infos-pratiques') }}" title="infos-pratiques">Infos Pratiques</a></li>
+                            <li class="@if(Request::is('infos-pratiques') || Request::is('/')) active @endif"><a href="{{ url('/infos-pratiques') }}" title="infos pratiques toyota lyon">Infos Pratiques</a></li>
                             <li class="dropdown @if(Request::is('gamme-toyota') || Request::is('vehicules-occasion') || Request::is('sans-permis') || Request::is('vehicule/*')) active @endif"><a href="#" title="Nos véhicules" class="dropdown-toggle"
                                                     data-toggle="dropdown">Véhicules <b
                                             class="caret"></b></a>
@@ -130,9 +130,9 @@
                                 </ul>
                             </li>
                             <li class="@if(Request::is('actu') || Request::is('article/*')) active @endif"><a href="{{ url('/actu')  }}" title="Actualité">Actu</a></li>
-                            <li class="@if(Request::is('forfaits') || Request::is('forfait/*')) active @endif"><a href="{{ url('/forfaits')  }}" title="Forfaits">Forfaits</a></li>
+                            <li class="@if(Request::is('forfaits') || Request::is('forfait/*')) active @endif"><a href="{{ url('/forfaits')  }}" title="Forfaits toyota">Forfaits</a></li>
                             <li class="@if(Request::is('magasin') || Request::is('produit/*')) active @endif"><a href="{{ url('/magasin')  }}" title="Le magasin">Magasin</a></li>
-                            <li class="@if(Request::is('contact')) active @endif"><a href="{{ url('/contact')  }}" title="Contact">Contact</a></li>
+                            <li class="@if(Request::is('contact')) active @endif"><a href="{{ url('/contact')  }}" title="Contact toyota lyon">Contact</a></li>
                         </ul>
                     </div>
                     <!-- /.navbar-collapse -->
@@ -204,7 +204,7 @@
                             href="#">
                         <h1>Stamcar</h1></a>
                 </div>
-                <p>Copyright &copy; 2015 STAMCAR.</p>
+                <p>Copyright &copy; 2015 STAMCAR TOYOTA LYON EST</p>
             </div>
             <div class="col-lg-8 col-md-8 col-sm-6 col-xs-12">
                 <!--

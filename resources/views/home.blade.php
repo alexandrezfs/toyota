@@ -574,12 +574,12 @@
                                     @foreach($cars as $car)
                                         <div class="slide">
                                             <div class="car-block">
-                                                <div class="img-flex"><a href="{{url('/vehicule/' . $car['slug'])}}" title="{{$car['title']}}"><span
+                                                <div class="img-flex"><a href="{{url('/vehicule/' . $car['slug'])}}" title="{{$car['titre']}}"><span
                                                                 class="align-center"><i
                                                                     class="fa fa-3x fa-plus-square-o"></i></span></a>
                                                     @if(count($car['images']) > 0)
                                                         <img src="{{$car['images'][0]['uri']}}" alt=""
-                                                             class="img-responsive" alt="{{$car['title']}}"></div>
+                                                             class="img-responsive" alt="{{$car['titre']}}"></div>
                                                     @else
                                                         <img src="http://placehold.it/350x200" alt=""
                                                              class="img-responsive"></div>

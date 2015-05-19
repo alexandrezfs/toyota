@@ -723,6 +723,8 @@ $(window).load(function(){
 			var scroll_wheel = $("#google-map-listing").data('scroll');
 			var style        = $("#google-map-listing").data('style');
 			var parallax     = $("#google-map-listing").data('parallax');
+
+            var isDraggable = $(document).width() > 480 ? true : false;
 			
 			if(latitude && longitude){				
 				var myLatlng = new google.maps.LatLng(latitude, longitude);
@@ -730,7 +732,8 @@ $(window).load(function(){
 					zoom: zoom,
 					center: myLatlng,
 					popup: true,
-					mapTypeId: google.maps.MapTypeId.ROADMAP
+					mapTypeId: google.maps.MapTypeId.ROADMAP,
+                    draggable: isDraggable
 				}
 
 				if(parallax != false && typeof parallax == "undefined"){

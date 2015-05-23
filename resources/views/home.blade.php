@@ -1,8 +1,8 @@
 @extends('app')
 
 @section('seo')
-    <title>STAMCAR TOYOTA LYON EST - Garage auto sur Lyon</title>
-    <meta name="description" content="Véhicules neufs et d'occasion, réparateur véhicules agréé Toyota et JDM à LYON. Réparations et entretiens toutes marques.">
+    <title>STAMCAR TOYOTA LYON EST - Garage Auto Toyota Lyon</title>
+    <meta name="description" content="Bienvenue chez Toyota Lyon Est. Véhicules neufs et d'occasion, réparateur véhicules agréé Toyota et JDM à LYON. Réparations et entretiens toutes marques.">
     <link rel="canonical" href="http://stamcar.fr" />
     <meta name="keywords" content="toyota lyon, toyota meyzieu, atelier toyota lyon, lyon"/>
 @endsection
@@ -279,7 +279,7 @@
     <section class="message-wrap">
         <div class="container">
             <div class="row">
-                <h2 class="col-lg-9 col-md-8 col-sm-12 col-xs-12 xs-padding-left-15">Votre garage toutes marques à Lyon
+                <h2 class="col-lg-9 col-md-8 col-sm-12 col-xs-12 xs-padding-left-15">Votre garage toutes marques Toyota Lyon
                     accessible <span class="alternate-font">facilement</span></h2>
 
                 <div class="col-lg-3 col-md-4 col-sm-12 col-xs-12 xs-padding-right-15">

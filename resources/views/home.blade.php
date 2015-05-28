@@ -3,7 +3,6 @@
 @section('seo')
     <title>TOYOTA LYON EST - STAMCAR - Garage Auto Toyota Lyon</title>
     <meta name="description" content="Bienvenue chez Toyota Lyon Est. Véhicules neufs et d'occasion, réparateur véhicules agréé Toyota et JDM à LYON. Réparations et entretiens toutes marques.">
-    <link rel="canonical" href="http://stamcar.fr" />
     <meta name="keywords" content="toyota lyon, toyota meyzieu, atelier toyota lyon, lyon"/>
 @endsection
 

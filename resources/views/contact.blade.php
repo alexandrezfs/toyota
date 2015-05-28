@@ -31,17 +31,8 @@
         <div class="container">
             <div class="inner-page">
                 <div class="col-md-12 padding-none">
-                    <!--MAP-->
-                    <div class="find_map row clearfix">
-                        <h2 class="margin-bottom-25 margin-top-none">Nous trouver sur la carte</h2>
-                        <div class="map margin-vertical-30">
-                            <div id='google-map-listing' class="contact" data-longitude='4.986016'
-                                 data-latitude='45.766984' data-zoom='16' style='height: 390px;'></div>
-                        </div>
-                    </div>
-                    <!--MAP-->
                     <!--CONTACT INFORMATION-->
-                    <div class="row contacts margin-top-25">
+                    <div class="row contacts">
                         <!--LEFT INFORMATION-->
                         <div class="col-md-6 left-information">
                             <div class="contact_information information_head clearfix">
@@ -138,6 +129,16 @@
 
                     </div>
                     <!---CONTACT INFORMATION-->
+
+                    <!--MAP-->
+                    <div class="find_map row clearfix margin-top-60">
+                        <h2 class="margin-bottom-25 margin-top-none">Nous trouver sur la carte</h2>
+                        <div class="map margin-vertical-30">
+                            <div id='google-map-listing' class="contact" data-longitude='4.986016'
+                                 data-latitude='45.766984' data-zoom='16' style='height: 390px;'></div>
+                        </div>
+                    </div>
+                    <!--MAP-->
 
                 </div>
                 <div class="clearfix"></div>

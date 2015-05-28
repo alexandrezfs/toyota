@@ -33,14 +33,48 @@
         <div class="container">
             <div class="inner-page about-us row">
                 <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 padding-left-none padding-bottom-40 xs-padding-left-none xs-padding-right-none">
+
+                    <div class="contact_information information_head clearfix">
+                        <h3 class="margin-bottom-25 margin-top-none">CONTACT</h3>
+
+                        <div class="address clearfix margin-right-25 padding-bottom-40">
+                            <div class="icon_address">
+                                <p><i class="fa fa-map-marker"></i><strong>Adresse:</strong></p>
+                            </div>
+                            <div class="contact_address">
+                                <p class="margin-bottom-none">STAMCAR TOYOTA LYON EST<br>
+                                    16 RUE PAUL CEZANNE <br>
+                                    69330 MEYZIEU <br>
+                                    France</p>
+                            </div>
+                        </div>
+                        <div class="address clearfix address_details margin-right-25 padding-bottom-40">
+                            <ul class="margin-bottom-none">
+                                <li><i class="fa fa-phone"></i><strong>Téléphone:</strong> <span><a
+                                                href="tel:0478316165">04 78 31 61 65</a></span></li>
+                                <li><i class="fa fa-envelope-o"></i><strong>Email:</strong> <a
+                                            href="mailto:stamcar.toyota@neuf.fr">stamcar.toyota@neuf.fr</a></li>
+                                <li class="padding-bottom-none"><i class="fa fa-laptop"></i><strong>Web:</strong> <a
+                                            href="http://www.stamcar.fr">www.stamcar.fr</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
                     <h3 class="margin-bottom-25">NOTRE MISSION</h3>
 
-                    <p><span class="firstcharacter">S</span>pécialisé dans la réparation de tous les véhicules y compris les véhicules sans permis, notre savoir faire sur les entretiens des véhicules de toutes marques et spécialement de la marque Toyota. En partenariat avec notre fournisseur IGOL, nos produits sont de hautes qualités, pour une longévité de votre véhicule.
+                    <p><span class="firstcharacter">S</span>pécialisé dans la réparation de tous les véhicules y compris
+                        les véhicules sans permis, notre savoir faire sur les entretiens des véhicules de toutes marques
+                        et spécialement de la marque Toyota. En partenariat avec notre fournisseur IGOL, nos produits
+                        sont de hautes qualités, pour une longévité de votre véhicule.
 
-                        Du Lundi au Jeudi 8h-12h 14h-19h sauf Vendredi fermeture à 18h, et Samedi 8h-12h fermeture après midi.
-                        *À l'occasion de certaines journées (jours fériés, vacances d'été), le garage est susceptible de fermer ses portes.
+                        Du Lundi au Jeudi 8h-12h 14h-19h sauf Vendredi fermeture à 18h, et Samedi 8h-12h fermeture après
+                        midi.
+                        *À l'occasion de certaines journées (jours fériés, vacances d'été), le garage est susceptible de
+                        fermer ses portes.
 
-                        STAMCAR, situé en plein coeur d'un large réseau de transports, tel l'axe national N346 qui relie l'entreprise à Lyon, repose en plein coeur de nombreux commerces. (Zone d'activité) 16 Rue Paul Cezanne, 69330 Meyzieu derrière le centre Leclerc.</p>
+                        STAMCAR, situé en plein coeur d'un large réseau de transports, tel l'axe national N346 qui relie
+                        l'entreprise à Lyon, repose en plein coeur de nombreux commerces. (Zone d'activité) 16 Rue Paul
+                        Cezanne, 69330 Meyzieu derrière le centre Leclerc.</p>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-4 padding-right-none padding-bottom-40 xs-padding-left-none xs-padding-right-none">
                     <div class="right-container">
@@ -89,10 +123,12 @@
                         <div class="testimonial">
                             <ul class="testimonial_slider">
                                 <li>
-                                    <blockquote class="style1"><span>STAMCAR est notre principal partenaire et gère notre parc de 40 véhicules neufs. Nous avons pleinement confiance en leurs compétence et ont su être à la hauteur à chacune de nos demandes d'intervention.</span> <strong>Jean</strong> </blockquote>
+                                    <blockquote class="style1"><span>STAMCAR est notre principal partenaire et gère notre parc de 40 véhicules neufs. Nous avons pleinement confiance en leurs compétence et ont su être à la hauteur à chacune de nos demandes d'intervention.</span>
+                                        <strong>Jean</strong></blockquote>
                                 </li>
                                 <li>
-                                    <blockquote class="style1"><span>Me déplacant toute la journée mon véhicule a besoin d'être entretenu de manière soutenue. STAMCAR a su répondre à mes attentes et leurs interventions ont été rapides et efficaces.</span> <strong>Roger</strong> </blockquote>
+                                    <blockquote class="style1"><span>Me déplacant toute la journée mon véhicule a besoin d'être entretenu de manière soutenue. STAMCAR a su répondre à mes attentes et leurs interventions ont été rapides et efficaces.</span>
+                                        <strong>Roger</strong></blockquote>
                                 </li>
                             </ul>
                         </div>
@@ -111,17 +147,19 @@
                                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 list-info padding-bottom-15 padding-horizontal-5">
                                             <a href="{{url('/article/' . $new['slug'])}}">
                                                 <div class="thumb-image">
-                                                @if(count($new['images']) > 0)
-                                                    <img src="{{$new['images'][0]['uri']}}" style="max-width:80px;" alt="">
-                                                @else
-                                                    <img src="http://placehold.it/50x50" alt=""
-                                                         class="img-responsive">
-                                                @endif
+                                                    @if(count($new['images']) > 0)
+                                                        <img src="{{$new['images'][0]['uri']}}" style="max-width:80px;"
+                                                             alt="">
+                                                    @else
+                                                        <img src="http://placehold.it/50x50" alt=""
+                                                             class="img-responsive">
+                                                    @endif
                                                 </div>
                                                 <h4>{{$new['titre']}}</h4>
                                                 <span>{{$new['created_at']}}</span>
 
-                                                <p>{{substr(preg_replace('/(<.*?>)|(&.*?;)/', '', $new['contenu']), 0, 250)}}<a href="{{url('/article/' . $new['slug'])}}"> [...]</a></p>
+                                                <p>{{substr(preg_replace('/(<.*?>)|(&.*?;)/', '', $new['contenu']), 0, 250)}}
+                                                    <a href="{{url('/article/' . $new['slug'])}}"> [...]</a></p>
                                             </a>
                                         </div>
                                     </div>

@@ -1,8 +1,8 @@
 @extends('app')
 
 @section('seo')
-    <title>STAMCAR TOYOTA LYON EST - Stamcar.fr</title>
-    <meta name="description" content="Bienvenue chez Toyota Lyon Est. Véhicules neufs et d'occasion, réparateur véhicules agréé Toyota et JDM à LYON. Réparations et entretiens toutes marques.">
+    <title>TOYOTA LYON EST</title>
+    <meta name="description" content="Bienvenue chez Toyota Lyon Est. Véhicules neufs et d'occasion, réparateur véhicules agréé Toyota et Lexus à LYON. Réparations et entretiens toutes marques.">
     <meta name="keywords" content="toyota lyon, toyota meyzieu, atelier toyota lyon, lyon"/>
 @endsection
 

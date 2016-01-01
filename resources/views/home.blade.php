@@ -279,7 +279,7 @@
         <div class="container">
             <div class="row">
                 <h1 class="col-lg-9 col-md-8 col-sm-12 col-xs-12 xs-padding-left-15" style="font-size: 2.0em; padding: 0; margin: 0;">Votre garage <strong>Toyota Lyon</strong> Est
-                    à <span class="alternate-font">votre service</span></h1>
+                    à <span class="alternate-font">vous souhaite une bonne et heureuse année 2016 !</span></h1>
 
                 <div class="col-lg-3 col-md-4 col-sm-12 col-xs-12 xs-padding-right-15">
                     <a href="{{url('/infos-pratiques')}}" class="default-btn pull-right action_button lg-button">

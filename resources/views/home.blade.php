@@ -290,6 +290,17 @@
         </div>
         <div class="message-shadow"></div>
     </section>
+    <section class="container" style="padding-top:20px;color:red;font-size:1.2em;">
+        Votre garage "Stamcar Toyota Lyon Est" sera fermé du samedi 06 août au dimanche 21 août.
+        <br>
+        Notre équipe ne sera pas en mesure de vous répondre pendant cette période.
+        <br>
+        Si vous souhaitez prendre un rendez-vous à la réouverture, veillez nous envoyer un e-mail ou nous rappeler le plus tôt possible.
+        <br>
+        Merci de votre compréhension.
+        <br>
+        Cordialement, votre garage Toyota Stamcar.
+    </section>
     <!--message-wrap ends-->
     <section class="content">
         <div class="container">
